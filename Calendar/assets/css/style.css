@@ -1,0 +1,54 @@
+
+
+h1 {
+    text-align: center;
+    position: relative;
+    left: -265px;
+    top: 60px;
+}
+
+#june, #aug {
+    display: inline;
+    width: 150px;    
+}
+
+#june {
+    position: relative;
+    top: 125px;
+}
+
+#aug {
+    position: relative;
+    left: 565px;
+    top: -30px;
+}
+
+.day p, .date p {
+    display: inline-block;
+    padding: 15px;
+    margin: 2.5px;
+    background-color: white;
+    border: 2px solid black;
+    vertical-align: top;
+}
+
+.date p {
+    width: 60px;
+    text-align: center;
+}
+#grey {
+    background-color: lightgrey;
+    display: inline-block;
+    width: 94px;
+    height: 50px;
+    margin-top: 5px;
+    margin-left: 5px;
+}
+
+#blue {
+    background-color: lightskyblue;
+}
+
+#green {
+    background-color: lightgreen;
+}

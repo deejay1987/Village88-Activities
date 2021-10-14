@@ -1,0 +1,241 @@
+#wrapper {
+  background-color: #3d3525;
+  height: 1050px;
+  margin: auto;
+  width: 1400px;
+}
+#wrapper header {
+  display: inline-block;
+  width: 1400px;
+}
+#wrapper header ul li,
+#wrapper header span,
+#wrapper header a {
+  display: inline-block;
+}
+#wrapper header #home :hover,
+#wrapper header li :hover,
+#wrapper header #right_nav li :hover {
+  background: orange;
+}
+#wrapper header #home a#feature :hover,
+#wrapper header li a#feature :hover,
+#wrapper header #right_nav li a#feature :hover {
+  color: orange;
+}
+#wrapper #search_container {
+  background-color: #c75000;
+  height: 90px;
+  margin: auto;
+  text-align: center;
+  width: 1230px;
+}
+#wrapper #search_container h1,
+#wrapper #search_container form,
+#wrapper #search_container span {
+  font-size: 35px;
+  color: white;
+  display: inline-block;
+}
+#wrapper #search_container h1 input,
+#wrapper #search_container form input,
+#wrapper #search_container span input {
+  border: none;
+  border-bottom: 1px solid white;
+  background-color: transparent;
+  text-align: center;
+  width: 260px;
+}
+#wrapper section {
+  background-color: #f2e8d5;
+  height: 600px;
+  margin: auto;
+  margin-top: 10px;
+  width: 1230px;
+}
+#wrapper section #hashtag,
+#wrapper section #star {
+  background-color: #c75000;
+  color: white;
+  position: relative;
+}
+#wrapper section #hashtag #hashtag,
+#wrapper section #star #hashtag,
+#wrapper section #hashtag #star,
+#wrapper section #star #star {
+  position: absolute;
+  text-align: center;
+  width: 25px;
+}
+#wrapper section #hashtag {
+  font-size: 25px;
+  left: -30px;
+  top: 30px;
+}
+#wrapper section #star {
+  font-size: 15px;
+  left: -57px;
+  padding: 3px;
+  top: 65px;
+}
+#wrapper section header {
+  display: inline-block;
+  width: 1230px;
+}
+#wrapper section header h2,
+#wrapper section header p {
+  display: block;
+  width: 420px;
+}
+#wrapper section .table {
+  margin: 10px;
+}
+#wrapper section .table ul {
+  margin: 5px;
+  margin-left: 0px;
+  padding: 0px;
+}
+#wrapper section .table ul li {
+  display: inline-block;
+  padding: 5px;
+  font-size: 13px;
+  text-align: center;
+  width: 57px;
+}
+#wrapper section .table ul li#if,
+#wrapper section .table ul li#edge {
+  border-bottom: 4px solid #375884;
+}
+#wrapper section .table ul li#firefox,
+#wrapper section .table ul li#firefox_for_android {
+  border-bottom: 4px solid #a36222;
+}
+#wrapper section .table ul li#chrome,
+#wrapper section .table ul li#chrome_for_android {
+  border-bottom: 4px solid #3e77bb;
+}
+#wrapper section .table ul li#safari {
+  border-bottom: 4px solid #666666;
+}
+#wrapper section .table ul li#opera {
+  border-bottom: 4px solid #7b191a;
+}
+#wrapper section .table ul li#safari_on_ios {
+  border-bottom: 4px solid #29292a;
+}
+#wrapper section .table ul li#android_browser {
+  border-bottom: 4px solid #9eb569;
+}
+#wrapper section .table ul li#opera_mini,
+#wrapper section .table ul li#opera_mobile {
+  border-bottom: 4px solid #b2605a;
+}
+#wrapper section .table ul li#uc_browser,
+#wrapper section .table ul li#qq_browser,
+#wrapper section .table ul li#baidu_browser {
+  border-bottom: 4px solid #000000;
+}
+#wrapper section .table ul li#samsung_internet {
+  border-bottom: 4px solid #924bff;
+}
+#wrapper section .table ul li#kaios_browser {
+  border-bottom: 4px solid #6800b3;
+}
+#wrapper section .table ul li.darkgreen {
+  background-color: #746c00;
+}
+#wrapper section .table ul li.red {
+  background-color: #b43b2b;
+}
+#wrapper section .table ul li.green {
+  background-color: #2a8436;
+}
+#wrapper section .lower_tab_section {
+  margin: 0px;
+}
+#wrapper section .lower_tab_section ul {
+  margin: 0px;
+}
+#wrapper section .lower_tab_section ul li {
+  padding: 5px;
+  background-color: #e4d7bb;
+  display: inline-block;
+}
+#wrapper section .lower_tab_section ul li:nth-child(1) {
+  background-color: #e0c89b;
+}
+#wrapper section .es6 {
+  background-color: #e0c89b;
+  padding: 10px;
+}
+#wrapper section .es6 p {
+  font-size: 15px;
+  margin-left: 10px;
+  padding: 5px;
+}
+#wrapper section .es6 span {
+  background-color: #f1e5ce;
+}
+#wrapper footer {
+  border-top: 2px solid gray;
+  margin-left: 90px;
+  margin-top: 50px;
+  width: 1230px;
+}
+#wrapper footer h4 {
+  color: white;
+}
+#wrapper footer .caniuse_section,
+#wrapper footer .support_section,
+#wrapper footer .links_section a {
+  color: #a46316;
+  text-decoration: none;
+}
+#wrapper footer a:hover {
+  color: #e9e903;
+}
+#wrapper footer .caniuse_section {
+  color: #e0c89b;
+  display: inline-block;
+  width: 465px;
+}
+#wrapper footer .caniuse_section img {
+  width: 85px;
+}
+#wrapper footer .caniuse_section p {
+  margin: 5px;
+}
+#wrapper footer .support_section {
+  display: inline-block;
+  margin-left: 60px;
+  vertical-align: top;
+  width: 200px;
+}
+#wrapper footer .support_section p {
+  color: #e0c89b ;
+}
+#wrapper footer .support_section button {
+  background-color: #f96854;
+  padding: 5px;
+}
+#wrapper footer .links_section {
+  display: inline-block;
+  margin-left: 60px;
+  vertical-align: top;
+}
+#wrapper footer .links_section ul {
+  padding: 0px;
+}
+#wrapper footer .links_section ul li {
+  display: block;
+}
+#wrapper footer .legend_section {
+  display: inline-block;
+  margin-left: 60px;
+  vertical-align: top;
+  width: 220px;
+}
+#wrapper footer .legend_section li {
+  color: #e0c89b;
+  display: block;
+}
