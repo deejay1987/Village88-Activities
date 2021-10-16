@@ -1,0 +1,198 @@
+@import url('https://fonts.googleapis.com/css2?family=Barlow+Semi+Condensed:wght@500;600&display=swap');
+
+
+    
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+html {
+    font-size: 62.5%;
+}
+
+body {
+    font-family: 'Barlow Semi Condensed', sans-serif;
+    font-size: 1.3rem;
+    line-height: 1.8rem;
+    font-weight: 500;
+    background-color: var(--backBody);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+}
+main {
+    width: 144rem;
+    height: 90rem;
+    background-color: var(--backMain);
+    display: grid;
+    grid-template-columns: repeat(4, 255px);
+    grid-template-rows: 28.2rem 26.6rem;
+    grid-template-areas: 
+    "test1 test1 test2 test3"
+    "test4 test5 test5 test3";
+    grid-column-gap: 3rem;
+    grid-row-gap: 2.4rem;
+    justify-content: center;
+    align-content: center;
+    letter-spacing: .03px;
+}
+.test {
+    border-radius: .8rem;
+    box-shadow: 40px 60px 50px -47px rgba(72, 85, 106, 0.247378);
+    padding: 2.6rem 3.2rem;
+}
+.person {
+    display: flex;
+    margin-top: -.2rem;
+    margin-left: -.2rem;
+}
+.person-image img {
+    height: 3.2rem;
+    border-radius: 100%;
+}
+.person-details {
+    margin-left: 1.5rem;
+    color: var(--white);
+}
+.person-details__name {
+    font-size: 1.3rem;
+    font-weight: 500;
+}
+.person-details__graduate {
+    font-weight: 500;
+    font-size: 1.1rem;
+    opacity: .5;
+    margin-top: -.2rem;
+}
+.testemonial-1 {
+    grid-area: test1;
+    background-color: var(--purple);
+    position: relative;
+}
+.testemonial-1 .person-image img {
+    border: 2px solid #A775F1;
+}
+
+.quotes img {
+    position: absolute;
+    top: 0;
+    right: 8rem;
+    max-height: 10.2rem;
+    max-width: 10.4rem;
+}
+.test blockquote {
+    position: relative;
+    margin-top: 1.2rem;
+    font-size: 2rem;
+    font-weight: 600;
+    line-height: 2.4rem;
+}
+.info {
+    margin-top: 1.6rem;
+    font-size: 1.3rem;
+    line-height: 1.8rem;
+    font-weight: 500;
+    opacity: .7;
+}
+.info-2 {
+    margin-top: 2.4rem;
+    font-size: 1.3rem;
+    line-height: 1.8rem;
+    font-weight: 500;
+    opacity: .7;
+
+}
+.testemonial-2 {
+    grid-area: test2;
+    background-color: var(--darkGrey);
+}
+.testemonial-2 .person-image img {
+    border: 2px solid var(--lightGrey);
+}
+.testemonial-3 {
+    grid-area: test3;
+    background-color: var(--white);
+}
+
+.testemonial-4 {
+    grid-area: test4;
+    background-color: var(--white);
+}
+.testemonial-5 {
+    grid-area: test5;
+    background-color: var(--black);
+}
+.testemonial-5 .person-image img {
+    border: 2px solid #A775F1;
+}
+.white {
+    color: var(--white);
+}
+.light-grey {
+    color: var(--lightGrey);
+}
+.dark-grey {
+    color: var(--darkGrey);
+}
+
+@media only screen and (max-width: 1150px) {
+    body {
+      background-color: var(--backMain);
+    }
+    main {
+        grid-template-columns: repeat(3, 255px);
+        grid-template-rows: 28.2rem 26.6rem 26.6rem;
+        grid-template-areas: 
+        "test1 test1 test2"
+        "test4 test5 test5"
+        "test3 test3 test3";
+        grid-column-gap: 3rem;
+        grid-row-gap: 2.4rem;
+        justify-content: center;
+        align-content: center;
+        letter-spacing: .03px;
+        margin-top: 7.1rem;
+        margin-bottom: 7.1rem;
+    }
+  }
+
+  @media only screen and (max-width: 850px) {
+    main {
+        grid-template-columns: repeat(2, 255px);
+        grid-template-rows: 28.2rem 26.6rem 28.2rem 26.6rem;
+        grid-template-areas: 
+        "test1 test1"
+        "test2 test4"
+        "test5 test5"
+        "test3 test3";
+        grid-column-gap: 3rem;
+        grid-row-gap: 2.4rem;
+        justify-content: center;
+        align-content: center;
+        letter-spacing: .03px;
+        height: auto;
+        margin-top: 7.1rem;
+        margin-bottom: 7.1rem;
+    }
+  }
+  @media only screen and (max-width: 570px) {
+    main {
+        grid-template-columns: 32.7rem;
+        grid-template-rows: 44.4rem 24rem 22.2rem 38.4rem 43.8rem;
+        grid-template-areas: 
+        "test1"
+        "test2"
+        "test4"
+        "test5"
+        "test3";
+        grid-row-gap: 2.4rem;
+        justify-content: center;
+        align-content: center;
+        letter-spacing: .03px;
+    }
+    .info-2 {
+        margin-top: 1.6rem;
+    }
+  }

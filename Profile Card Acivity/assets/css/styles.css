@@ -1,0 +1,83 @@
+#wrapper {
+  align-items: center;
+  background-color: #19a2ae;
+  display: flex;
+  height: 900px;
+  justify-content: center;
+  overflow: hidden;
+  position: absolute;
+  width: 1440px;
+}
+#wrapper::before {
+  background-image: url(../images/bg-pattern-top.svg);
+  content: "";
+  height: 978px;
+  left: -280px;
+  position: absolute;
+  top: -485px;
+  width: 978px;
+}
+#wrapper::after {
+  background-image: url(../images/bg-pattern-bottom.svg);
+  bottom: -470px;
+  content: "";
+  height: 978px;
+  position: absolute;
+  right: -300px;
+  width: 978px;
+}
+#wrapper #card {
+  background: white;
+  border-radius: 20px;
+  overflow: hidden;
+  text-align: center;
+  width: 350px;
+  z-index: 1;
+}
+#wrapper #card #pattern_card {
+  background-image: url(../images/bg-pattern-card.svg);
+  height: 130px;
+}
+#wrapper #card img {
+  border-radius: 100%;
+  border: 5px solid white;
+  position: relative;
+  top: -50px;
+}
+#wrapper #card h1 {
+  font-family: "Kumbh Sans", sans-serif;
+  font-size: 18px;
+  font-weight: 700;
+  letter-spacing: 1px;
+}
+#wrapper #card h3 {
+  font-family: "Kumbh Sans", sans-serif;
+  font-size: 12px;
+  font-weight: 400;
+  letter-spacing: 1px;
+  opacity: .6;
+}
+#wrapper #card #age {
+  font-weight: 400;
+  margin-left: 5px;
+  opacity: .6;
+}
+#wrapper ul {
+  display: flex;
+  justify-content: space-evenly;
+  padding: 0px;
+  width: 300px;
+}
+#wrapper ul li {
+  font-family: "Kumbh Sans", sans-serif;
+  letter-spacing: 1px;
+  list-style: none;
+}
+#wrapper ul li span {
+  font-size: 18px;
+  font-weight: 700;
+}
+#wrapper ul li h5 {
+  font-weight: 400;
+  opacity: .6;
+}

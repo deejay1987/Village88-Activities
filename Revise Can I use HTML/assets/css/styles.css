@@ -1,0 +1,82 @@
+.canvas {
+  background-color: #3d3525;
+  height: 1050px;
+  margin: auto;
+  width: 1400px;
+}
+.canvas header nav {
+  display: flex;
+  justify-content: space-between;
+  margin: auto;
+  width: 1230px;
+}
+.canvas header nav #feature,
+.canvas header nav li,
+.canvas header nav a {
+  color: white;
+  text-decoration: none;
+}
+.canvas header nav ul,
+.canvas header nav li {
+  display: inline-block;
+  padding: 0px;
+  margin-top: 0px;
+}
+.canvas header nav ul li,
+.canvas header nav li li {
+  background-color: #534c3e;
+  padding: 10px;
+}
+.canvas #search_container {
+  background-color: #c75000;
+  height: 70px;
+  margin: auto;
+  margin-bottom: 15px;
+  text-align: center;
+  width: 1230px;
+}
+.canvas #search_container h1,
+.canvas #search_container form,
+.canvas #search_container span {
+  display: inline-block;
+  color: white;
+}
+.canvas #search_container input {
+  width: 300px;
+}
+.canvas #search_container span {
+  font-size: 30px;
+}
+.canvas section {
+  background-color: white;
+  margin-top: 30px;
+  margin: auto;
+  width: 1230px;
+}
+.canvas section #hashtag,
+.canvas section #star {
+  background-color: orangered;
+  position: relative;
+}
+.canvas section #hashtag {
+  left: -31px;
+  top: 10px;
+  padding: 10px;
+}
+.canvas section #star {
+  left: -62px;
+  top: 50px;
+}
+.canvas .if,
+.canvas .edge {
+  border-bottom: 4px solid #375884;
+}
+.canvas .darkgreen {
+  background-color: #746c00;
+}
+.canvas .red {
+  background-color: #b43b2b;
+}
+.canvas .green {
+  background-color: #2a8436;
+}

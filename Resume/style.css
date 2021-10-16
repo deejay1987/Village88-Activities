@@ -1,0 +1,85 @@
+
+.canvas {
+    width: 970px;
+    height: 900px;
+    background-color: #d9e2ec;
+}
+
+.header img {
+    width: 250px;
+    height: 200px;
+    padding: 20px;
+}
+
+#contact {
+    display: block;
+    margin-left: 295px;
+    margin-top: -70px;
+}
+
+.name {
+    display: inline-block;
+    vertical-align: top;
+    border-bottom: 2px solid black    ;
+}
+
+.name h1 {
+    font-size: 90px;
+    margin-top: 10px;
+    color: #2d4767;
+}
+
+.name p {
+    margin-top: -60px;
+    font-size: 20px;
+}
+
+.content {  
+    width: 900px;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 70px;
+    padding: 10px;    
+    background-color: #e5e8ed;
+}
+
+.image, .experience {
+    margin: 10px;
+    padding: 10px;
+    display: inline-block;
+}
+
+.image{
+    width: 425px;
+    height: 355px;  
+    margin-left: 25px;
+    vertical-align: top;
+    text-align: center;
+}
+
+.image img {
+    width: 50px;
+    height: 50px;
+    margin: 5px;
+    text-align: center;
+    display: inline;
+}
+
+.experience {
+    width: 425px;
+    margin-left: 15px;
+    background-color: #ebebeb;
+}
+
+.socmed {
+    text-align: center;
+}
+
+.socmed img {    
+    width: 20px;
+    height: 20px;
+}
+
+.socmed a {
+    color: black;
+}

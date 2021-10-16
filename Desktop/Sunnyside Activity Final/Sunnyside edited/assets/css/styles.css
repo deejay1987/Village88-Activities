@@ -1,0 +1,584 @@
+#wrapper #header_text {
+  display: flex;
+  justify-content: center;
+  position: relative;
+  text-align: center;
+  text-transform: uppercase;
+}
+#wrapper #header_text h1 {
+  bottom: 520px;
+  color: whitesmoke;
+  font-family: 'Fraunces', serif;
+  font-size: 48px;
+  font-weight: 900;
+  letter-spacing: 10px;
+  position: absolute;
+}
+#wrapper #header_text img {
+  position: absolute;
+  top: -445px;
+}
+#wrapper header {
+  background-image: url(../images/desktop/image-header.jpg);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  height: 800px;
+  position: relative;
+}
+#wrapper header nav .container-fluid {
+  padding: 15px 40px;
+}
+#wrapper header nav .container-fluid #navMenu {
+  padding: 0px;
+  z-index: 1;
+}
+#wrapper header nav .container-fluid #navMenu li {
+  list-style: none;
+  width: 110px;
+}
+#wrapper header nav .container-fluid #navMenu li a {
+  color: white;
+  font-family: 'Barlow', sans-serif;
+  font-weight: 600;
+  opacity: .7;
+  text-align: center;
+}
+#wrapper header nav .container-fluid #navMenu li .contact {
+  background-color: whitesmoke;
+  border-radius: 25px;
+  color: black;
+  font-family: 'Fraunces', serif;
+  font-size: 14px;
+  opacity: 1;
+  padding: 15px;
+  text-transform: uppercase;
+}
+#wrapper header nav .container-fluid #navMenu li .contact:hover {
+  background-color: #6fcfff;
+  border-radius: 25px;
+  color: white;
+  opacity: 1;
+}
+#wrapper #transform_your_brand_section,
+#wrapper #stand_out_section,
+#wrapper #cherry_orange_section {
+  display: flex;
+}
+#wrapper #transform_your_brand_section img,
+#wrapper #stand_out_section img,
+#wrapper #cherry_orange_section img {
+  width: 50%;
+}
+#wrapper #transform_your_brand_section #transform_your_brand,
+#wrapper #stand_out_section #transform_your_brand,
+#wrapper #cherry_orange_section #transform_your_brand,
+#wrapper #transform_your_brand_section #stand_out,
+#wrapper #stand_out_section #stand_out,
+#wrapper #cherry_orange_section #stand_out {
+  flex-direction: column;
+  margin: auto;
+  position: relative;
+  width: 28%;
+}
+#wrapper #transform_your_brand_section #transform_your_brand h2,
+#wrapper #stand_out_section #transform_your_brand h2,
+#wrapper #cherry_orange_section #transform_your_brand h2,
+#wrapper #transform_your_brand_section #stand_out h2,
+#wrapper #stand_out_section #stand_out h2,
+#wrapper #cherry_orange_section #stand_out h2 {
+  color: #23303e;
+  font-family: 'Fraunces', serif;
+  font-size: 35px;
+  font-weight: 900;
+}
+#wrapper #transform_your_brand_section #transform_your_brand p,
+#wrapper #stand_out_section #transform_your_brand p,
+#wrapper #cherry_orange_section #transform_your_brand p,
+#wrapper #transform_your_brand_section #stand_out p,
+#wrapper #stand_out_section #stand_out p,
+#wrapper #cherry_orange_section #stand_out p {
+  color: #a7abae;
+  font-family: 'Barlow', sans-serif;
+  font-weight: 600;
+  margin: 25px 0px 25px 0px;
+}
+#wrapper #transform_your_brand_section #transform_your_brand a,
+#wrapper #stand_out_section #transform_your_brand a,
+#wrapper #cherry_orange_section #transform_your_brand a,
+#wrapper #transform_your_brand_section #stand_out a,
+#wrapper #stand_out_section #stand_out a,
+#wrapper #cherry_orange_section #stand_out a {
+  color: black;
+  font-family: 'Fraunces', serif;
+  font-weight: 700;
+  text-decoration: none;
+  text-transform: uppercase;
+  width: 26%;
+}
+#wrapper #transform_your_brand_section #transform_your_brand a::before,
+#wrapper #stand_out_section #transform_your_brand a::before,
+#wrapper #cherry_orange_section #transform_your_brand a::before,
+#wrapper #transform_your_brand_section #stand_out a::before,
+#wrapper #stand_out_section #stand_out a::before,
+#wrapper #cherry_orange_section #stand_out a::before {
+  align-items: center;
+  border-bottom: 8px solid #f0f012;
+  border-radius: 10px;
+  bottom: 2px;
+  content: "";
+  margin-left: -5px;
+  opacity: .3;
+  position: absolute;
+  width: 125px;
+  z-index: -1;
+}
+#wrapper #transform_your_brand_section #transform_your_brand a:hover::before,
+#wrapper #stand_out_section #transform_your_brand a:hover::before,
+#wrapper #cherry_orange_section #transform_your_brand a:hover::before,
+#wrapper #transform_your_brand_section #stand_out a:hover::before,
+#wrapper #stand_out_section #stand_out a:hover::before,
+#wrapper #cherry_orange_section #stand_out a:hover::before {
+  /*hover for darker color for*/
+  opacity: 1;
+}
+#wrapper #transform_your_brand_section #stand_out a::before,
+#wrapper #stand_out_section #stand_out a::before,
+#wrapper #cherry_orange_section #stand_out a::before {
+  border-bottom: 8px solid #fe7867;
+}
+#wrapper #transform_your_brand_section #stand_out a:hover::before,
+#wrapper #stand_out_section #stand_out a:hover::before,
+#wrapper #cherry_orange_section #stand_out a:hover::before {
+  /*hover for darker color*/
+  opacity: 1;
+}
+#wrapper #transform_your_brand_section #graphic_design_container,
+#wrapper #stand_out_section #graphic_design_container,
+#wrapper #cherry_orange_section #graphic_design_container,
+#wrapper #transform_your_brand_section #photography_container,
+#wrapper #stand_out_section #photography_container,
+#wrapper #cherry_orange_section #photography_container {
+  display: flex;
+  justify-content: center;
+  position: relative;
+  width: 50%;
+}
+#wrapper #transform_your_brand_section #graphic_design_container h2,
+#wrapper #stand_out_section #graphic_design_container h2,
+#wrapper #cherry_orange_section #graphic_design_container h2,
+#wrapper #transform_your_brand_section #photography_container h2,
+#wrapper #stand_out_section #photography_container h2,
+#wrapper #cherry_orange_section #photography_container h2 {
+  bottom: 215px;
+  font-family: 'Fraunces', serif;
+  position: absolute;
+  text-align: center;
+  width: 54%;
+}
+#wrapper #transform_your_brand_section #graphic_design_container p,
+#wrapper #stand_out_section #graphic_design_container p,
+#wrapper #cherry_orange_section #graphic_design_container p,
+#wrapper #transform_your_brand_section #photography_container p,
+#wrapper #stand_out_section #photography_container p,
+#wrapper #cherry_orange_section #photography_container p {
+  bottom: 90px;
+  font-family: 'Fraunces', serif;
+  position: absolute;
+  text-align: center;
+  width: 54%;
+}
+#wrapper #transform_your_brand_section #graphic_design_container,
+#wrapper #stand_out_section #graphic_design_container,
+#wrapper #cherry_orange_section #graphic_design_container {
+  background-image: url(../images/desktop/image-graphic-design.jpg);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  height: 800px;
+}
+#wrapper #transform_your_brand_section #graphic_design_container h2,
+#wrapper #stand_out_section #graphic_design_container h2,
+#wrapper #cherry_orange_section #graphic_design_container h2,
+#wrapper #transform_your_brand_section #graphic_design_container p,
+#wrapper #stand_out_section #graphic_design_container p,
+#wrapper #cherry_orange_section #graphic_design_container p {
+  color: #25564b;
+}
+#wrapper #transform_your_brand_section #photography_container,
+#wrapper #stand_out_section #photography_container,
+#wrapper #cherry_orange_section #photography_container {
+  background-image: url(../images/desktop/image-photography.jpg);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  height: 800px;
+}
+#wrapper #transform_your_brand_section #photography_container h2,
+#wrapper #stand_out_section #photography_container h2,
+#wrapper #cherry_orange_section #photography_container h2,
+#wrapper #transform_your_brand_section #photography_container p,
+#wrapper #stand_out_section #photography_container p,
+#wrapper #cherry_orange_section #photography_container p {
+  color: #19536b;
+}
+#wrapper #testimonials_container {
+  display: flex;
+  flex-wrap: wrap;
+  padding: 50px 10px 50px 10px;
+  text-align: center;
+}
+#wrapper #testimonials_container h3 {
+  color: #a7abae;
+  font-family: 'Fraunces', serif;
+  letter-spacing: 3px;
+  margin: 0px;
+  padding: 50px 0px 85px 0px;
+  text-transform: uppercase;
+  width: 100%;
+}
+#wrapper #testimonials_container ul {
+  display: flex;
+  justify-content: center;
+  list-style: none;
+  padding: 0px;
+}
+#wrapper #testimonials_container ul li {
+  width: 27%;
+}
+#wrapper #testimonials_container ul li img {
+  border-radius: 50%;
+  width: 30%;
+}
+#wrapper #testimonials_container ul li h5 {
+  font-family: 'Fraunces', serif;
+  font-weight: 900;
+}
+#wrapper #testimonials_container ul li p {
+  color: #5a636c;
+  font-family: 'Barlow', sans-serif;
+  font-weight: 600;
+  padding: 50px 34px;
+}
+#wrapper #testimonials_container ul li p.work_position {
+  color: #a7abae;
+  padding: 3px;
+}
+#wrapper #images_container {
+  display: flex;
+}
+#wrapper #images_container #milkbottles_image,
+#wrapper #images_container #orange_image,
+#wrapper #images_container #cone_image,
+#wrapper #images_container #sugarcubes_image {
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  height: 450px;
+  width: 25%;
+}
+#wrapper #images_container #milkbottles_image {
+  background-image: url(../images/desktop/image-gallery-milkbottles.jpg);
+}
+#wrapper #images_container #orange_image {
+  background-image: url(../images/desktop/image-gallery-orange.jpg);
+}
+#wrapper #images_container #cone_image {
+  background-image: url(../images/desktop/image-gallery-cone.jpg);
+}
+#wrapper #images_container #sugarcubes_image {
+  background-image: url(../images/desktop/image-gallery-sugarcubes.jpg);
+}
+#wrapper footer {
+  background-color: #90d4c5;
+  display: flex;
+  flex-direction: column;
+  padding: 50px 30px;
+}
+#wrapper footer a {
+  margin: auto;
+}
+#wrapper footer a img {
+  filter: invert(1) brightness(0);
+  opacity: .5;
+}
+#wrapper footer ul {
+  column-gap: 50px;
+  display: flex;
+  justify-content: center;
+  list-style: none;
+  padding: 45px 20px 25px;
+}
+#wrapper footer ul li {
+  display: flex;
+  padding: 0px;
+}
+#wrapper footer ul li a {
+  color: #25564b;
+  font-family: "Barlow", sans-serif;
+  text-decoration: none;
+}
+#wrapper footer ul li a img.icon:hover {
+  filter: brightness(0) invert(1);
+  opacity: 1;
+}
+#wrapper footer ul li a:hover {
+  color: white;
+}
+#wrapper footer #nav_icon {
+  column-gap: 25px;
+}
+@media only screen and (max-width: 375px) {
+  #wrapper #header_text {
+    position: relative;
+  }
+  #wrapper #header_text h1 {
+    bottom: 235px;
+    font-size: 35px;
+    font-weight: 900;
+    letter-spacing: 7px;
+    position: absolute;
+  }
+  #wrapper #header_text img {
+    position: absolute;
+    top: -203px;
+  }
+  #wrapper header {
+    background-image: url(../images/mobile/image-header.jpg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 450px;
+  }
+  #wrapper header nav .container-fluid {
+    padding: 10px 8px;
+  }
+  #wrapper header nav .container-fluid #navMenu {
+    background-color: whitesmoke;
+    clip-path: polygon(0 10%, 92% 10%, 100% 0%, 100% 100%, 0 100%);
+    left: 18px;
+    position: absolute;
+    top: 85px;
+    width: 90%;
+  }
+  #wrapper header nav .container-fluid #navMenu li {
+    display: flex;
+    justify-content: center;
+    padding: 5px;
+    width: 100%;
+  }
+  #wrapper header nav .container-fluid #navMenu li a {
+    color: #5a636c;
+    width: 40%;
+  }
+  #wrapper header nav .container-fluid #navMenu li .contact {
+    background-color: #fbd603;
+    border-radius: 25px;
+    opacity: 1;
+    width: 40%;
+  }
+  #wrapper #transform_your_brand_section,
+  #wrapper #stand_out_section,
+  #wrapper #cherry_orange_section {
+    flex-direction: column;
+    width: 100%;
+  }
+  #wrapper #transform_your_brand_section img,
+  #wrapper #stand_out_section img,
+  #wrapper #cherry_orange_section img {
+    width: 100%;
+  }
+  #wrapper #transform_your_brand_section #transform_your_brand,
+  #wrapper #stand_out_section #transform_your_brand,
+  #wrapper #cherry_orange_section #transform_your_brand {
+    order: 2;
+  }
+  #wrapper #transform_your_brand_section #transform_your_brand a,
+  #wrapper #stand_out_section #transform_your_brand a,
+  #wrapper #cherry_orange_section #transform_your_brand a {
+    width: 50%;
+  }
+  #wrapper #transform_your_brand_section #transform_your_brand a::before,
+  #wrapper #stand_out_section #transform_your_brand a::before,
+  #wrapper #cherry_orange_section #transform_your_brand a::before {
+    /*hover for darker color*/
+    bottom: 52px;
+  }
+  #wrapper #transform_your_brand_section #stand_out a,
+  #wrapper #stand_out_section #stand_out a,
+  #wrapper #cherry_orange_section #stand_out a {
+    width: 50%;
+  }
+  #wrapper #transform_your_brand_section #stand_out a::before,
+  #wrapper #stand_out_section #stand_out a::before,
+  #wrapper #cherry_orange_section #stand_out a::before {
+    /*hover for darker color*/
+    bottom: 52px;
+  }
+  #wrapper #transform_your_brand_section #transform_your_brand,
+  #wrapper #stand_out_section #transform_your_brand,
+  #wrapper #cherry_orange_section #transform_your_brand,
+  #wrapper #transform_your_brand_section #stand_out,
+  #wrapper #stand_out_section #stand_out,
+  #wrapper #cherry_orange_section #stand_out {
+    padding: 50px 45px 50px 45px;
+    text-align: center;
+    width: 100%;
+  }
+  #wrapper #transform_your_brand_section #transform_your_brand h2,
+  #wrapper #stand_out_section #transform_your_brand h2,
+  #wrapper #cherry_orange_section #transform_your_brand h2,
+  #wrapper #transform_your_brand_section #stand_out h2,
+  #wrapper #stand_out_section #stand_out h2,
+  #wrapper #cherry_orange_section #stand_out h2 {
+    font-size: 27px;
+  }
+  #wrapper #transform_your_brand_section #transform_your_brand p,
+  #wrapper #stand_out_section #transform_your_brand p,
+  #wrapper #cherry_orange_section #transform_your_brand p,
+  #wrapper #transform_your_brand_section #stand_out p,
+  #wrapper #stand_out_section #stand_out p,
+  #wrapper #cherry_orange_section #stand_out p {
+    color: #a7abae;
+  }
+  #wrapper #transform_your_brand_section #graphic_design_container,
+  #wrapper #stand_out_section #graphic_design_container,
+  #wrapper #cherry_orange_section #graphic_design_container,
+  #wrapper #transform_your_brand_section #photography_container,
+  #wrapper #stand_out_section #photography_container,
+  #wrapper #cherry_orange_section #photography_container {
+    display: flex;
+    justify-content: center;
+    position: relative;
+    width: 100%;
+  }
+  #wrapper #transform_your_brand_section #graphic_design_container h2,
+  #wrapper #stand_out_section #graphic_design_container h2,
+  #wrapper #cherry_orange_section #graphic_design_container h2,
+  #wrapper #transform_your_brand_section #photography_container h2,
+  #wrapper #stand_out_section #photography_container h2,
+  #wrapper #cherry_orange_section #photography_container h2 {
+    bottom: 160px;
+    font-weight: 900;
+    position: absolute;
+    text-align: center;
+    width: 100%;
+  }
+  #wrapper #transform_your_brand_section #graphic_design_container p,
+  #wrapper #stand_out_section #graphic_design_container p,
+  #wrapper #cherry_orange_section #graphic_design_container p,
+  #wrapper #transform_your_brand_section #photography_container p,
+  #wrapper #stand_out_section #photography_container p,
+  #wrapper #cherry_orange_section #photography_container p {
+    bottom: 55px;
+    font-size: 14px;
+    height: 60px;
+    line-height: 1.7;
+    width: 90%;
+  }
+  #wrapper #transform_your_brand_section #graphic_design_container,
+  #wrapper #stand_out_section #graphic_design_container,
+  #wrapper #cherry_orange_section #graphic_design_container,
+  #wrapper #transform_your_brand_section #photography_container,
+  #wrapper #stand_out_section #photography_container,
+  #wrapper #cherry_orange_section #photography_container {
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 600px;
+  }
+  #wrapper #transform_your_brand_section #graphic_design_container,
+  #wrapper #stand_out_section #graphic_design_container,
+  #wrapper #cherry_orange_section #graphic_design_container {
+    background-image: url(../images/mobile/image-graphic-design.jpg);
+  }
+  #wrapper #transform_your_brand_section #photography_container,
+  #wrapper #stand_out_section #photography_container,
+  #wrapper #cherry_orange_section #photography_container {
+    background-image: url(../images/mobile/image-photography.jpg);
+  }
+  #wrapper #testimonials_container {
+    padding: 25px 10px 25px 10px;
+  }
+  #wrapper #testimonials_container h3 {
+    font-size: 18px;
+    font-weight: 700;
+    letter-spacing: 3px;
+    padding: 40px 0px 40px 0px;
+    text-transform: uppercase;
+  }
+  #wrapper #testimonials_container ul {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+  }
+  #wrapper #testimonials_container ul li {
+    padding: 25px 0px;
+    width: 100%;
+  }
+  #wrapper #testimonials_container ul li img {
+    width: 20%;
+  }
+  #wrapper #testimonials_container ul li p {
+    padding: 32px;
+  }
+  #wrapper #images_container {
+    display: flex;
+    flex-wrap: wrap;
+  }
+  #wrapper #images_container #milkbottles_image,
+  #wrapper #images_container #orange_image,
+  #wrapper #images_container #cone_image,
+  #wrapper #images_container #sugarcubes_image {
+    height: 180px;
+    width: 50%;
+  }
+  #wrapper #images_container #milkbottles_image {
+    background-image: url(../images/mobile/image-gallery-milkbottles.jpg);
+  }
+  #wrapper #images_container #orange_image {
+    background-image: url(../images/mobile/image-gallery-orange.jpg);
+  }
+  #wrapper #images_container #cone_image {
+    background-image: url(../images/mobile/image-gallery-cone.jpg);
+  }
+  #wrapper #images_container #sugarcubes_image {
+    background-image: url(../images/mobile/image-gallery-sugar-cubes.jpg);
+  }
+  footer {
+    background-color: #90d4c5;
+    display: flex;
+    flex-direction: column;
+    padding: 50px 30px;
+  }
+  footer a {
+    margin: auto;
+  }
+  footer a img {
+    filter: invert(1) brightness(0);
+    opacity: .5;
+  }
+  footer ul {
+    display: flex;
+    justify-content: space-between;
+    list-style: none;
+    padding: 35px 20px;
+    width: 100%;
+  }
+  footer ul li {
+    display: flex;
+    padding: 0px;
+  }
+  footer ul li a {
+    color: #25564b;
+    font-family: "Barlow", sans-serif;
+    text-decoration: none;
+  }
+  footer ul li a img.icon:hover {
+    filter: brightness(0) invert(1);
+    opacity: 1;
+  }
+  footer ul li a:hover {
+    color: white;
+  }
+}

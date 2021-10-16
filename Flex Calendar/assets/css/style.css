@@ -1,0 +1,48 @@
+.canvas{
+    margin: auto;
+    width: 600px;
+    height: 400px;
+}
+
+header{
+    width: 600px;
+    height: 85px;
+    display: flex;
+    justify-content: space-between;
+}
+header img{
+    width: 150px;
+    height: 70px;
+}
+.canvas ul {
+    display: flex;
+    align-items: stretch;
+    justify-content: space-between;
+    width: 100%;    
+    margin: 0;
+    padding: 0;
+}
+
+.canvas li {
+    text-align: center;
+    width: 70px;
+    display: block;
+    flex: 0 1 auto;
+    list-style-type: none;
+    border: 1px solid black;
+    padding: 5px;   
+}
+.canvas > ul li:nth-child(-n+7) {
+    margin-top: 5px;
+  }
+
+.canvas ul li:nth-child(1) {
+    background-color: lightblue;
+}
+.canvas ul li:nth-child(7) {
+    background-color: lightgreen;
+}
+.canvas ul li:empty {
+    background-color: lightgray;
+    border: 1px solid lightgray;
+}
