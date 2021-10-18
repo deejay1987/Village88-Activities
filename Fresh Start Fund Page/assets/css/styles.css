@@ -165,33 +165,17 @@
   width: 67px;
   z-index: 1;
 }
-#wrapper #awarded_funds ul #full_time_awards p,
-#wrapper #awarded_funds ul #part_time_awards p {
+#wrapper #awarded_funds ul #full_time_awards h3,
+#wrapper #awarded_funds ul #part_time_awards h3 {
   font-family: "Proxima Nova", sans-serif;
-  font-size: 18px;
-  line-height: 24.36px;
-  margin: 0px 0px 0px 0px;
-  text-align: left;
-  width: 173px;
+  width: 155px;
+  margin: 43px 0px 0px 140px;
 }
-#wrapper #awarded_funds ul #full_time_awards p.part_time,
-#wrapper #awarded_funds ul #part_time_awards p.part_time {
-  margin: 37px 0px 0px 140px;
-}
-#wrapper #awarded_funds ul #full_time_awards p span,
-#wrapper #awarded_funds ul #part_time_awards p span {
-  font-weight: bold;
-}
-#wrapper #awarded_funds ul #full_time_awards p span::after,
-#wrapper #awarded_funds ul #part_time_awards p span::after {
-  content: "\A";
-  white-space: pre;
-}
-#wrapper #awarded_funds ul #full_time_awards span.income,
-#wrapper #awarded_funds ul #part_time_awards span.income {
+#wrapper #awarded_funds ul #full_time_awards span,
+#wrapper #awarded_funds ul #part_time_awards span {
+  font-family: "Proxima Nova", sans-serif;
   letter-spacing: .3;
-  margin-top: 10px;
-  margin-left: 145px;
+  margin: 5px 0px 0px 143px;
 }
 #wrapper footer {
   display: flex;
@@ -334,16 +318,15 @@
   #wrapper #awarded_funds ul #part_time_awards img {
     left: 25px;
   }
-  #wrapper #awarded_funds ul #full_time_awards p.part_time,
-  #wrapper #awarded_funds ul #part_time_awards p.part_time {
-    margin: 28px 0px -22px 110px;
-    width: 150px;
+  #wrapper #awarded_funds ul #full_time_awards h3,
+  #wrapper #awarded_funds ul #part_time_awards h3 {
+    width: 160px;
+    margin: 33px 0px 0px 110px;
   }
-  #wrapper #awarded_funds ul #full_time_awards span.income,
-  #wrapper #awarded_funds ul #part_time_awards span.income {
-    margin-top: 25px;
-    margin-left: 110px;
-    width: 125px;
+  #wrapper #awarded_funds ul #full_time_awards span,
+  #wrapper #awarded_funds ul #part_time_awards span {
+    margin: 5px 0px 0px 110px;
+    width: 130px;
   }
   #wrapper footer {
     padding: 50px 35px 79px 35px;
