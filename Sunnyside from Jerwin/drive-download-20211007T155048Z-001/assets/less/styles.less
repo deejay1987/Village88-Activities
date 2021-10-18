@@ -1,0 +1,149 @@
+@font-face {
+    font-family: CustomFont;
+    src: url(https://fonts.google.com/specimen/Barlow);
+}
+
+
+#wrapper{
+    margin: auto;
+    width: 1440px;
+    position: relative;
+    &::before{
+        content: "";
+        background-image: url(../images/icon-arrow-down.svg);
+        width: 36px;
+        height: 114px;
+        position: absolute;
+        left: 700px;
+        top: 195px;
+    }
+    h1{
+        position: absolute;
+        left: 390px;
+        top: 85px;
+        color: white;
+        font-size: 65px;
+        font-family: CustomFont;
+        src: url(https://fonts.google.com/specimen/Fraunces);
+        font-weight: 700;
+    }
+    header{
+        display: flex;
+        justify-content: space-between;
+        img, ul{
+            margin: 20px;
+            padding: 0px;
+            z-index: 1;
+        }
+    
+        ul li a{
+            text-decoration: none;
+            color: white;
+        }
+    }
+    #header_half_orange{
+        width: 1440px;
+        margin-top: -235px;
+        z-index: 1;
+    }
+    section{
+        display: flex;
+        #transform, #stand_out{
+            align-items: center;
+            background-color: hsl(0, 0%, 100%);
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            h2, p, a{
+                width: 50%;
+            }
+        }
+        #graphic_design{
+            display: flex;
+            flex-direction: column;
+            position: relative;
+            h2{
+                left: 250px;
+                position: absolute;
+                top: 380px;
+            }
+            p{
+                left: 180px;
+                position: absolute;
+                text-align: center;
+                top: 436px;
+                width: 350px;
+            }
+        }
+        #photography{
+            display: flex;
+            flex-direction: column;
+            position: relative;
+            h2{
+                left: 290px;
+                position: absolute;
+                top: 380px;
+            }
+            p{
+                left: 200px;
+                position: absolute;
+                text-align: center;
+                top: 436px;
+                width: 350px;
+            }
+        }
+    }
+    #client_testimonials{
+        margin-top: 50px;
+        text-align: center;
+    }
+    #testimonials{
+        align-items: center;
+        display: flex;
+        height: 400px;
+        justify-content: space-evenly;
+        text-align: center;
+        img{
+            border-radius: 50%;
+            width: 20%;
+        }
+        .client{
+            width: 24%;
+            font-size: 18px;
+            p{
+                padding-top: 20px;
+            }
+            p.work_position{
+                padding: 0px;
+                color: lightgrey;
+            }
+        }
+    }
+    #accessory_images{
+        display: flex;
+        img{
+            width: 25%;
+        }
+    }
+    footer{
+        height: 150px;
+        background-color: hsl(168, 34%, 41%);
+        display: flex;
+        flex-direction: column;
+        align-content: flex-end;
+        ul{
+            display: flex;
+            gap: 45px;
+            justify-content: center;
+            list-style-type: none;
+            padding: 0px;
+            li a{
+                text-decoration: none;
+                color: white;
+            }
+        }
+        img{
+            margin: auto;
+        }
+    }
+}

@@ -1,0 +1,149 @@
+.news ul li, .use ul li, .footer ul li, .legal ul li, .legal p, .legal ul, .news, .use,
+.description img, .description p, .search form, .search button, .search a, .search, .nav,
+.nav ul li, .description, .paragraph{
+    display: inline-block;
+}
+.canvas{
+    background-color: #265175;
+    margin: auto;
+    width: 970px;
+}
+.header{
+    padding: 20px;
+}
+.header img{
+    width: 230px;
+}
+    .header button{
+        background-color: #dba900;
+        border-radius: 5px;
+        margin-left: 305px;
+        margin-top: 17px;
+        padding: 6px;
+        vertical-align: top;
+    }
+.search{
+    background-color: #1e2933;
+    border-radius: 10px;
+    padding: 20px;
+    vertical-align: top;
+    width: 285px;
+    height: 20px;
+}
+    .search button{
+        background-color: #306896;
+        margin: 0px;
+        margin-top: -5px;
+    }
+    .search a{      
+        color: grey;
+        text-decoration: none;
+    }
+    .search form{
+        height: 20px;
+    }
+
+.nav{
+    background-color: #3674a8;
+    border-radius: 10px;
+    height: 50px;
+    margin: 25px;
+    text-align: center;
+    width: 920px;
+    margin-top: -10px;
+}
+    .nav li{
+        color: #cbdce0;
+        font-size: 15px;
+        margin: 17px;
+    }
+    .nav ul{
+        padding: 0px;
+        margin-top: 0px;
+    }
+.description{
+    margin-left: 110px;
+    margin-top: -5px;
+    width: 900px;
+}
+    .description p{
+        margin-top: -5px;
+        color: #d0d8d9;
+    }
+    .description img{
+        position: absolute;
+        top: 160px;
+        left: 725px;
+        width: 385px;
+    }
+    .paragraph{
+        vertical-align: top;
+        width: 312px;
+    }
+    #python{
+        color: #ffd343;
+        font-size: 25px;
+        margin-top: -5px;
+    }
+.center{
+    background-color: white;
+    display: inline-block;
+    height: 280px;
+    padding: 12px;
+    width: 950px;
+}
+.more{
+    display: inline-block;
+    width: 400px;
+}
+.news .more a, .use .more a{
+   background-color: white;
+   color: gray;
+}
+.more h3{
+    width: 330px;
+    display: inline-block;
+}
+.news .use{
+    display: inline-block;
+}
+    .news, .use{   
+        border-top: 3px solid rgb(93, 176, 209);
+        font-size: 12px;
+        margin-left: 65px;
+    }
+    .news a{
+        color: #5ca2d2;
+        text-decoration: none;
+    }
+    .use a{
+        background-color: rgb(220, 223, 226);
+        color: gray;
+        padding: 2px;
+        text-decoration: none;
+    }
+.news ul, .use ul{
+        border-top: 1px solid lightgray;
+        margin: 0px;
+        width: 370px;;
+    }
+.news ul, .use ul, .footer ul, .legal p, .legal ul {
+    padding: 0px;
+}
+h3{
+    font-size: 15px;
+}
+.legal, .footer{
+    color: #d0d8d9;
+    text-align: center;
+}
+.legal{
+    font-size: 12px;
+}
+.footer a, .legal a{
+    color: #d0d8d9;
+}
+.footer a{
+    text-decoration: none;
+    margin: 10px;
+}

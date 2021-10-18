@@ -1,0 +1,158 @@
+@font-face {
+  font-family: CustomFont;
+  src: url(https://fonts.google.com/specimen/Barlow);
+}
+* {
+  outline: 1px solid red;
+}
+#wrapper #splash_section {
+  height: 655px;
+}
+#wrapper #splash_section .container {
+  background-image: url(../images/desktop/image-header.jpg);
+  background-repeat: no-repeat;
+  background-size: 100%;
+  height: 100%;
+}
+#wrapper h1 {
+  color: #fff;
+  font-size: 65px;
+  margin-top: 170px;
+  text-align: center;
+  text-transform: uppercase;
+}
+#wrapper h1:before {
+  background-image: url("../images/icon-arrow-down.svg");
+  content: "";
+  display: flex;
+  font-size: 65px;
+  height: 114px;
+  left: 48%;
+  position: absolute;
+  top: 260px;
+  width: 36px;
+}
+#wrapper header {
+  display: flex;
+  justify-content: space-between;
+}
+#wrapper header a,
+#wrapper header ul {
+  margin: 20px;
+  padding: 0px;
+  z-index: 1;
+}
+#wrapper header ul li a {
+  text-decoration: none;
+  color: white;
+}
+#wrapper #header_half_orange {
+  margin-top: -235px;
+  width: 1440px;
+}
+#wrapper section {
+  display: flex;
+}
+#wrapper section #transform_your_brand,
+#wrapper section #stand_out {
+  align-items: center;
+  background-color: #ffffff;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+#wrapper section #transform_your_brand h2,
+#wrapper section #stand_out h2,
+#wrapper section #transform_your_brand p,
+#wrapper section #stand_out p,
+#wrapper section #transform_your_brand a,
+#wrapper section #stand_out a {
+  width: 50%;
+}
+#wrapper section #graphic_design {
+  display: flex;
+  flex-direction: column;
+  position: relative;
+}
+#wrapper section #graphic_design h2 {
+  left: 250px;
+  position: absolute;
+  top: 380px;
+}
+#wrapper section #graphic_design p {
+  left: 180px;
+  position: absolute;
+  text-align: center;
+  top: 436px;
+  width: 350px;
+}
+#wrapper section #photography {
+  display: flex;
+  flex-direction: column;
+  position: relative;
+}
+#wrapper section #photography h2 {
+  left: 290px;
+  position: absolute;
+  top: 380px;
+}
+#wrapper section #photography p {
+  left: 200px;
+  position: absolute;
+  text-align: center;
+  top: 436px;
+  width: 350px;
+}
+#wrapper #testimonials {
+  align-items: center;
+  flex-wrap: wrap;
+  height: 400px;
+  justify-content: space-evenly;
+  text-align: center;
+}
+#wrapper #testimonials h2 {
+  width: 100%;
+}
+#wrapper #testimonials img {
+  border-radius: 50%;
+  width: 20%;
+}
+#wrapper #testimonials .client_item {
+  font-size: 18px;
+  width: 24%;
+}
+#wrapper #testimonials .client_item p {
+  margin-top: 20px;
+}
+#wrapper #testimonials .client_item p.work_position {
+  color: lightgrey;
+  margin: 0px;
+  padding: 0px;
+}
+#wrapper #accessory_images {
+  display: flex;
+}
+#wrapper #accessory_images img {
+  width: 25%;
+}
+#wrapper footer {
+  align-content: flex-end;
+  background-color: #458c7e;
+  display: flex;
+  flex-direction: column;
+  height: 150px;
+}
+#wrapper footer a {
+  margin: auto;
+}
+#wrapper footer ul {
+  display: flex;
+  gap: 45px;
+  justify-content: center;
+  list-style-type: none;
+  padding: 0px;
+}
+#wrapper footer ul li a {
+  color: white;
+  text-decoration: none;
+}

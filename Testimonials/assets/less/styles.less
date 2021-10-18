@@ -1,0 +1,173 @@
+#wrapper{
+    background-color: #ECF2F8;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: flex-start;
+    letter-spacing: .03px;
+    width: 1440px;
+    .testimonials_container{
+        display: flex;
+        flex-wrap: wrap;
+        &:first-child{
+            width: 74%;
+        }
+        &:last-child{
+            display: block;
+            width: 25%;
+        }
+        .testimonies{
+            border-radius: 10px; 
+            box-shadow: 40px 60px 50px -47px rgba(178, 197, 228, 0.247);
+            display: flex;
+            flex-wrap: wrap;
+            margin: 5px;
+            padding: 10px;
+            .details{
+                display: flex;
+                flex-direction: column;
+                height: 40px;
+                margin-left: 15px;
+                margin-top: 5px;
+            }  
+            img{
+                border-radius: 100%;
+                height: 45px;
+            }
+            &#daniel_testimony{
+                background-color: hsl(263, 55%, 52%);
+                width: 65%;
+                position: relative;
+                &::before{
+                    background-image: url(../images/bg-pattern-quotation.svg);
+                    content: "";
+                    height: 102px;
+                    right: 125px;
+                    top: 0px;
+                    position: absolute;
+                    width: 104px;
+                }
+                p.quote{
+                    z-index: 1;                    
+                }
+            }
+            &#jonathan_testimony{
+                background-color: hsl(217, 19%, 35%);
+                width: 27%;
+            }
+            &#kira_testimony{
+                background-color: hsl(0, 0%, 100%);
+                width: 90%;
+            }
+            &#jeanette_testimony{
+                background-color: hsl(0, 0%, 100%);
+                width: 27%;
+            }
+            &#patrick_testimony{
+                background-color: hsl(219, 29%, 14%);
+                width: 65%;
+            }          
+            .quote{
+                color: white;
+                font-size: 20px;
+            }
+            .dark_grey{
+                color: hsl(217, 19%, 35%);
+            }
+            .quote_darkgrey{
+                color: hsl(217, 19%, 35%);
+                font-size: 20px;
+            }            
+            h2{
+                color: hsl(0, 0%, 81%);
+                font-size: 14px;
+                font-weight: 500;
+                margin: 2px;
+            }
+            span{
+                color: white;
+                font-size: 13px;
+                font-weight: 500;
+                opacity: .5;        
+            }
+            .light_grey {
+                color: lightGrey;
+                margin: 0px;
+            }        
+        }
+    }
+}
+/* for tablet
+@media only screen and (min-width: 481px) and (max-width: 850px){
+    #wrapper{
+        justify-content: center;
+        width: 100%;
+        .testimonials_container{
+            display: flex;
+            flex-wrap: wrap;
+            &:first-child{
+                width: 100%;
+            }
+            &:last-child{
+                display: block;
+                width: 100%;
+            }
+            #daniel_testimony.testimonies{
+                position: relative;
+                width: auto;
+                ::before{
+                    position: absolute;
+                }
+            }
+            #jonathan_testimony.testimonies{
+                width: 46%;
+            }
+            #jeanette_testimony.testimonies{
+                width: 46%;
+            }
+            #patrick_testimony.testimonies{
+                width: auto;
+            }
+            #kira_testimony.testimonies{
+                width: auto;
+            }
+        }
+    }
+}*/
+/*for phone with 375px */
+@media only screen and (max-width: 375px){
+    #wrapper{
+        flex-direction: column;
+        width: 100%;
+        .testimonials_container{
+            display: flex;
+            flex-wrap: wrap;
+            &:first-child{
+                width: 100%;
+            }
+            &:last-child{
+                display: block;
+                width: 100%;
+            }
+            #daniel_testimony.testimonies{
+                width: 93%;
+                &::before{
+                    content: "";
+                    left: 175px;
+                    top: 0px;
+                }
+            }
+            #jonathan_testimony.testimonies{
+                width: 93%;
+            }
+            #jeanette_testimony.testimonies{
+                width: 93%;
+            }
+            #patrick_testimony.testimonies{
+                width: 93%;
+            }
+            #kira_testimony.testimonies{
+                width: 93%;
+            }
+        }
+    }
+}

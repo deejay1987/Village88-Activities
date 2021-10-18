@@ -1,0 +1,280 @@
+#wrapper{
+    #header_text{
+        text-align: center;
+        h1{
+            color: hsl(0, 0%, 100%);
+            font-family: 'Fraunces', serif;
+            font-size: 3rem;
+            font-weight: 900;
+            letter-spacing: 6px;
+            margin-top: 20px;
+            text-transform: uppercase;
+        }
+        img{
+            margin-top: 40px;
+        }
+    }
+    header{
+        background-image: url(../images/desktop/image-header.jpg);
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size: cover;
+        height: 500px;
+        position: relative;
+        nav{
+            .container-fluid{
+                #navMenu{
+                    padding: 0px;
+                    li{
+                        list-style: none;
+                        a{
+                            color: white;
+                            font-family: "Fraunces", serif;
+                            font-weight: 700;
+                            margin: auto;
+                            opacity: .7;
+                            width: 100%;
+                        }
+                        .contact{
+                            background-color: whitesmoke;
+                            border-radius: 16px;
+                            color: black;
+                            opacity: 1;
+                        }
+                    }
+                }
+            }
+        }
+    }
+   
+    section{
+        &.transform{ 
+            align-items: center;
+            display: flex;
+            height: 100%;
+            justify-content: center;
+            img{
+                width: 50%;
+            }
+            #transform_your_brand, #stand_out{
+                align-items: center;
+                display: flex;
+                flex-wrap: wrap;
+                height: 100%;
+                justify-content: center;
+                width: 50%;
+                h2{
+                    font-size: 50px;
+                }
+                h2, p, a{
+                    color: hsl(212, 27%, 19%);
+                    font-family: 'Fraunces', serif;
+                    font-weight: 900;
+                    width: 70%;
+                }
+                a{
+                    color: black;
+                    font-weight: 700;
+                    text-decoration: none;
+                    text-transform: uppercase;
+                }
+                
+            }
+            #graphic_design, #photography{
+                display: flex;
+                justify-content: center;
+                position: relative;
+                width: 50%;
+                img{
+                    width: 100%;
+                }
+                h2, p{
+                    bottom: 150px;
+                    font-family: 'Fraunces', serif;
+                    position: absolute;
+                    text-align: center;
+                    width: 100%;
+                }
+                p{
+                    bottom: 20px;
+                    width: 50%;
+                }
+            }
+            #photography{
+                p{
+                    bottom: 45px;
+                }
+            }
+        }
+        &#testimonials{
+            display: flex;
+            flex-wrap: wrap;
+            height: 400px;
+            justify-content: space-evenly;
+            text-align: center;
+            h2{
+                color: hsl(210, 4%, 67%);
+                font-family: 'Fraunces', serif;
+                font-size: 35px;
+                margin-top: 5%;
+                width: 100%;
+            }
+            .client_item{
+                width: 25%;
+                img{
+                    border-radius: 50%;
+                    width: 30%;
+                }
+                h3{
+                    font-family: 'Fraunces', serif;
+                    margin-bottom: 0px;
+                }
+                p{
+                    font-family: 'Barlow', sans-serif;
+                    &.work_position{
+                        color: lightgrey;
+                    }
+                }
+            }
+        }
+    }
+    #accessory_images{
+        display: flex;
+        img{
+            width: 25%;
+        }
+    }
+    footer{
+        background-color: hsl(168, 34%, 41%);
+        display: flex;
+        flex-direction: column;
+        height: 170px;
+        a{
+            margin: auto;
+            img{
+                filter: invert(1) brightness(0);
+            }
+        }
+        ul{
+            display: flex;
+            justify-content: center;
+            list-style: none;
+            padding: 0px;
+            li{
+                a{
+                    color: hsl(167, 40%, 24%);
+                    font-family: "Barlow", sans-serif;
+                    padding: 10px;
+                    text-decoration: none;
+                }
+            }
+        }
+
+    }
+}
+@media only screen and (max-width: 800px){
+    #wrapper{
+        #header_text{
+            h1{
+                color: whitesmoke;
+                font-size: 25px;
+                font-weight: 900;
+                letter-spacing: 7px;
+                margin-top: 30px;
+                text-transform: uppercase;
+            }
+            img{
+                margin-top: 10px;
+            }
+        }
+        header{
+            nav{
+                .container-fluid{
+                    #navMenu{
+                        background-color: whitesmoke;
+                        clip-path: polygon(0 15%, 90% 15%, 100% 0%, 100% 100%, 0 100%);
+                        margin-top: 15px;
+                        margin-top: 295px;
+                        padding: 0px;
+                        position: absolute;
+                        width: 93.5%;
+                        li{
+                            text-align: center;
+                            a{
+                                color: hsl(213, 9%, 39%);
+                            }
+                            .contact{
+                                background-color: yellow;
+                                width: 35%;
+                            }
+                        }
+                    }
+                }
+            }
+        }
+        section{
+            &.transform{
+                flex-direction: column;
+                width: 100%;
+                #transform_your_brand{
+                    order: 2;
+                }
+                #transform_your_brand, #stand_out{
+                    height: 300px;
+                    text-align: center;
+                    h2{
+                        font-size: 25px;
+                    }
+                    h2, p{
+                        
+                        width: 80%;
+                    }
+                }
+                #transform_your_brand, #stand_out, img{
+                    width: 100%;
+                }
+                #graphic_design,  #photography{
+                    display: flex;
+                    height: auto;
+                    position: relative;
+                    width: 100%;
+                    h2{
+                        bottom: 80px;
+                        height: 45px;
+                        position: absolute;
+                        text-align: center;
+                        width: 100%;
+                    }
+                    p{
+                        bottom: 20px;
+                        height: 60px;
+                        line-height: 1;
+                        width: 80%;
+                    }
+                }
+               
+            }
+            &#testimonials{
+                height: auto;
+                padding: 25px;
+                .client_item{
+                    width: 100%;
+                    
+                }
+                h2{
+                    font-size: 15px;
+                    font-weight: 900;
+                    letter-spacing: 4px;
+                    margin-bottom: 50px;
+                    text-transform: uppercase;
+                }
+            }
+        }
+        #accessory_images{
+            flex-wrap: wrap;
+            img{
+                width: 50%;
+            }
+        }
+    }
+}

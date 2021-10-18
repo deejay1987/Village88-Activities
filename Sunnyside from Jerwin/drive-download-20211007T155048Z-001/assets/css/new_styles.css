@@ -1,0 +1,274 @@
+#wrapper #header_text {
+  text-align: center;
+}
+#wrapper #header_text h1 {
+  color: #ffffff;
+  font-family: 'Fraunces', serif;
+  font-size: 3rem;
+  font-weight: 900;
+  letter-spacing: 6px;
+  margin-top: 20px;
+  text-transform: uppercase;
+}
+#wrapper #header_text img {
+  margin-top: 40px;
+}
+#wrapper header {
+  background-image: url(../images/desktop/image-header.jpg);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  height: 500px;
+  position: relative;
+}
+#wrapper header nav .container-fluid #navMenu {
+  padding: 0px;
+}
+#wrapper header nav .container-fluid #navMenu li {
+  list-style: none;
+}
+#wrapper header nav .container-fluid #navMenu li a {
+  color: white;
+  font-family: "Fraunces", serif;
+  font-weight: 700;
+  margin: auto;
+  opacity: .7;
+  width: 100%;
+}
+#wrapper header nav .container-fluid #navMenu li .contact {
+  background-color: whitesmoke;
+  border-radius: 16px;
+  color: black;
+  opacity: 1;
+}
+#wrapper section.transform {
+  align-items: center;
+  display: flex;
+  height: 100%;
+  justify-content: center;
+}
+#wrapper section.transform img {
+  width: 50%;
+}
+#wrapper section.transform #transform_your_brand,
+#wrapper section.transform #stand_out {
+  align-items: center;
+  display: flex;
+  flex-wrap: wrap;
+  height: 100%;
+  justify-content: center;
+  width: 50%;
+}
+#wrapper section.transform #transform_your_brand h2,
+#wrapper section.transform #stand_out h2 {
+  font-size: 50px;
+}
+#wrapper section.transform #transform_your_brand h2,
+#wrapper section.transform #stand_out h2,
+#wrapper section.transform #transform_your_brand p,
+#wrapper section.transform #stand_out p,
+#wrapper section.transform #transform_your_brand a,
+#wrapper section.transform #stand_out a {
+  color: #23303e;
+  font-family: 'Fraunces', serif;
+  font-weight: 900;
+  width: 70%;
+}
+#wrapper section.transform #transform_your_brand a,
+#wrapper section.transform #stand_out a {
+  color: black;
+  font-weight: 700;
+  text-decoration: none;
+  text-transform: uppercase;
+}
+#wrapper section.transform #graphic_design,
+#wrapper section.transform #photography {
+  display: flex;
+  justify-content: center;
+  position: relative;
+  width: 50%;
+}
+#wrapper section.transform #graphic_design img,
+#wrapper section.transform #photography img {
+  width: 100%;
+}
+#wrapper section.transform #graphic_design h2,
+#wrapper section.transform #photography h2,
+#wrapper section.transform #graphic_design p,
+#wrapper section.transform #photography p {
+  bottom: 150px;
+  font-family: 'Fraunces', serif;
+  position: absolute;
+  text-align: center;
+  width: 100%;
+}
+#wrapper section.transform #graphic_design p,
+#wrapper section.transform #photography p {
+  bottom: 20px;
+  width: 50%;
+}
+#wrapper section.transform #photography p {
+  bottom: 45px;
+}
+#wrapper section#testimonials {
+  display: flex;
+  flex-wrap: wrap;
+  height: 400px;
+  justify-content: space-evenly;
+  text-align: center;
+}
+#wrapper section#testimonials h2 {
+  color: #a7abae;
+  font-family: 'Fraunces', serif;
+  font-size: 35px;
+  margin-top: 5%;
+  width: 100%;
+}
+#wrapper section#testimonials .client_item {
+  width: 25%;
+}
+#wrapper section#testimonials .client_item img {
+  border-radius: 50%;
+  width: 30%;
+}
+#wrapper section#testimonials .client_item h3 {
+  font-family: 'Fraunces', serif;
+  margin-bottom: 0px;
+}
+#wrapper section#testimonials .client_item p {
+  font-family: 'Barlow', sans-serif;
+}
+#wrapper section#testimonials .client_item p.work_position {
+  color: lightgrey;
+}
+#wrapper #accessory_images {
+  display: flex;
+}
+#wrapper #accessory_images img {
+  width: 25%;
+}
+#wrapper footer {
+  background-color: #458c7e;
+  display: flex;
+  flex-direction: column;
+  height: 170px;
+}
+#wrapper footer a {
+  margin: auto;
+}
+#wrapper footer a img {
+  filter: invert(1) brightness(0);
+}
+#wrapper footer ul {
+  display: flex;
+  justify-content: center;
+  list-style: none;
+  padding: 0px;
+}
+#wrapper footer ul li a {
+  color: #25564b;
+  font-family: "Barlow", sans-serif;
+  padding: 10px;
+  text-decoration: none;
+}
+@media only screen and (max-width: 800px) {
+  #wrapper #header_text h1 {
+    color: whitesmoke;
+    font-size: 25px;
+    font-weight: 900;
+    letter-spacing: 7px;
+    margin-top: 30px;
+    text-transform: uppercase;
+  }
+  #wrapper #header_text img {
+    margin-top: 10px;
+  }
+  #wrapper header nav .container-fluid #navMenu {
+    background-color: whitesmoke;
+    clip-path: polygon(0 15%, 90% 15%, 100% 0%, 100% 100%, 0 100%);
+    margin-top: 15px;
+    margin-top: 295px;
+    padding: 0px;
+    position: absolute;
+    width: 93.5%;
+  }
+  #wrapper header nav .container-fluid #navMenu li {
+    text-align: center;
+  }
+  #wrapper header nav .container-fluid #navMenu li a {
+    color: #5a636c;
+  }
+  #wrapper header nav .container-fluid #navMenu li .contact {
+    background-color: yellow;
+    width: 35%;
+  }
+  #wrapper section.transform {
+    flex-direction: column;
+    width: 100%;
+  }
+  #wrapper section.transform #transform_your_brand {
+    order: 2;
+  }
+  #wrapper section.transform #transform_your_brand,
+  #wrapper section.transform #stand_out {
+    height: 300px;
+    text-align: center;
+  }
+  #wrapper section.transform #transform_your_brand h2,
+  #wrapper section.transform #stand_out h2 {
+    font-size: 25px;
+  }
+  #wrapper section.transform #transform_your_brand h2,
+  #wrapper section.transform #stand_out h2,
+  #wrapper section.transform #transform_your_brand p,
+  #wrapper section.transform #stand_out p {
+    width: 80%;
+  }
+  #wrapper section.transform #transform_your_brand,
+  #wrapper section.transform #stand_out,
+  #wrapper section.transform img {
+    width: 100%;
+  }
+  #wrapper section.transform #graphic_design,
+  #wrapper section.transform #photography {
+    display: flex;
+    height: auto;
+    position: relative;
+    width: 100%;
+  }
+  #wrapper section.transform #graphic_design h2,
+  #wrapper section.transform #photography h2 {
+    bottom: 80px;
+    height: 45px;
+    position: absolute;
+    text-align: center;
+    width: 100%;
+  }
+  #wrapper section.transform #graphic_design p,
+  #wrapper section.transform #photography p {
+    bottom: 20px;
+    height: 60px;
+    line-height: 1;
+    width: 80%;
+  }
+  #wrapper section#testimonials {
+    height: auto;
+    padding: 25px;
+  }
+  #wrapper section#testimonials .client_item {
+    width: 100%;
+  }
+  #wrapper section#testimonials h2 {
+    font-size: 15px;
+    font-weight: 900;
+    letter-spacing: 4px;
+    margin-bottom: 50px;
+    text-transform: uppercase;
+  }
+  #wrapper #accessory_images {
+    flex-wrap: wrap;
+  }
+  #wrapper #accessory_images img {
+    width: 50%;
+  }
+}

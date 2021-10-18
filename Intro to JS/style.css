@@ -1,0 +1,50 @@
+.canvas {
+    width: 970px;
+}
+
+.content {
+    margin-left: 30px;
+    width: 700px;
+}
+
+.content, .nav {
+    display: inline-block;    
+}
+
+.box1, .box2 {
+    border: 1px solid lightgray;
+}
+
+.box1 p, .box2 p {
+    width: 670px;
+    margin-left: 20px;
+}
+
+.nav {
+    background-color: #f5f2f0;
+    border-right: 1px solid black;
+    height: 735px;
+    vertical-align: top;
+    width: 235px;
+}
+
+.nav p {
+    color: lightslategray;
+    margin-left: 12px;
+}
+.nav ul {
+    margin: 12px;
+    padding: 0px;
+}
+
+.nav ul li {
+    list-style-type: none; 
+}
+
+.nav a {    
+    color: black;
+}
+
+a {
+    text-decoration: none;
+}

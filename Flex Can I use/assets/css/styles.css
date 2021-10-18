@@ -1,0 +1,84 @@
+#wrapper {
+  background-color: gray;
+  margin: auto;
+  width: 1440px;
+}
+#wrapper header {
+  align-items: center;
+  display: flex;
+  justify-content: space-between;
+  margin: auto;
+  width: 1075px;
+}
+#wrapper header ul {
+  display: flex;
+  list-style: none;
+  padding: 0px;
+}
+#wrapper header ul li {
+  padding: 5px;
+}
+#wrapper .search_section {
+  align-items: center;
+  background-color: orangered;
+  color: white;
+  display: flex;
+  justify-content: center;
+  margin: auto;
+  width: 1075px;
+}
+#wrapper .search_section input {
+  background: transparent;
+  border-bottom: 1px solid white;
+  border: none;
+  width: 250px;
+}
+#wrapper section {
+  background-color: white;
+  height: 800px;
+  margin: 15px 0px 0px 182px;
+  width: 1075px;
+}
+#wrapper section button {
+  position: absolute;
+}
+#wrapper section button #hashtag,
+#wrapper section button #star {
+  position: relative;
+}
+#wrapper section header {
+  width: 1050px;
+  display: flex;
+  justify-content: space-between;
+}
+#wrapper section header h2 {
+  flex-grow: 3;
+}
+#wrapper section header .usage_section {
+  display: flex;
+  flex-direction: column;
+  flex-grow: 1;
+}
+#wrapper section header .user_serction {
+  flex-grow: 1;
+}
+#wrapper section p {
+  margin: -15px 0px 0px 15px;
+  width: 421px;
+}
+#wrapper section #upper_tab_section {
+  width: 400px;
+  list-style: none;
+  display: flex;
+  justify-content: space-between;
+}
+#wrapper section .table #header {
+  background-color: yellowgreen;
+  padding: 0px;
+  list-style: none;
+  display: flex;
+  justify-content: center;
+}
+#wrapper section .table #header li {
+  border-bottom: 1px solid black;
+}
