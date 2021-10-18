@@ -81,18 +81,19 @@
   line-height: 27px;
   margin: 15px 0px 76px 0px;
   text-align: center;
-  width: 41%;
+  width: 690px;
+  letter-spacing: 0.6px;
 }
 #wrapper #qualifying_steps span {
   font-family: "Proxima Nova", sans-serif;
   font-weight: bold;
 }
 #wrapper #qualifying_steps ul {
+  column-gap: 20px;
   display: flex;
   justify-content: center;
   padding: 0px;
   text-align: center;
-  width: 100%;
 }
 #wrapper #qualifying_steps ul li {
   align-items: center;
@@ -104,12 +105,13 @@
 #wrapper #qualifying_steps ul li p {
   font-family: "Proxima Nova", sans-serif;
   font-size: 20px;
+  letter-spacing: 0px;
   line-height: 24px;
   margin: auto;
-  width: 208px;
+  width: 222px;
 }
-#wrapper #qualifying_steps ul li p.proof_of_income {
-  width: 265px;
+#wrapper #qualifying_steps ul li p#proof_of_income {
+  width: 283px;
 }
 #wrapper #qualifying_steps ul li p span::after {
   content: "\A";
@@ -123,7 +125,7 @@
   display: flex;
   flex-wrap: wrap;
   justify-content: center;
-  padding: 77px 0px 96px 0px;
+  padding: 77px 0px;
 }
 #wrapper #awarded_funds h2,
 #wrapper #awarded_funds p {
@@ -145,8 +147,7 @@
   justify-content: space-between;
   width: 60%;
 }
-#wrapper #awarded_funds ul #full_time_awards,
-#wrapper #awarded_funds ul #part_time_awards {
+#wrapper #awarded_funds ul li {
   align-items: flex-start;
   background-color: white;
   display: flex;
@@ -155,8 +156,7 @@
   position: relative;
   width: 406px;
 }
-#wrapper #awarded_funds ul #full_time_awards img,
-#wrapper #awarded_funds ul #part_time_awards img {
+#wrapper #awarded_funds ul li img {
   bottom: -221px;
   height: 67px;
   left: 45px;
@@ -165,14 +165,12 @@
   width: 67px;
   z-index: 1;
 }
-#wrapper #awarded_funds ul #full_time_awards h3,
-#wrapper #awarded_funds ul #part_time_awards h3 {
+#wrapper #awarded_funds ul li h3 {
   font-family: "Proxima Nova", sans-serif;
-  width: 155px;
   margin: 43px 0px 0px 140px;
+  width: 155px;
 }
-#wrapper #awarded_funds ul #full_time_awards span,
-#wrapper #awarded_funds ul #part_time_awards span {
+#wrapper #awarded_funds ul li span {
   font-family: "Proxima Nova", sans-serif;
   letter-spacing: .3;
   margin: 5px 0px 0px 143px;
@@ -223,43 +221,51 @@
 @media only screen and (max-width: 375px) {
   #wrapper #splash_section {
     height: 555px;
+    padding: 0px 35px;
   }
   #wrapper #splash_section .container {
-    margin-top: -75px;
-    padding: 0px 33px;
-    width: 100%;
+    display: flex;
+    flex-direction: column;
+    height: 390px;
+    margin-top: 45px;
   }
   #wrapper #splash_section .container span {
     font-size: 12px;
+    margin-bottom: 10px;
   }
   #wrapper #splash_section .container h1 {
     font-size: 42px;
+    margin: 0px 0px 12px 0px;
   }
-  #wrapper #splash_section .container form input {
+  #wrapper #splash_section .container form input,
+  #wrapper #splash_section .container form button {
     border-radius: 2px;
     height: 65px;
     width: 306px;
   }
   #wrapper #splash_section .container form button {
-    height: 65px;
     margin: 14px 0px;
-    width: 306px;
   }
   #wrapper #splash_section .container p#email_address {
     font-size: 18px;
-    width: 225px;
+    width: 251px;
   }
   #wrapper #splash_section .container p#policy {
     line-height: 13px;
     margin: 0px;
-    width: 228px;
+    width: 245px;
   }
   #wrapper #qualifying_steps {
-    padding: 55px 20px 46px 35px;
+    padding: 55px 0px 27px 0px;
+    width: 100%;
+  }
+  #wrapper #qualifying_steps img {
+    height: 99px;
+    width: 99px;
   }
   #wrapper #qualifying_steps h2 {
     font-size: 26px;
-    width: 260px;
+    width: 271px;
   }
   #wrapper #qualifying_steps p {
     font-size: 16px;
@@ -267,18 +273,13 @@
     width: 279px;
   }
   #wrapper #qualifying_steps ul {
-    display: flex;
-    flex-wrap: wrap;
-    padding: 0px 20px 0px 20px;
-    width: 100%;
+    flex-direction: column;
   }
   #wrapper #qualifying_steps ul li {
     column-gap: 32px;
     display: flex;
     flex-direction: row;
     margin-bottom: 37px;
-    padding: 0px;
-    width: 100%;
   }
   #wrapper #qualifying_steps ul li img {
     margin: 0px;
@@ -286,50 +287,56 @@
   #wrapper #qualifying_steps ul li p {
     font-size: 16px;
     font-weight: 400px;
-    vertical-align: top;
-    width: 118px;
+    width: 120px;
   }
-  #wrapper #qualifying_steps ul li p.proof_of_income {
-    font-size: 16px;
-    width: 121px;
+  #wrapper #qualifying_steps ul li p span::before {
+    content: "\A";
+    white-space: pre;
+  }
+  #wrapper #qualifying_steps ul li p#proof_of_income {
+    width: 124px;
   }
   #wrapper #awarded_funds {
-    padding: 57px 35px 66px 35px;
+    padding: 57px 0px 66px 0px;
+    width: 100%;
   }
   #wrapper #awarded_funds h2 {
     font-size: 26px;
   }
   #wrapper #awarded_funds p {
-    line-height: 24px;
     font-size: 16px;
+    line-height: 24px;
     margin-bottom: 25px;
     width: 242px;
   }
   #wrapper #awarded_funds ul {
-    flex-wrap: wrap;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
     row-gap: 22px;
+    width: 80%;
+  }
+  #wrapper #awarded_funds ul li {
+    display: flex;
+    height: 150px;
+    justify-content: center;
+    row-gap: 5px;
     width: 100%;
+    width: 306px;
   }
-  #wrapper #awarded_funds ul #full_time_awards,
-  #wrapper #awarded_funds ul #part_time_awards {
-    width: 100%;
+  #wrapper #awarded_funds ul li img {
+    height: 58px;
+    left: 23px;
+    width: 58px;
   }
-  #wrapper #awarded_funds ul #full_time_awards img,
-  #wrapper #awarded_funds ul #part_time_awards img {
-    left: 25px;
-  }
-  #wrapper #awarded_funds ul #full_time_awards h3,
-  #wrapper #awarded_funds ul #part_time_awards h3 {
+  #wrapper #awarded_funds ul li h3,
+  #wrapper #awarded_funds ul li span {
+    margin: 0px 105px;
     width: 160px;
-    margin: 33px 0px 0px 110px;
-  }
-  #wrapper #awarded_funds ul #full_time_awards span,
-  #wrapper #awarded_funds ul #part_time_awards span {
-    margin: 5px 0px 0px 110px;
-    width: 130px;
   }
   #wrapper footer {
-    padding: 50px 35px 79px 35px;
+    padding: 50px 0px 79px 0px;
+    width: 100%;
   }
   #wrapper footer h2 {
     font-size: 26px;

@@ -80,18 +80,19 @@
             line-height: 27px;
             margin: 15px 0px 76px 0px;
             text-align: center;
-            width: 41%;
+            width: 690px;
+            letter-spacing: 0.6px;
         }
         span{
             font-family: "Proxima Nova", sans-serif;
             font-weight: bold;
         }
         ul{
+            column-gap: 20px;
             display: flex;
             justify-content: center;
             padding: 0px;
-            text-align: center;
-            width: 100%;
+            text-align: center; 
             li{
                 align-items: center;
                 flex-direction: column;
@@ -101,11 +102,12 @@
                 p{
                     font-family: "Proxima Nova", sans-serif;
                     font-size: 20px;
+                    letter-spacing: 0px;
                     line-height: 24px;
                     margin: auto;
-                    width: 208px;
-                    &.proof_of_income{
-                        width: 265px;
+                    width: 222px;
+                    &#proof_of_income{
+                        width: 283px;
                     }
                     span{
                         &::after{
@@ -125,7 +127,7 @@
         display: flex;
         flex-wrap: wrap;
         justify-content: center;
-        padding: 77px 0px 96px 0px;
+        padding: 77px 0px;
         h2, p{
             color: #333333;
             font-family: "Proxima Nova", sans-serif;
@@ -144,7 +146,7 @@
             display: flex;
             justify-content: space-between;
             width: 60%;
-            #full_time_awards, #part_time_awards{
+            li{
                 align-items: flex-start;
                 background-color: white;
                 display: flex;
@@ -163,8 +165,8 @@
                 }
                 h3{
                     font-family: "Proxima Nova", sans-serif;
-                    width: 155px;
                     margin: 43px 0px 0px 140px;
+                    width: 155px;
                 }
                 span{
                     font-family: "Proxima Nova", sans-serif;
@@ -223,46 +225,53 @@
     #wrapper{
         #splash_section{
             height: 555px;
+            padding: 0px 35px;
             .container{
-                margin-top: -75px;
-                padding: 0px 33px;
-                width: 100%;
+                display: flex;
+                flex-direction: column;
+                height: 390px;
+                margin-top: 45px;
                 span{
                     font-size: 12px;
+                    margin-bottom: 10px;
                 }
                 h1{
                     font-size: 42px;
+                    margin: 0px 0px 12px 0px;
                 }
                 form{
-                    input{
+                    input, button{
                         border-radius: 2px;
                         height: 65px;
                         width: 306px;
                     }
                     button{
-                        height: 65px;
                         margin: 14px 0px;
-                        width: 306px;
                     }
                 }
                 p{
                     &#email_address{
                         font-size: 18px;
-                        width: 225px;
+                        width: 251px;
                     }
                     &#policy{
                         line-height: 13px;
                         margin: 0px;
-                        width: 228px;
+                        width: 245px;
                     }
                 }
             }
         }
         #qualifying_steps{
-            padding: 55px 20px 46px 35px;
+            padding: 55px 0px 27px 0px;
+            width: 100%;
+            img{
+                height: 99px;
+                width: 99px;
+            }
             h2{
                 font-size: 26px;
-                width: 260px;
+                width: 271px;
             }
             p{
                 font-size: 16px;
@@ -270,66 +279,72 @@
                 width: 279px;
             }
             ul{
-                display: flex;
-                flex-wrap: wrap;
-                padding: 0px 20px 0px 20px;
-                width: 100%;
+                flex-direction: column;
                 li{
                     column-gap: 32px;
                     display: flex;
                     flex-direction: row;
                     margin-bottom: 37px;
-                    padding: 0px;
-                    width: 100%;
                     img{
                         margin: 0px;
                     }
                     p{
                         font-size: 16px;
                         font-weight: 400px;
-                        vertical-align: top;
-                        width: 118px;
-                        &.proof_of_income{
-                            font-size: 16px;
-                            width: 121px;
+                        width: 120px;
+                        span{
+                            &::before{
+                                content: "\A";
+                                white-space: pre;
+                            }
+                        }
+                        &#proof_of_income{
+                            width: 124px;
                         }
                     }
                 }
             }
         }
         #awarded_funds{
-            padding: 57px 35px 66px 35px;
+            padding: 57px 0px 66px 0px;
+            width: 100%;
             h2{
                 font-size: 26px;
             }
             p{
-                line-height: 24px;
                 font-size: 16px;
+                line-height: 24px;
                 margin-bottom: 25px;
                 width: 242px;
             }
             ul{
-                flex-wrap: wrap;
+                display: flex;
+                flex-direction: column;
+                justify-content: center;
                 row-gap: 22px;
-                width: 100%;
-                #full_time_awards, #part_time_awards{
+                width: 80%;
+                li{
+                    display: flex;
+                    height: 150px;
+                    justify-content: center;
+                    row-gap: 5px;
                     width: 100%;
+                    width: 306px;
                     img{
-                        left: 25px;
+                        height: 58px;
+                        left: 23px;
+                        width: 58px;
                     }
-                    h3{
+                    h3, span{
+                        margin: 0px 105px;
                         width: 160px;
-                        margin: 33px 0px 0px 110px;
-                    }
-                    span{
-                        margin: 5px 0px 0px 110px;
-                        width: 130px;
                     }
                 }
             }
         }
         footer{
-            padding: 50px 35px 79px 35px;
+            padding: 50px 0px 79px 0px;
+            width: 100%;
             h2{
                 font-size: 26px;
                 width: 292px;
