@@ -33,6 +33,9 @@
                 &#policy{
                     font-size: 10px;
                     margin-top: 23.21px;
+                    a{
+                        text-decoration: underline 2.1px solid white;
+                    }
                 }
             }
             form{
@@ -46,6 +49,9 @@
                     letter-spacing: .2;
                     text-indent: 23px;
                     width: 271px;
+                    &::placeholder{
+                        opacity: .5;
+                    }
                 }
                 button{
                     background-color: #05AAE1;
@@ -77,18 +83,18 @@
             color: #333333;
             font-family: "Proxima Nova", sans-serif;
             font-size: 18px;
+            letter-spacing: 0.6px;
             line-height: 27px;
             margin: 15px 0px 76px 0px;
             text-align: center;
             width: 690px;
-            letter-spacing: 0.6px;
         }
         span{
             font-family: "Proxima Nova", sans-serif;
-            font-weight: bold;
+            font-weight: 700;
         }
         ul{
-            column-gap: 20px;
+            column-gap: 16px;
             display: flex;
             justify-content: center;
             padding: 0px;
@@ -103,11 +109,15 @@
                     font-family: "Proxima Nova", sans-serif;
                     font-size: 20px;
                     letter-spacing: 0px;
-                    line-height: 24px;
+                    line-height: 136%;
                     margin: auto;
                     width: 222px;
                     &#proof_of_income{
                         width: 283px;
+                        &::after{
+                            content: "(recent paystub or equivalent)";
+                            font-size: 18px;
+                        }
                     }
                     span{
                         &::after{
@@ -140,6 +150,7 @@
         }
         p{
             font-size: 18px;
+            letter-spacing: 0.6px;
             margin: 15px 0px 60px 0px;
         }
         ul{
@@ -165,13 +176,13 @@
                 }
                 h3{
                     font-family: "Proxima Nova", sans-serif;
-                    margin: 43px 0px 0px 140px;
-                    width: 155px;
+                    margin: 37px 0px 0px 140px;
+                    width: 175px;
                 }
                 span{
                     font-family: "Proxima Nova", sans-serif;
                     letter-spacing: .3;
-                    margin: 5px 0px 0px 143px;
+                    margin: 5px 0px 0px 140px;
                 }
             }
         }
@@ -207,6 +218,9 @@
                 letter-spacing: .2;
                 text-indent: 23px;
                 width: 271px;
+                &::placeholder{
+                    opacity: .5;
+                }
             }
             button{
                 background-color: #05AAE1;
@@ -258,6 +272,10 @@
                         line-height: 13px;
                         margin: 0px;
                         width: 245px;
+                        a{
+                            text-decoration: underline 1px solid;
+                            text-decoration-color: rgba(255, 255, 255, 0.4);
+                        }
                     }
                 }
             }
@@ -276,12 +294,12 @@
             p{
                 font-size: 16px;
                 margin-bottom: 25px;
-                width: 279px;
+                width: 305px;
             }
             ul{
                 flex-direction: column;
                 li{
-                    column-gap: 32px;
+                    column-gap: 16px;
                     display: flex;
                     flex-direction: row;
                     margin-bottom: 37px;
@@ -290,7 +308,6 @@
                     }
                     p{
                         font-size: 16px;
-                        font-weight: 400px;
                         width: 120px;
                         span{
                             &::before{
@@ -300,6 +317,9 @@
                         }
                         &#proof_of_income{
                             width: 124px;
+                            &::after{
+                                font-size: 14px;
+                            }
                         }
                     }
                 }
@@ -337,7 +357,7 @@
                     }
                     h3, span{
                         margin: 0px 105px;
-                        width: 160px;
+                        width: 170px;
                     }
                 }
             }

@@ -37,6 +37,9 @@
   font-size: 10px;
   margin-top: 23.21px;
 }
+#wrapper #splash_section .container p#policy a {
+  text-decoration: underline 2.1px solid white;
+}
 #wrapper #splash_section .container form {
   margin-top: 30px;
 }
@@ -49,6 +52,9 @@
   letter-spacing: .2;
   text-indent: 23px;
   width: 271px;
+}
+#wrapper #splash_section .container form input::placeholder {
+  opacity: .5;
 }
 #wrapper #splash_section .container form button {
   background-color: #05AAE1;
@@ -78,18 +84,18 @@
   color: #333333;
   font-family: "Proxima Nova", sans-serif;
   font-size: 18px;
+  letter-spacing: 0.6px;
   line-height: 27px;
   margin: 15px 0px 76px 0px;
   text-align: center;
   width: 690px;
-  letter-spacing: 0.6px;
 }
 #wrapper #qualifying_steps span {
   font-family: "Proxima Nova", sans-serif;
-  font-weight: bold;
+  font-weight: 700;
 }
 #wrapper #qualifying_steps ul {
-  column-gap: 20px;
+  column-gap: 16px;
   display: flex;
   justify-content: center;
   padding: 0px;
@@ -106,12 +112,16 @@
   font-family: "Proxima Nova", sans-serif;
   font-size: 20px;
   letter-spacing: 0px;
-  line-height: 24px;
+  line-height: 136%;
   margin: auto;
   width: 222px;
 }
 #wrapper #qualifying_steps ul li p#proof_of_income {
   width: 283px;
+}
+#wrapper #qualifying_steps ul li p#proof_of_income::after {
+  content: "(recent paystub or equivalent)";
+  font-size: 18px;
 }
 #wrapper #qualifying_steps ul li p span::after {
   content: "\A";
@@ -140,6 +150,7 @@
 }
 #wrapper #awarded_funds p {
   font-size: 18px;
+  letter-spacing: 0.6px;
   margin: 15px 0px 60px 0px;
 }
 #wrapper #awarded_funds ul {
@@ -167,13 +178,13 @@
 }
 #wrapper #awarded_funds ul li h3 {
   font-family: "Proxima Nova", sans-serif;
-  margin: 43px 0px 0px 140px;
-  width: 155px;
+  margin: 37px 0px 0px 140px;
+  width: 175px;
 }
 #wrapper #awarded_funds ul li span {
   font-family: "Proxima Nova", sans-serif;
   letter-spacing: .3;
-  margin: 5px 0px 0px 143px;
+  margin: 5px 0px 0px 140px;
 }
 #wrapper footer {
   display: flex;
@@ -207,6 +218,9 @@
   letter-spacing: .2;
   text-indent: 23px;
   width: 271px;
+}
+#wrapper footer form input::placeholder {
+  opacity: .5;
 }
 #wrapper footer form button {
   background-color: #05AAE1;
@@ -255,6 +269,10 @@
     margin: 0px;
     width: 245px;
   }
+  #wrapper #splash_section .container p#policy a {
+    text-decoration: underline 1px solid;
+    text-decoration-color: rgba(255, 255, 255, 0.4);
+  }
   #wrapper #qualifying_steps {
     padding: 55px 0px 27px 0px;
     width: 100%;
@@ -270,13 +288,13 @@
   #wrapper #qualifying_steps p {
     font-size: 16px;
     margin-bottom: 25px;
-    width: 279px;
+    width: 305px;
   }
   #wrapper #qualifying_steps ul {
     flex-direction: column;
   }
   #wrapper #qualifying_steps ul li {
-    column-gap: 32px;
+    column-gap: 16px;
     display: flex;
     flex-direction: row;
     margin-bottom: 37px;
@@ -286,7 +304,6 @@
   }
   #wrapper #qualifying_steps ul li p {
     font-size: 16px;
-    font-weight: 400px;
     width: 120px;
   }
   #wrapper #qualifying_steps ul li p span::before {
@@ -295,6 +312,9 @@
   }
   #wrapper #qualifying_steps ul li p#proof_of_income {
     width: 124px;
+  }
+  #wrapper #qualifying_steps ul li p#proof_of_income::after {
+    font-size: 14px;
   }
   #wrapper #awarded_funds {
     padding: 57px 0px 66px 0px;
@@ -332,7 +352,7 @@
   #wrapper #awarded_funds ul li h3,
   #wrapper #awarded_funds ul li span {
     margin: 0px 105px;
-    width: 160px;
+    width: 170px;
   }
   #wrapper footer {
     padding: 50px 0px 79px 0px;
