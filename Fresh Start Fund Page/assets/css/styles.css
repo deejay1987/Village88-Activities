@@ -15,8 +15,8 @@
 #wrapper #splash_section .container {
   display: flex;
   flex-direction: column;
-  padding: 0px 142px;
   height: 282px;
+  padding: 0px 142px;
   width: 1150px;
 }
 #wrapper #splash_section .container span,
@@ -51,13 +51,13 @@
   border-radius: 8px;
   border: 2px solid lightgrey;
   box-sizing: border-box;
-  font-family: "Mulish", sans-serif;
   height: 53.96px;
   letter-spacing: .2;
   text-indent: 23px;
   width: 271px;
 }
 #wrapper #splash_section .container form input::placeholder {
+  font-family: 'Mulish', sans-serif;
   opacity: .5;
 }
 #wrapper #splash_section .container form button {
@@ -154,17 +154,17 @@
   margin: 15px 0px 60px 0px;
 }
 #wrapper #awarded_funds ul {
+  column-gap: 41px;
   display: flex;
   justify-content: center;
-  column-gap: 41px;
   width: 100%;
 }
 #wrapper #awarded_funds ul li {
   background-color: white;
   display: flex;
-  justify-content: center;
   flex-direction: column;
   height: 160px;
+  justify-content: center;
   position: relative;
   width: 406px;
 }
@@ -210,8 +210,8 @@
   margin: 24px 0px 37px 0px;
 }
 #wrapper footer form {
-  flex-wrap: wrap;
   column-gap: 22px;
+  flex-wrap: wrap;
   justify-content: center;
 }
 #wrapper footer form input {
@@ -224,6 +224,7 @@
   width: 271px;
 }
 #wrapper footer form input::placeholder {
+  font-family: 'Mulish', sans-serif;
   opacity: .5;
 }
 #wrapper footer form button {
@@ -289,7 +290,7 @@
   }
   #wrapper #qualifying_steps p {
     font-size: 16px;
-    margin-bottom: 25px;
+    margin-bottom: 40px;
     width: 305px;
   }
   #wrapper #qualifying_steps ul {
@@ -402,9 +403,9 @@
     font-size: 30px;
   }
   #wrapper #qualifying_steps ul {
-    justify-content: center;
     column-gap: 25px;
     flex-wrap: wrap;
+    justify-content: center;
     row-gap: 40px;
   }
   #wrapper #awarded_funds {
