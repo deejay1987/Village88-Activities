@@ -39,6 +39,7 @@
 #wrapper #splash_section .container p#policy {
   font-size: 10px;
   margin-top: 23.21px;
+  opacity: .8;
 }
 #wrapper #splash_section .container p#policy a {
   text-decoration: underline 2.1px solid white;
@@ -100,13 +101,9 @@
 #wrapper #qualifying_steps ul {
   column-gap: 16px;
   display: flex;
-  justify-content: center;
-  padding: 0px;
   text-align: center;
 }
 #wrapper #qualifying_steps ul li {
-  align-items: center;
-  flex-direction: column;
   list-style: none;
   padding: 0px 12px;
   width: 270px;
@@ -163,9 +160,9 @@
   width: 100%;
 }
 #wrapper #awarded_funds ul li {
-  align-items: flex-start;
   background-color: white;
   display: flex;
+  justify-content: center;
   flex-direction: column;
   height: 160px;
   position: relative;
@@ -176,19 +173,27 @@
   height: 67px;
   left: 45px;
   position: absolute;
-  top: 43px;
+  top: 50px;
   width: 67px;
   z-index: 1;
 }
 #wrapper #awarded_funds ul li h3 {
   font-family: "Proxima Nova", sans-serif;
+<<<<<<< HEAD
   margin: 40px 0px 0px 140px;
+=======
+  margin-left: 140px;
+>>>>>>> f2b74889c0674834e262d1259c7c034e7894255f
   width: 175px;
 }
 #wrapper #awarded_funds ul li span {
   font-family: "Proxima Nova", sans-serif;
+<<<<<<< HEAD
   letter-spacing: .3;
   margin: 10px 0px 0px 140px;
+=======
+  margin: 5px 0px 0px 140px;
+>>>>>>> f2b74889c0674834e262d1259c7c034e7894255f
 }
 #wrapper footer {
   display: flex;
@@ -222,9 +227,7 @@
   border-radius: 2px;
   border: 1px solid #C4C4C4;
   box-sizing: border-box;
-  font-family: "Mulish", sans-serif;
   height: 65px;
-  letter-spacing: .2;
   text-indent: 23px;
   width: 271px;
 }
@@ -274,16 +277,15 @@
   }
   #wrapper #splash_section .container p#policy {
     line-height: 13px;
-    margin: 0px;
+    margin-top: 17px;
     width: 245px;
   }
   #wrapper #splash_section .container p#policy a {
-    text-decoration: underline 1px solid;
     text-decoration-color: rgba(255, 255, 255, 0.4);
+    text-decoration: underline 1px solid;
   }
   #wrapper #qualifying_steps {
     padding: 55px 0px 27px 0px;
-    width: 100%;
   }
   #wrapper #qualifying_steps img {
     height: 99px;
@@ -326,7 +328,6 @@
   }
   #wrapper #awarded_funds {
     padding: 57px 0px 66px 0px;
-    width: 100%;
   }
   #wrapper #awarded_funds h2 {
     font-size: 26px;
@@ -342,14 +343,18 @@
     flex-direction: column;
     justify-content: center;
     row-gap: 22px;
-    width: 80%;
+    width: 100%;
   }
   #wrapper #awarded_funds ul li {
     display: flex;
     height: 150px;
-    justify-content: center;
+    margin: auto;
     row-gap: 5px;
+<<<<<<< HEAD
     width: 100%;
+=======
+    width: 80%;
+>>>>>>> f2b74889c0674834e262d1259c7c034e7894255f
   }
   #wrapper #awarded_funds ul li img {
     height: 58px;
@@ -363,7 +368,6 @@
   }
   #wrapper footer {
     padding: 50px 0px 79px 0px;
-    width: 100%;
   }
   #wrapper footer h2 {
     font-size: 26px;
