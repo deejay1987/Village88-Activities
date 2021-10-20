@@ -13,6 +13,9 @@
   justify-content: center;
 }
 #wrapper #splash_section .container {
+  display: flex;
+  flex-direction: column;
+  padding: 0px 142px;
   height: 282px;
   width: 1150px;
 }
@@ -70,7 +73,7 @@
   display: flex;
   flex-wrap: wrap;
   justify-content: center;
-  padding: 88px 0px 59px 0px;
+  padding: 77px 0px 59px 0px;
 }
 #wrapper #qualifying_steps h2 {
   color: #333333;
@@ -155,8 +158,9 @@
 }
 #wrapper #awarded_funds ul {
   display: flex;
-  justify-content: space-between;
-  width: 60%;
+  justify-content: center;
+  column-gap: 41px;
+  width: 100%;
 }
 #wrapper #awarded_funds ul li {
   align-items: flex-start;
@@ -178,13 +182,13 @@
 }
 #wrapper #awarded_funds ul li h3 {
   font-family: "Proxima Nova", sans-serif;
-  margin: 37px 0px 0px 140px;
+  margin: 40px 0px 0px 140px;
   width: 175px;
 }
 #wrapper #awarded_funds ul li span {
   font-family: "Proxima Nova", sans-serif;
   letter-spacing: .3;
-  margin: 5px 0px 0px 140px;
+  margin: 10px 0px 0px 140px;
 }
 #wrapper footer {
   display: flex;
@@ -207,6 +211,11 @@
 #wrapper footer p {
   font-size: 24px;
   margin: 24px 0px 37px 0px;
+}
+#wrapper footer form {
+  flex-wrap: wrap;
+  column-gap: 22px;
+  justify-content: center;
 }
 #wrapper footer form input {
   background: #FFFFFF;
@@ -232,16 +241,15 @@
   margin-left: 12px;
   width: 246px;
 }
-@media only screen and (max-width: 375px) {
+@media screen and (max-width: 375px) {
   #wrapper #splash_section {
     height: 555px;
     padding: 0px 35px;
   }
   #wrapper #splash_section .container {
-    display: flex;
-    flex-direction: column;
     height: 390px;
     margin-top: 45px;
+    padding: 0px;
   }
   #wrapper #splash_section .container span {
     font-size: 12px;
@@ -327,7 +335,7 @@
     font-size: 16px;
     line-height: 24px;
     margin-bottom: 25px;
-    width: 242px;
+    width: 265px;
   }
   #wrapper #awarded_funds ul {
     display: flex;
@@ -342,7 +350,6 @@
     justify-content: center;
     row-gap: 5px;
     width: 100%;
-    width: 306px;
   }
   #wrapper #awarded_funds ul li img {
     height: 58px;
@@ -375,5 +382,60 @@
     color: white;
     margin: 13px 0px;
     width: 305px;
+  }
+}
+@media screen and (min-width: 376px) and (max-width: 900px) {
+  #wrapper #splash_section {
+    height: 555px;
+    padding: 0px 60px;
+  }
+  #wrapper #splash_section .container {
+    margin-top: -35px;
+    padding: 0px;
+  }
+  #wrapper #splash_section .container h1 {
+    font-size: 48px;
+  }
+  #wrapper #splash_section .container p#email_address {
+    font-size: 18px;
+  }
+  #wrapper #splash_section .container form button {
+    margin: 10px 0px 0px 0px;
+    width: 271px;
+  }
+  #wrapper #qualifying_steps {
+    padding: 77px 35px;
+  }
+  #wrapper #qualifying_steps h2 {
+    font-size: 30px;
+  }
+  #wrapper #qualifying_steps ul {
+    column-gap: 25px;
+    flex-wrap: wrap;
+    row-gap: 40px;
+  }
+  #wrapper #awarded_funds {
+    padding: 77px 35px;
+  }
+  #wrapper #awarded_funds h2 {
+    font-size: 30px;
+  }
+  #wrapper #awarded_funds ul {
+    flex-wrap: wrap;
+    row-gap: 22px;
+  }
+  #wrapper #awarded_funds ul li {
+    align-content: center;
+  }
+  #wrapper footer h2 {
+    font-size: 30px;
+  }
+  #wrapper footer form {
+    display: flex;
+    row-gap: 14px;
+  }
+  #wrapper footer form button {
+    margin: 0px;
+    width: 271px;
   }
 }

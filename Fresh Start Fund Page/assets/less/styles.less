@@ -13,6 +13,9 @@
         height: 485px;
         justify-content: center;
         .container{
+            display: flex;
+            flex-direction: column;
+            padding: 0px 142px;
             height: 282px;
             width: 1150px;
             span, h1, p, a{
@@ -70,7 +73,7 @@
         display: flex;
         flex-wrap: wrap;
         justify-content: center;
-        padding: 88px 0px 59px 0px;
+        padding: 77px 0px 59px 0px;
         h2{
             color: #333333;
             font-family: "Proxima Nova", sans-serif;
@@ -155,8 +158,9 @@
         }
         ul{
             display: flex;
-            justify-content: space-between;
-            width: 60%;
+            justify-content: center;
+            column-gap: 41px;
+            width: 100%;
             li{
                 align-items: flex-start;
                 background-color: white;
@@ -176,13 +180,13 @@
                 }
                 h3{
                     font-family: "Proxima Nova", sans-serif;
-                    margin: 37px 0px 0px 140px;
+                    margin: 40px 0px 0px 140px;
                     width: 175px;
                 }
                 span{
                     font-family: "Proxima Nova", sans-serif;
                     letter-spacing: .3;
-                    margin: 5px 0px 0px 140px;
+                    margin: 10px 0px 0px 140px;
                 }
             }
         }
@@ -208,6 +212,9 @@
             margin: 24px 0px 37px 0px;
         }
         form{
+            flex-wrap: wrap;
+            column-gap: 22px;
+            justify-content: center;
             input{
                 background: #FFFFFF;
                 border-radius: 2px;
@@ -235,16 +242,15 @@
         }
     }
 }
-@media only screen and (max-width: 375px){
+@media screen and (max-width: 375px){
     #wrapper{
         #splash_section{
             height: 555px;
             padding: 0px 35px;
             .container{
-                display: flex;
-                flex-direction: column;
                 height: 390px;
                 margin-top: 45px;
+                padding: 0px;
                 span{
                     font-size: 12px;
                     margin-bottom: 10px;
@@ -335,7 +341,7 @@
                 font-size: 16px;
                 line-height: 24px;
                 margin-bottom: 25px;
-                width: 242px;
+                width: 265px;
             }
             ul{
                 display: flex;
@@ -349,7 +355,6 @@
                     justify-content: center;
                     row-gap: 5px;
                     width: 100%;
-                    width: 306px;
                     img{
                         height: 58px;
                         left: 23px;
@@ -381,6 +386,69 @@
                     color: white;
                     margin: 13px 0px;
                     width: 305px;
+                }
+            }
+        }
+    }
+}
+@media screen and (min-width: 376px) and (max-width: 900px){
+    #wrapper{
+        #splash_section{
+            height: 555px;
+            padding: 0px 60px;
+            .container{
+                margin-top: -35px;
+                padding: 0px;
+                h1{
+                    font-size: 48px;
+                }
+                p{
+                    &#email_address{
+                        font-size: 18px;
+                    }
+                }
+                form{
+                    button{
+                        margin: 10px 0px 0px 0px;
+                        width: 271px;
+                    }
+                }
+            }
+        }
+        #qualifying_steps{
+            padding: 77px 35px;
+            h2{
+                font-size: 30px;
+            }
+            ul{
+                column-gap: 25px;
+                flex-wrap: wrap;
+                row-gap: 40px;
+            }
+        }
+        #awarded_funds{
+            padding: 77px 35px;
+            h2{
+                font-size: 30px;
+            }
+            ul{
+                flex-wrap: wrap;
+                row-gap: 22px;
+                li{
+                    align-content: center;
+                }
+            }
+        }
+        footer{
+            h2{
+                font-size: 30px;
+            }
+            form{
+                display: flex;
+                row-gap: 14px;
+                button{
+                    margin: 0px;
+                    width: 271px;
                 }
             }
         }
