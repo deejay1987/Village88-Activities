@@ -135,11 +135,18 @@
 }
 #wrapper #qualifying_steps ul li p#proof_of_income::after {
   content: "(recent paystub or equivalent)";
+  display: inline-block;
   font-size: 18px;
 }
-#wrapper #qualifying_steps ul li p span::after {
-  content: "\A";
-  white-space: pre;
+#wrapper #qualifying_steps ul li p#proof_of_income span {
+  display: inline-block;
+  margin: -20px;
+  width: 240px;
+}
+#wrapper #qualifying_steps ul li p span {
+  margin-top: -22px;
+  display: inline;
+  width: 138px;
 }
 #wrapper #qualifying_steps ul li img {
   margin-bottom: 23px;
@@ -306,7 +313,7 @@
     text-decoration: underline 1px solid;
   }
   #wrapper #qualifying_steps {
-    padding: 55px 0px 27px 0px;
+    padding: 55px 0px 25px 0px;
   }
   #wrapper #qualifying_steps img {
     height: 99px;
@@ -337,7 +344,13 @@
   }
   #wrapper #qualifying_steps ul li p {
     font-size: 16px;
-    width: 122px;
+    line-height: 22px;
+    width: 128px;
+  }
+  #wrapper #qualifying_steps ul li p span {
+    display: inline-block;
+    font-size: 18px;
+    margin-left: -5px;
   }
   #wrapper #qualifying_steps ul li p span::before {
     content: "\A";
@@ -348,6 +361,9 @@
   }
   #wrapper #qualifying_steps ul li p#proof_of_income::after {
     font-size: 14px;
+  }
+  #wrapper #qualifying_steps ul li p#proof_of_income span {
+    margin: -23px 0px 0px -58px;
   }
   #wrapper #awarded_funds {
     padding: 60px 0px 66px 0px;
@@ -459,12 +475,20 @@
     font-size: 18px;
     width: 130px;
   }
-  #wrapper #qualifying_steps ul li p#proof_of_income {
-    width: 136px;
+  #wrapper #qualifying_steps ul li p span {
+    display: inline-block;
+    font-size: 18px;
+    margin-left: -5px;
   }
   #wrapper #qualifying_steps ul li p span::before {
     content: "\A";
     white-space: pre;
+  }
+  #wrapper #qualifying_steps ul li p#proof_of_income {
+    width: 136px;
+  }
+  #wrapper #qualifying_steps ul li p#proof_of_income span {
+    margin: -20px 0px 0px -57px;
   }
   #wrapper #awarded_funds {
     padding: 77px 35px;

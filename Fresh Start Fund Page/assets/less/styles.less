@@ -130,14 +130,19 @@
                         width: 271px;
                         &::after{
                             content: "(recent paystub or equivalent)";
+                            display: inline-block;
                             font-size: 18px;
+                        }
+                        span{
+                            display: inline-block;
+                            margin: -20px;
+                            width: 240px;
                         }
                     }
                     span{
-                        &::after{
-                            content: "\A";
-                            white-space: pre;
-                        }
+                        margin-top: -22px;
+                        display: inline;
+                        width: 138px;
                     }
                 }
                 img{
@@ -311,7 +316,7 @@
             }
         }
         #qualifying_steps{
-            padding: 55px 0px 27px 0px;
+            padding: 55px 0px 25px 0px;
             img{
                 height: 99px;
                 width: 99px;
@@ -339,8 +344,12 @@
                     }
                     p{
                         font-size: 16px;
-                        width: 122px;
+                        line-height: 22px;
+                        width: 128px;
                         span{
+                            display: inline-block;
+                            font-size: 18px;
+                            margin-left: -5px;
                             &::before{
                                 content: "\A";
                                 white-space: pre;
@@ -350,6 +359,9 @@
                             width: 124px;
                             &::after{
                                 font-size: 14px;
+                            }
+                            span{
+                                margin: -23px 0px 0px -58px;
                             }
                         }
                     }
@@ -466,13 +478,19 @@
                     p{
                         font-size: 18px;
                         width: 130px;
-                        &#proof_of_income{
-                            width: 136px;
-                        }
                         span{
+                            display: inline-block;
+                            font-size: 18px;
+                            margin-left: -5px;
                             &::before{
                                 content: "\A";
                                 white-space: pre;
+                            }
+                        }
+                        &#proof_of_income{
+                            width: 136px;
+                            span{
+                                margin: -20px 0px 0px -57px;
                             }
                         }
                     }
