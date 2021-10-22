@@ -11,12 +11,10 @@
   display: flex;
   height: 485px;
   justify-content: center;
-  padding: 0px 142px;
 }
 #wrapper #splash_section .container {
-  display: flex;
-  flex-direction: column;
-  height: 282px;
+  margin-top: -23px;
+  padding: 0px 144px;
   width: 1150px;
 }
 #wrapper #splash_section .container span,
@@ -27,44 +25,49 @@
   font-family: "Proxima Nova", sans-serif;
 }
 #wrapper #splash_section .container span {
+  font-size: 16px;
+  font-style: normal;
   font-weight: bold;
   letter-spacing: .6px;
+  line-height: 16px;
   text-transform: uppercase;
 }
 #wrapper #splash_section .container h1 {
   font-size: 60px;
   font-weight: bold;
-  letter-spacing: 1px;
-  margin: 10px 0px 18px 0px;
+  letter-spacing: .6px;
+  margin: 18px 0px 16px 0px;
 }
 #wrapper #splash_section .container p#email_address {
   font-size: 20px;
   font-weight: normal;
   letter-spacing: .6px;
+  margin-bottom: 33px;
 }
 #wrapper #splash_section .container p#policy {
   font-size: 10px;
-  margin-top: 23.21px;
   opacity: .8;
 }
 #wrapper #splash_section .container p#policy a {
   text-decoration: underline 1.5px solid white;
 }
 #wrapper #splash_section .container form {
-  margin-top: 30px;
+  margin-bottom: 24px;
 }
 #wrapper #splash_section .container form input {
   border-radius: 8px;
   border: 2px solid lightgrey;
   box-sizing: border-box;
-  height: 53.96px;
+  height: 54px;
   letter-spacing: .2px;
   text-indent: 23px;
   width: 271px;
 }
 #wrapper #splash_section .container form input::placeholder {
   font-family: 'Mulish', sans-serif;
-  opacity: .5;
+  font-size: 16px;
+  font-weight: normal;
+  letter-spacing: .2px;
 }
 #wrapper #splash_section .container form button {
   background-color: #05AAE1;
@@ -72,22 +75,25 @@
   border: none;
   box-shadow: 0px 6px 6px rgba(11, 31, 39, 0.08);
   color: white;
-  font-weight: 700;
+  font-family: "Proxima Nova", sans-serif;
+  font-size: 16px;
+  font-weight: bold;
   height: 53.96px;
   letter-spacing: .6px;
-  margin-left: 12px;
+  margin-left: 8px;
   width: 246px;
 }
 #wrapper #qualifying_steps {
   display: flex;
   flex-wrap: wrap;
   justify-content: center;
-  padding: 77px 0px 59px 0px;
+  padding: 81px 0px 59px 0px;
 }
 #wrapper #qualifying_steps h2 {
   color: #333333;
   font-family: "Proxima Nova", sans-serif;
   font-size: 40px;
+  font-weight: bold;
   letter-spacing: .6px;
   margin: 0px;
   text-align: center;
@@ -97,10 +103,11 @@
   color: #333333;
   font-family: "Proxima Nova", sans-serif;
   font-size: 18px;
+  letter-spacing: .6px;
   line-height: 27px;
-  margin: 15px 0px 69px 0px;
+  margin: 14px 0px 69px 0px;
   text-align: center;
-  width: 660px;
+  width: 680px;
 }
 #wrapper #qualifying_steps span {
   font-family: "Proxima Nova", sans-serif;
@@ -113,18 +120,18 @@
 }
 #wrapper #qualifying_steps ul li {
   list-style: none;
-  padding: 0px 12px;
+  padding: 0px 15px;
   width: 270px;
 }
 #wrapper #qualifying_steps ul li p {
   font-family: "Proxima Nova", sans-serif;
-  font-size: 20px;
-  line-height: 136%;
+  font-size: 18px;
+  line-height: 124%;
   margin: auto;
-  width: 221px;
+  width: 198px;
 }
 #wrapper #qualifying_steps ul li p#proof_of_income {
-  width: 283px;
+  width: 271px;
 }
 #wrapper #qualifying_steps ul li p#proof_of_income::after {
   content: "(recent paystub or equivalent)";
@@ -135,14 +142,14 @@
   white-space: pre;
 }
 #wrapper #qualifying_steps ul li img {
-  margin-bottom: 27px;
+  margin-bottom: 23px;
 }
 #wrapper #awarded_funds {
   background-color: #f8faff;
   display: flex;
   flex-wrap: wrap;
   justify-content: center;
-  padding: 77px 0px 96px 0px;
+  padding: 83px 0px 96px 0px;
 }
 #wrapper #awarded_funds h2,
 #wrapper #awarded_funds p {
@@ -154,11 +161,12 @@
 }
 #wrapper #awarded_funds h2 {
   font-size: 40px;
+  font-weight: bold;
   margin: 0px;
 }
 #wrapper #awarded_funds p {
   font-size: 18px;
-  margin: 15px 0px 60px 0px;
+  margin: 18px 0px 64px 0px;
 }
 #wrapper #awarded_funds ul {
   column-gap: 41px;
@@ -181,17 +189,20 @@
   height: 67px;
   left: 45px;
   position: absolute;
-  top: 50px;
+  top: 43px;
   width: 67px;
   z-index: 1;
 }
 #wrapper #awarded_funds ul li h3 {
   font-family: "Proxima Nova", sans-serif;
-  margin-left: 140px;
+  font-size: 20px;
+  line-height: 24px;
+  margin: -10px 0px 0px 140px;
   width: 175px;
 }
 #wrapper #awarded_funds ul li span {
   font-family: "Proxima Nova", sans-serif;
+  font-size: 18px;
   letter-spacing: 1px;
   margin: 10px 0px 0px 140px;
 }
@@ -199,7 +210,7 @@
   display: flex;
   flex-wrap: wrap;
   justify-content: center;
-  padding: 95px 0px 209px 0px;
+  padding: 101px 0px 208px 0px;
 }
 #wrapper footer h2,
 #wrapper footer p {
@@ -216,7 +227,7 @@
 }
 #wrapper footer p {
   font-size: 24px;
-  margin: 24px 0px 37px 0px;
+  margin: 26px 0px 41px 0px;
 }
 #wrapper footer form {
   column-gap: 22px;
@@ -228,13 +239,15 @@
   border-radius: 2px;
   border: 1px solid #C4C4C4;
   box-sizing: border-box;
+  font-size: 16px;
   height: 65px;
   text-indent: 23px;
   width: 271px;
 }
 #wrapper footer form input::placeholder {
   font-family: 'Mulish', sans-serif;
-  opacity: .5;
+  font-size: 16px;
+  font-weight: normal;
 }
 #wrapper footer form button {
   background-color: #05AAE1;
@@ -242,8 +255,11 @@
   border: none;
   box-shadow: 0px 6px 6px rgba(11, 31, 39, 0.08);
   color: white;
+  font-size: 16px;
+  font-weight: bold;
   height: 65px;
-  margin-left: 12px;
+  letter-spacing: .6px;
+  margin-left: 8px;
   width: 246px;
 }
 @media screen and (max-width: 375px) {
@@ -253,7 +269,7 @@
   }
   #wrapper #splash_section .container {
     height: 390px;
-    margin-top: 45px;
+    margin-top: 41px;
     padding: 0px;
   }
   #wrapper #splash_section .container span {
@@ -262,7 +278,8 @@
   }
   #wrapper #splash_section .container h1 {
     font-size: 42px;
-    margin: 0px 0px 12px 0px;
+    line-height: 115.2%;
+    margin: 9px 0px 7px 0px;
   }
   #wrapper #splash_section .container form input,
   #wrapper #splash_section .container form button {
@@ -275,11 +292,13 @@
   }
   #wrapper #splash_section .container p#email_address {
     font-size: 18px;
+    line-height: 24px;
+    margin-bottom: 27px;
     width: 282px;
   }
   #wrapper #splash_section .container p#policy {
     line-height: 13px;
-    margin-top: 17px;
+    margin-top: -6px;
     width: 245px;
   }
   #wrapper #splash_section .container p#policy a {
@@ -295,12 +314,14 @@
   }
   #wrapper #qualifying_steps h2 {
     font-size: 26px;
+    line-height: 32px;
     width: 295px;
   }
   #wrapper #qualifying_steps p {
     font-size: 16px;
-    margin-bottom: 40px;
-    width: 288px;
+    letter-spacing: .6px;
+    margin: 18px 0px 37px 0px;
+    width: 300px;
   }
   #wrapper #qualifying_steps ul {
     flex-direction: column;
@@ -316,7 +337,7 @@
   }
   #wrapper #qualifying_steps ul li p {
     font-size: 16px;
-    width: 120px;
+    width: 122px;
   }
   #wrapper #qualifying_steps ul li p span::before {
     content: "\A";
@@ -329,7 +350,7 @@
     font-size: 14px;
   }
   #wrapper #awarded_funds {
-    padding: 57px 0px 66px 0px;
+    padding: 60px 0px 66px 0px;
   }
   #wrapper #awarded_funds h2 {
     font-size: 26px;
@@ -337,7 +358,7 @@
   #wrapper #awarded_funds p {
     font-size: 16px;
     line-height: 24px;
-    margin-bottom: 25px;
+    margin: 17px 0px 34px 0px;
     width: 274px;
   }
   #wrapper #awarded_funds ul {
@@ -361,18 +382,21 @@
   }
   #wrapper #awarded_funds ul li h3,
   #wrapper #awarded_funds ul li span {
+    line-height: 24px;
     margin: 0px 105px;
     width: 170px;
   }
   #wrapper footer {
-    padding: 50px 0px 79px 0px;
+    padding: 50px 0px 65px 0px;
   }
   #wrapper footer h2 {
     font-size: 26px;
+    line-height: 32px;
     width: 292px;
   }
   #wrapper footer p {
     font-size: 16px;
+    margin: 12px 0px 32px 0px;
   }
   #wrapper footer form {
     text-align: center;
@@ -468,8 +492,8 @@
   }
 }
 @media screen and (min-width: 666px) and (max-width: 900px) {
-  #wrapper #splash_section {
-    padding: 0px 65px;
+  #wrapper #splash_section .container {
+    padding: 0px 66px;
   }
   #wrapper #qualifying_steps {
     padding: 77px 35px 59px 35px;
