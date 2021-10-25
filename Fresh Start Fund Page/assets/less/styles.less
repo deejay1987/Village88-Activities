@@ -144,6 +144,7 @@
                     }
                     span{
                         display: inline;
+                        font-size: 20px;
                         margin-top: -22px;
                         width: 138px;
                     }
@@ -340,45 +341,50 @@
                 width: 100%;
             }
             ul{
-                flex-direction: column;
+                column-gap: 25px;
+                flex-wrap: wrap;
+                justify-content: center;
                 row-gap: 37px;
-                width: 100%;
+                width: 87%;
                 li{
+                    column-gap: 30px;
                     display: flex;
                     flex-direction: row;
                     padding: 0px;
-                    width: 100%;
+                    width: 300px;
                     img{
+                        height: 99px;
                         margin: auto;
+                        width: 99px;
                     }
                     p{
                         font-size: 16px;
-                        line-height: 22px;
-                        width: 42%;
+                        line-height: 20px;
+                        width: 127px;
                         span{
+                            display: inline-block;
                             font-size: 18px;
-                            text-align: center;
-                            width: 42%;
+                            margin-left: -5px;
                             &::before{
                                 content: "\A";
                                 white-space: pre;
                             }
                         }
                         &#review_essay{
+                            line-height: 22px;
                             &::after{
-                                display: inline-block;
                                 font-size: 18px;
                                 margin-left: -4px;
-                                width: 100%;
+                                width: 137px;
                             }
                         }
                         &#proof_of_income{
-                            width: 42%;
-                            &::after{
-                                font-size: 14px;
-                            }
+                            width: 129px;
                             span{
                                 width: 140px;
+                            }
+                            &::after{
+                                font-size: 16px;
                             }
                         }
                     }
@@ -510,6 +516,7 @@
                     column-gap: 30px;
                     display: flex;
                     flex-direction: row;
+                    padding: 0px;
                     width: 300px;
                     img{
                         height: 99px;
@@ -518,6 +525,7 @@
                     }
                     p{
                         font-size: 16px;
+                        line-height: 20px;
                         width: 127px;
                         span{
                             display: inline-block;
@@ -529,6 +537,7 @@
                             }
                         }
                         &#review_essay{
+                            line-height: 22px;
                             &::after{
                                 font-size: 18px;
                                 margin-left: -4px;

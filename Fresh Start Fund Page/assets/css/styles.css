@@ -148,6 +148,7 @@
 }
 #wrapper #qualifying_steps ul li p span {
   display: inline;
+  font-size: 20px;
   margin-top: -22px;
   width: 138px;
 }
@@ -340,47 +341,54 @@
     width: 100%;
   }
   #wrapper #qualifying_steps ul {
-    flex-direction: column;
+    column-gap: 25px;
+    flex-wrap: wrap;
+    justify-content: center;
     row-gap: 37px;
-    width: 100%;
+    width: 87%;
   }
   #wrapper #qualifying_steps ul li {
+    column-gap: 30px;
     display: flex;
     flex-direction: row;
     padding: 0px;
-    width: 100%;
+    width: 300px;
   }
   #wrapper #qualifying_steps ul li img {
+    height: 99px;
     margin: auto;
+    width: 99px;
   }
   #wrapper #qualifying_steps ul li p {
     font-size: 16px;
-    line-height: 22px;
-    width: 42%;
+    line-height: 20px;
+    width: 127px;
   }
   #wrapper #qualifying_steps ul li p span {
+    display: inline-block;
     font-size: 18px;
-    text-align: center;
-    width: 42%;
+    margin-left: -5px;
   }
   #wrapper #qualifying_steps ul li p span::before {
     content: "\A";
     white-space: pre;
   }
+  #wrapper #qualifying_steps ul li p#review_essay {
+    line-height: 22px;
+  }
   #wrapper #qualifying_steps ul li p#review_essay::after {
-    display: inline-block;
     font-size: 18px;
     margin-left: -4px;
-    width: 100%;
+    width: 137px;
   }
   #wrapper #qualifying_steps ul li p#proof_of_income {
-    width: 42%;
-  }
-  #wrapper #qualifying_steps ul li p#proof_of_income::after {
-    font-size: 14px;
+    width: 129px;
   }
   #wrapper #qualifying_steps ul li p#proof_of_income span {
     width: 140px;
+  }
+  #wrapper #qualifying_steps ul li p#proof_of_income::after {
+    font-size: 16px;
   }
   #wrapper #awarded_funds {
     padding: 60px 35px 66px 35px;
@@ -506,6 +514,7 @@
     column-gap: 30px;
     display: flex;
     flex-direction: row;
+    padding: 0px;
     width: 300px;
   }
   #wrapper #qualifying_steps ul li img {
@@ -515,6 +524,7 @@
   }
   #wrapper #qualifying_steps ul li p {
     font-size: 16px;
+    line-height: 20px;
     width: 127px;
   }
   #wrapper #qualifying_steps ul li p span {
@@ -525,6 +535,9 @@
   #wrapper #qualifying_steps ul li p span::before {
     content: "\A";
     white-space: pre;
+  }
+  #wrapper #qualifying_steps ul li p#review_essay {
+    line-height: 22px;
   }
   #wrapper #qualifying_steps ul li p#review_essay::after {
     font-size: 18px;
