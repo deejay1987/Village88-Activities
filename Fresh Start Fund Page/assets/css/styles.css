@@ -1,7 +1,6 @@
 * {
   margin: 0px;
   padding: 0px;
-  outline: 1px dotted red;
 }
 #wrapper #splash_section {
   align-items: center;
@@ -128,6 +127,12 @@
   margin: auto;
   width: 198px;
 }
+#wrapper #qualifying_steps ul li p#review_essay::after {
+  content: "within 48 hours";
+  display: inline-block;
+  font-size: 20px;
+  font-weight: bold;
+}
 #wrapper #qualifying_steps ul li p#proof_of_income {
   width: 271px;
 }
@@ -142,8 +147,8 @@
   width: 240px;
 }
 #wrapper #qualifying_steps ul li p span {
-  margin-top: -22px;
   display: inline;
+  margin-top: -22px;
   width: 138px;
 }
 #wrapper #qualifying_steps ul li img {
@@ -337,9 +342,9 @@
   #wrapper #qualifying_steps ul {
     flex-direction: column;
     row-gap: 37px;
+    width: 100%;
   }
   #wrapper #qualifying_steps ul li {
-    column-gap: 32px;
     display: flex;
     flex-direction: row;
     padding: 0px;
@@ -351,25 +356,31 @@
   #wrapper #qualifying_steps ul li p {
     font-size: 16px;
     line-height: 22px;
-    width: 129px;
+    width: 42%;
   }
   #wrapper #qualifying_steps ul li p span {
-    display: inline-block;
     font-size: 18px;
     text-align: center;
+    width: 42%;
   }
   #wrapper #qualifying_steps ul li p span::before {
     content: "\A";
     white-space: pre;
   }
+  #wrapper #qualifying_steps ul li p#review_essay::after {
+    display: inline-block;
+    font-size: 18px;
+    margin-left: -4px;
+    width: 100%;
+  }
   #wrapper #qualifying_steps ul li p#proof_of_income {
-    width: 124px;
+    width: 42%;
   }
   #wrapper #qualifying_steps ul li p#proof_of_income::after {
     font-size: 14px;
   }
   #wrapper #qualifying_steps ul li p#proof_of_income span {
-    width: 138px;
+    width: 140px;
   }
   #wrapper #awarded_funds {
     padding: 60px 35px 66px 35px;
@@ -442,36 +453,54 @@
 @media screen and (min-width: 376px) and (max-width: 665px) {
   #wrapper #splash_section {
     height: 555px;
-    padding: 0px 33px;
+    padding: 0px 35px;
   }
   #wrapper #splash_section .container {
-    margin-top: -35px;
+    margin-top: 58px;
     padding: 0px;
+    width: 100%;
+  }
+  #wrapper #splash_section .container span {
+    font-size: 12px;
   }
   #wrapper #splash_section .container h1 {
     font-size: 42px;
+    line-height: 47px;
+    margin: 11px 0px 9px 0px;
   }
   #wrapper #splash_section .container p#email_address {
     font-size: 18px;
   }
+  #wrapper #splash_section .container p#policy {
+    line-height: 13px;
+    width: 95%;
+  }
+  #wrapper #splash_section .container form input,
   #wrapper #splash_section .container form button {
-    margin: 10px 0px 0px 0px;
-    width: 271px;
+    height: 65px;
+    width: 306px;
+  }
+  #wrapper #splash_section .container form button {
+    margin: 14px 0px 10px 0px;
   }
   #wrapper #qualifying_steps {
-    padding: 77px 35px;
+    padding: 60px 35px 60px 35px;
   }
   #wrapper #qualifying_steps h2 {
-    font-size: 30px;
+    font-size: 26px;
   }
   #wrapper #qualifying_steps p {
-    margin-bottom: 50px;
+    font-size: 16px;
+    line-height: 24px;
+    margin: 30px 0px 40px 0px;
+    width: 300px;
   }
   #wrapper #qualifying_steps ul {
     column-gap: 25px;
     flex-wrap: wrap;
     justify-content: center;
-    row-gap: 40px;
+    row-gap: 37px;
+    width: 100%;
   }
   #wrapper #qualifying_steps ul li {
     column-gap: 30px;
@@ -485,8 +514,8 @@
     width: 99px;
   }
   #wrapper #qualifying_steps ul li p {
-    font-size: 18px;
-    width: 130px;
+    font-size: 16px;
+    width: 127px;
   }
   #wrapper #qualifying_steps ul li p span {
     display: inline-block;
@@ -497,17 +526,30 @@
     content: "\A";
     white-space: pre;
   }
+  #wrapper #qualifying_steps ul li p#review_essay::after {
+    font-size: 18px;
+    margin-left: -4px;
+    width: 137px;
+  }
   #wrapper #qualifying_steps ul li p#proof_of_income {
-    width: 136px;
+    width: 129px;
   }
   #wrapper #qualifying_steps ul li p#proof_of_income span {
-    width: 150px;
+    width: 140px;
+  }
+  #wrapper #qualifying_steps ul li p#proof_of_income::after {
+    font-size: 16px;
   }
   #wrapper #awarded_funds {
-    padding: 77px 35px;
+    padding: 60px 35px 66px 35px;
   }
   #wrapper #awarded_funds h2 {
-    font-size: 30px;
+    font-size: 26px;
+  }
+  #wrapper #awarded_funds p {
+    font-size: 16px;
+    line-height: 25px;
+    margin: 22px 0px 37px 0px;
   }
   #wrapper #awarded_funds ul {
     flex-wrap: wrap;
@@ -516,16 +558,35 @@
   #wrapper #awarded_funds ul li {
     align-content: center;
   }
+  #wrapper #awarded_funds ul li h3 {
+    font-size: 18px;
+    width: 52%;
+  }
+  #wrapper #awarded_funds ul li span {
+    font-size: 16px;
+    line-height: 22px;
+    margin-top: 12px;
+  }
+  #wrapper footer {
+    padding: 58px 35px 80px 35px;
+  }
   #wrapper footer h2 {
-    font-size: 30px;
+    font-size: 26px;
+  }
+  #wrapper footer p {
+    font-size: 16px;
+    margin: 24px 0px 32px 0px;
   }
   #wrapper footer form {
     display: flex;
-    row-gap: 14px;
+    row-gap: 13px;
+  }
+  #wrapper footer form input,
+  #wrapper footer form button {
+    width: 100%;
   }
   #wrapper footer form button {
     margin: 0px;
-    width: 271px;
   }
 }
 @media screen and (min-width: 666px) and (max-width: 900px) {

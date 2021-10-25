@@ -1,7 +1,6 @@
 *{
     margin: 0px;
     padding: 0px;
-    outline: 1px dotted red;
 }
 #wrapper{
     #splash_section{
@@ -39,7 +38,7 @@
                     font-size: 20px;
                     font-weight: normal;
                     margin-bottom: 33px;
-                    }
+                }
                 &#policy{
                     font-size: 10px;
                     opacity: .8;
@@ -122,6 +121,14 @@
                     line-height: 124%;
                     margin: auto;
                     width: 198px;
+                    &#review_essay{
+                        &::after{
+                            content: "within 48 hours";
+                            display: inline-block;
+                            font-size: 20px;
+                            font-weight: bold;
+                        }
+                    }
                     &#proof_of_income{
                         width: 271px;
                         &::after{
@@ -136,8 +143,8 @@
                         }
                     }
                     span{
-                        margin-top: -22px;
                         display: inline;
+                        margin-top: -22px;
                         width: 138px;
                     }
                 }
@@ -335,8 +342,8 @@
             ul{
                 flex-direction: column;
                 row-gap: 37px;
+                width: 100%;
                 li{
-                    column-gap: 32px;
                     display: flex;
                     flex-direction: row;
                     padding: 0px;
@@ -347,23 +354,31 @@
                     p{
                         font-size: 16px;
                         line-height: 22px;
-                        width: 129px;
+                        width: 42%;
                         span{
-                            display: inline-block;
                             font-size: 18px;
                             text-align: center;
+                            width: 42%;
                             &::before{
                                 content: "\A";
                                 white-space: pre;
                             }
                         }
+                        &#review_essay{
+                            &::after{
+                                display: inline-block;
+                                font-size: 18px;
+                                margin-left: -4px;
+                                width: 100%;
+                            }
+                        }
                         &#proof_of_income{
-                            width: 124px;
+                            width: 42%;
                             &::after{
                                 font-size: 14px;
                             }
                             span{
-                                width: 138px;
+                                width: 140px;
                             }
                         }
                     }
@@ -441,39 +456,56 @@
     #wrapper{
         #splash_section{
             height: 555px;
-            padding: 0px 33px;
+            padding: 0px 35px;
             .container{
-                margin-top: -35px;
+                margin-top: 58px;
                 padding: 0px;
+                width: 100%;
+                span{
+                    font-size: 12px;
+                }
                 h1{
                     font-size: 42px;
+                    line-height: 47px;
+                    margin: 11px 0px 9px 0px;
                 }
                 p{
                     &#email_address{
                         font-size: 18px;
                     }
+                    &#policy{
+                        line-height: 13px;
+                        width: 95%;
+                    }
                 }
                 form{
+                    input, button{
+                        height: 65px;
+                        width: 306px;
+                    }
                     button{
-                        margin: 10px 0px 0px 0px;
-                        width: 271px;
+                        margin: 14px 0px 10px 0px;
                     }
                 }
             }
         }
         #qualifying_steps{
-            padding: 77px 35px;
+            padding: 60px 35px 60px 35px;
             h2{
-                font-size: 30px;
+                font-size: 26px;
             }
             p{
-                margin-bottom: 50px;
+                font-size: 16px;
+                line-height: 24px;
+                margin: 30px 0px 40px 0px;
+                width: 300px;
             }
             ul{
                 column-gap: 25px;
                 flex-wrap: wrap;
                 justify-content: center;
-                row-gap: 40px;
+                row-gap: 37px;
+                width: 100%;
                 li{
                     column-gap: 30px;
                     display: flex;
@@ -485,8 +517,8 @@
                         width: 99px;
                     }
                     p{
-                        font-size: 18px;
-                        width: 130px;
+                        font-size: 16px;
+                        width: 127px;
                         span{
                             display: inline-block;
                             font-size: 18px;
@@ -496,10 +528,20 @@
                                 white-space: pre;
                             }
                         }
+                        &#review_essay{
+                            &::after{
+                                font-size: 18px;
+                                margin-left: -4px;
+                                width: 137px;
+                            }
+                        }
                         &#proof_of_income{
-                            width: 136px;
+                            width: 129px;
                             span{
-                                width: 150px;
+                                width: 140px;
+                            }
+                            &::after{
+                                font-size: 16px;
                             }
                         }
                     }
@@ -507,28 +549,49 @@
             }
         }
         #awarded_funds{
-            padding: 77px 35px;
+            padding: 60px 35px 66px 35px;
             h2{
-                font-size: 30px;
+                font-size: 26px;
+            }
+            p{
+                font-size: 16px;
+                line-height: 25px;
+                margin: 22px 0px 37px 0px;
             }
             ul{
                 flex-wrap: wrap;
                 row-gap: 22px;
                 li{
                     align-content: center;
+                    h3{
+                        font-size: 18px;
+                        width: 52%;
+                    }
+                    span{
+                        font-size: 16px;
+                        line-height: 22px;
+                        margin-top: 12px;
+                    }
                 }
             }
         }
         footer{
+            padding: 58px 35px 80px 35px;
             h2{
-                font-size: 30px;
+                font-size: 26px;
+            }
+            p{
+                font-size: 16px;
+                margin: 24px 0px 32px 0px
             }
             form{
                 display: flex;
-                row-gap: 14px;
+                row-gap: 13px;
+                input, button{
+                    width: 100%;
+                }
                 button{
                     margin: 0px;
-                    width: 271px;
                 }
             }
         }
