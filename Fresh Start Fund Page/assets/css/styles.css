@@ -1,6 +1,7 @@
 * {
   margin: 0px;
   padding: 0px;
+  outline: 1px dotted red;
 }
 #wrapper #splash_section {
   align-items: center;
@@ -348,11 +349,10 @@
     width: 100%;
   }
   #wrapper #qualifying_steps ul li {
-    column-gap: 30px;
     display: flex;
     flex-direction: row;
     padding: 0px;
-    width: 300px;
+    width: 100%;
   }
   #wrapper #qualifying_steps ul li img {
     height: 99px;
@@ -362,6 +362,7 @@
   #wrapper #qualifying_steps ul li p {
     font-size: 16px;
     line-height: 20px;
+    margin-left: 12px;
     width: 127px;
   }
   #wrapper #qualifying_steps ul li p span {
@@ -511,11 +512,10 @@
     width: 100%;
   }
   #wrapper #qualifying_steps ul li {
-    column-gap: 30px;
     display: flex;
     flex-direction: row;
     padding: 0px;
-    width: 300px;
+    width: 100%;
   }
   #wrapper #qualifying_steps ul li img {
     height: 99px;
@@ -525,6 +525,7 @@
   #wrapper #qualifying_steps ul li p {
     font-size: 16px;
     line-height: 20px;
+    margin-left: 12px;
     width: 127px;
   }
   #wrapper #qualifying_steps ul li p span {
@@ -603,6 +604,9 @@
   }
 }
 @media screen and (min-width: 666px) and (max-width: 992px) {
+  #wrapper #splash_section {
+    padding: 0px 60px;
+  }
   #wrapper #splash_section .container {
     width: 100%;
   }
