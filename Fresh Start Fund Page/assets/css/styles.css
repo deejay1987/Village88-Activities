@@ -1,7 +1,6 @@
 * {
   margin: 0px;
   padding: 0px;
-  outline: 1px dotted red;
 }
 #wrapper #splash_section {
   align-items: center;
@@ -144,11 +143,9 @@
 }
 #wrapper #qualifying_steps ul li p#proof_of_income span {
   display: inline-block;
-  margin: -20px;
   width: 240px;
 }
 #wrapper #qualifying_steps ul li p span {
-  display: inline;
   font-size: 20px;
   margin-top: -22px;
   width: 138px;
@@ -336,21 +333,15 @@
   }
   #wrapper #qualifying_steps p {
     font-size: 16px;
-    letter-spacing: .6px;
     line-height: 24px;
     margin: 18px 0px 37px 0px;
-    width: 100%;
   }
   #wrapper #qualifying_steps ul {
-    column-gap: 25px;
     flex-wrap: wrap;
-    justify-content: center;
     row-gap: 37px;
-    width: 100%;
   }
   #wrapper #qualifying_steps ul li {
     display: flex;
-    flex-direction: row;
     padding: 0px;
     width: 100%;
   }
@@ -361,12 +352,10 @@
   }
   #wrapper #qualifying_steps ul li p {
     font-size: 16px;
-    line-height: 20px;
     margin-left: 12px;
     width: 127px;
   }
   #wrapper #qualifying_steps ul li p span {
-    display: inline-block;
     font-size: 18px;
     margin-left: -5px;
   }
@@ -401,14 +390,10 @@
     font-size: 16px;
     line-height: 24px;
     margin: 17px 0px 34px 0px;
-    width: 100%;
   }
   #wrapper #awarded_funds ul {
-    display: flex;
     flex-direction: column;
-    justify-content: center;
     row-gap: 22px;
-    width: 100%;
   }
   #wrapper #awarded_funds ul li {
     height: 150px;
