@@ -1,5 +1,455 @@
 * {
   margin: 0px;
   padding: 0px;
-  outline: 1px dotted red;
+}
+#wrapper #splash_section {
+  position: relative;
+}
+#wrapper #splash_section header {
+  background-image: url(../images/desktop/image-hero.jpg);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  height: 800px;
+}
+#wrapper #splash_section header nav {
+  padding: 100px 155px 0px 155px;
+}
+#wrapper #splash_section header nav ul li {
+  list-style: none;
+  width: 80px;
+}
+#wrapper #splash_section header nav ul li a {
+  color: white;
+  text-decoration: none;
+}
+#wrapper #splash_section .container {
+  border: 2px solid white;
+  bottom: 174px;
+  left: 170px;
+  padding: 0px;
+  position: absolute;
+  width: 605px;
+}
+#wrapper #splash_section .container h1 {
+  color: white;
+  font-family: 'Josefin Sans', sans-serif;
+  font-size: 67px;
+  margin: 0px;
+  padding: 40px;
+  text-transform: uppercase;
+  width: 600px;
+}
+#wrapper #leader_in_interactive_vr {
+  display: flex;
+  justify-content: flex-start;
+  padding: 140px 170px;
+  position: relative;
+}
+#wrapper #leader_in_interactive_vr .container {
+  background-color: white;
+  bottom: 120px;
+  padding: 80px 0px 0px 80px;
+  position: absolute;
+  right: 170px;
+  width: 530px;
+}
+#wrapper #leader_in_interactive_vr .container h2 {
+  font-family: 'Josefin Sans', sans-serif;
+  font-size: 52px;
+  line-height: 52px;
+  margin-bottom: 20px;
+  text-transform: uppercase;
+}
+#wrapper #leader_in_interactive_vr .container p {
+  color: #8c8c8c;
+  font-family: 'Alata', sans-serif;
+  font-size: 15px;
+}
+#wrapper #image_section {
+  gap: 25px;
+  padding: 70px 154px;
+}
+#wrapper #image_section .container {
+  display: flex;
+  justify-content: space-between;
+  margin: 0px;
+  padding: 0px;
+  width: 100%;
+}
+#wrapper #image_section .container h2 {
+  font-family: 'Josefin Sans', sans-serif;
+  font-size: 32px;
+  margin: 0px;
+  text-transform: uppercase;
+}
+#wrapper #image_section .container button {
+  letter-spacing: 3px;
+  text-transform: uppercase;
+  width: 130px;
+}
+#wrapper #image_section .container ul {
+  padding: 0px;
+}
+#wrapper #image_section .container ul li {
+  list-style: none;
+}
+#wrapper #image_section .earth,
+#wrapper #image_section .night_arcade,
+#wrapper #image_section .soccer_team,
+#wrapper #image_section .grid,
+#wrapper #image_section .from_up_above,
+#wrapper #image_section .borealis,
+#wrapper #image_section .curiosity,
+#wrapper #image_section .fisheye {
+  background-repeat: no-repeat;
+  background-size: cover;
+  height: 450px;
+  position: relative;
+  width: 25%;
+}
+#wrapper #image_section .earth h3,
+#wrapper #image_section .night_arcade h3,
+#wrapper #image_section .soccer_team h3,
+#wrapper #image_section .grid h3,
+#wrapper #image_section .from_up_above h3,
+#wrapper #image_section .borealis h3,
+#wrapper #image_section .curiosity h3,
+#wrapper #image_section .fisheye h3 {
+  bottom: 50px;
+  color: white;
+  font-family: 'Josefin Sans', sans-serif;
+  font-size: 28px;
+  font-weight: normal;
+  opacity: .9;
+  padding-left: 30px;
+  position: absolute;
+  text-transform: uppercase;
+  width: 172px;
+}
+#wrapper #image_section .grid h3 {
+  width: 125px;
+}
+#wrapper #image_section .earth {
+  background-image: url(../images/desktop/image-deep-earth.jpg);
+}
+#wrapper #image_section .night_arcade {
+  background-image: url(../images/desktop/image-night-arcade.jpg);
+}
+#wrapper #image_section .soccer_team {
+  background-image: url(../images/desktop/image-soccer-team.jpg);
+}
+#wrapper #image_section .grid {
+  background-image: url(../images/desktop/image-grid.jpg);
+}
+#wrapper #image_section .from_up_above {
+  background-image: url(../images/desktop/image-from-above.jpg);
+}
+#wrapper #image_section .borealis {
+  background-image: url(../images/desktop/image-pocket-borealis.jpg);
+}
+#wrapper #image_section .curiosity {
+  background-image: url(../images/desktop/image-curiosity.jpg);
+}
+#wrapper #image_section .fisheye {
+  background-image: url(../images/desktop/image-fisheye.jpg);
+}
+#wrapper footer {
+  background-color: #000000;
+  display: flex;
+  justify-content: space-between;
+  padding: 50px 170px;
+}
+#wrapper footer nav {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 20px;
+  width: 400px;
+}
+#wrapper footer nav a {
+  color: white;
+  text-decoration: none;
+}
+#wrapper footer #right_section #social_media {
+  display: flex;
+  gap: 20px;
+  justify-content: flex-end;
+}
+#wrapper footer #right_section p {
+  color: white;
+  font-size: 12px;
+  letter-spacing: .6px;
+  margin-top: 32px;
+}
+@media screen and (max-width: 375px) {
+  #wrapper #splash_section {
+    padding: 0px;
+    width: 100%;
+  }
+  #wrapper #splash_section header {
+    padding: 0px 35px;
+  }
+  #wrapper #splash_section header nav {
+    padding: 0px;
+  }
+  #wrapper #splash_section header nav ul {
+    padding: 0px;
+  }
+  #wrapper #splash_section header .container-fluid {
+    padding: 50px 30px;
+  }
+  #wrapper #splash_section .container {
+    left: 0px;
+    width: 100%;
+  }
+  #wrapper #splash_section .container h1 {
+    font-size: 32px;
+    width: 100%;
+  }
+  #wrapper #leader_in_interactive_vr {
+    flex-wrap: wrap;
+    padding: 30px;
+  }
+  #wrapper #leader_in_interactive_vr img {
+    width: 100%;
+  }
+  #wrapper #leader_in_interactive_vr .container {
+    padding: 50px 0px 20px 0px;
+    position: static;
+    width: 100%;
+  }
+  #wrapper #leader_in_interactive_vr .container h2 {
+    font-size: 24px;
+    font-weight: 300;
+    line-height: 27px;
+    text-align: center;
+  }
+  #wrapper #leader_in_interactive_vr .container p {
+    text-align: center;
+    width: 95%;
+    margin: auto;
+  }
+  #wrapper #image_section {
+    display: flex;
+    flex-direction: column;
+    padding: 30px 35px 50px 35px;
+    width: 100%;
+  }
+  #wrapper #image_section .container {
+    flex-direction: column;
+    width: 100%;
+  }
+  #wrapper #image_section .container ul {
+    padding: 0px;
+  }
+  #wrapper #image_section .container ul li {
+    margin-bottom: 20px;
+    list-style: none    ;
+  }
+  #wrapper #image_section .container h2 {
+    margin-bottom: 30px;
+    text-align: center;
+  }
+  #wrapper #image_section .container button {
+    padding: 5px;
+    margin: auto;
+    order: 9;
+  }
+  #wrapper #image_section .earth,
+  #wrapper #image_section .night_arcade,
+  #wrapper #image_section .soccer_team,
+  #wrapper #image_section .grid,
+  #wrapper #image_section .from_up_above,
+  #wrapper #image_section .borealis,
+  #wrapper #image_section .curiosity,
+  #wrapper #image_section .fisheye {
+    background-repeat: no-repeat;
+    background-size: cover;
+    display: flex;
+    flex-wrap: wrap;
+    height: 150px;
+    width: 100%;
+  }
+  #wrapper #image_section .earth h3,
+  #wrapper #image_section .night_arcade h3,
+  #wrapper #image_section .soccer_team h3,
+  #wrapper #image_section .grid h3,
+  #wrapper #image_section .from_up_above h3,
+  #wrapper #image_section .borealis h3,
+  #wrapper #image_section .curiosity h3,
+  #wrapper #image_section .fisheye h3 {
+    font-size: 24px;
+    bottom: 10px ;
+  }
+  #wrapper #image_section .earth {
+    background-image: url(../images/mobile/image-deep-earth.jpg);
+  }
+  #wrapper #image_section .night_arcade {
+    background-image: url(../images/mobile/image-night-arcade.jpg);
+  }
+  #wrapper #image_section .soccer_team {
+    background-image: url(../images/mobile/image-soccer-team.jpg);
+  }
+  #wrapper #image_section .grid {
+    background-image: url(../images/mobile/image-grid.jpg);
+  }
+  #wrapper #image_section .from_up_above {
+    background-image: url(../images/mobile/image-from-above.jpg);
+  }
+  #wrapper #image_section .borealis {
+    background-image: url(../images/mobile/image-pocket-borealis.jpg);
+  }
+  #wrapper #image_section .curiosity {
+    background-image: url(../images/mobile/image-curiosity.jpg);
+  }
+  #wrapper #image_section .fisheye {
+    background-image: url(../images/desktop/image-fisheye.jpg);
+  }
+  #wrapper footer {
+    flex-direction: column;
+    padding: 50px;
+  }
+  #wrapper footer #left_section {
+    margin: auto;
+  }
+  #wrapper footer #left_section nav {
+    flex-direction: column;
+    text-align: center;
+    width: 100%;
+  }
+  #wrapper footer #left_section nav a {
+    padding: 10px 0px;
+  }
+  #wrapper footer #right_section {
+    margin-top: 50px;
+    text-align: center;
+    width: 100%;
+  }
+  #wrapper footer #right_section #social_media {
+    justify-content: center;
+  }
+}
+@media screen and (min-width: 376px) and (max-width: 600px) {
+  #wrapper #splash_section {
+    position: static;
+    padding: 0px;
+    width: 100%;
+  }
+  #wrapper #splash_section header {
+    padding: 0px 35px;
+  }
+  #wrapper #splash_section header nav {
+    padding: 0px;
+  }
+  #wrapper #splash_section header nav ul {
+    padding: 0px;
+  }
+  #wrapper #splash_section header .container-fluid {
+    padding: 50px 30px;
+  }
+  #wrapper #splash_section .container {
+    left: 0px;
+    width: 100%;
+  }
+  #wrapper #splash_section .container h1 {
+    font-size: 32px;
+    width: 100%;
+  }
+  #wrapper #leader_in_interactive_vr {
+    flex-wrap: wrap;
+    padding: 30px;
+  }
+  #wrapper #leader_in_interactive_vr img {
+    width: 100%;
+  }
+  #wrapper #leader_in_interactive_vr .container {
+    padding: 50px 0px 20px 0px;
+    position: static;
+    width: 100%;
+  }
+  #wrapper #leader_in_interactive_vr .container h2 {
+    font-size: 24px;
+    font-weight: 300;
+    line-height: 27px;
+    text-align: center;
+  }
+  #wrapper #leader_in_interactive_vr .container p {
+    text-align: center;
+    width: 95%;
+    margin: auto;
+  }
+  #wrapper #image_section {
+    display: flex;
+    flex-direction: column;
+    padding: 30px 35px 50px 35px;
+    width: 100%;
+  }
+  #wrapper #image_section .container {
+    flex-direction: column;
+    width: 100%;
+  }
+  #wrapper #image_section .container ul {
+    padding: 0px;
+  }
+  #wrapper #image_section .container ul li {
+    margin-bottom: 20px;
+  }
+  #wrapper #image_section .container h2 {
+    margin-bottom: 30px;
+    text-align: center;
+  }
+  #wrapper #image_section .container button {
+    padding: 5px;
+    margin: auto;
+    order: 9;
+  }
+  #wrapper #image_section .earth,
+  #wrapper #image_section .night_arcade,
+  #wrapper #image_section .soccer_team,
+  #wrapper #image_section .grid,
+  #wrapper #image_section .from_up_above,
+  #wrapper #image_section .borealis,
+  #wrapper #image_section .curiosity,
+  #wrapper #image_section .fisheye {
+    background-repeat: no-repeat;
+    background-size: cover;
+    display: flex;
+    flex-wrap: wrap;
+    height: 150px;
+    width: 100%;
+  }
+  #wrapper #image_section .earth h3,
+  #wrapper #image_section .night_arcade h3,
+  #wrapper #image_section .soccer_team h3,
+  #wrapper #image_section .grid h3,
+  #wrapper #image_section .from_up_above h3,
+  #wrapper #image_section .borealis h3,
+  #wrapper #image_section .curiosity h3,
+  #wrapper #image_section .fisheye h3 {
+    font-size: 24px;
+    bottom: 10px ;
+  }
+  #wrapper footer {
+    flex-direction: column;
+    padding: 50px;
+  }
+  #wrapper footer #left_section {
+    margin: auto;
+  }
+  #wrapper footer #left_section nav {
+    flex-direction: column;
+    text-align: center;
+    width: 100%;
+  }
+  #wrapper footer #left_section nav a {
+    padding: 10px 0px;
+  }
+  #wrapper footer #right_section {
+    margin-top: 50px;
+    text-align: center;
+    width: 100%;
+  }
+  #wrapper footer #right_section #social_media {
+    justify-content: center;
+  }
 }
