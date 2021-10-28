@@ -50,24 +50,24 @@
     #leader_in_interactive_vr{
         padding: 100px 150px;
         .container{
-            padding: 0px;
             background-color: white;
-            position: relative;
+            display: flex;
+            padding: 0px;
             .vr_leader{
-                padding: 80px 0px 0px 80px;
                 background-color: white;
+                bottom: -205px;
                 height: 300px;
+                padding: 80px 0px 0px 80px;
+                position: relative;
+                right: 155px;
                 width: 557px;
-                position: absolute;
-                bottom: -5px;
-                right: 0px;
             }
             h2{
-                width: 485px;
                 font-family: 'Josefin Sans', sans-serif;
                 font-size: 48px;
                 font-weight: bold;
                 text-transform: uppercase;
+                width: 485px;
             }
             p{
                 color: hsl(0, 0%, 55%);
@@ -93,6 +93,7 @@
                 font-size: 48px;
                 font-weight: bold;
                 margin-bottom: 50px;
+                text-transform: uppercase;
                 width: 80%;
             }
             button{
@@ -164,9 +165,9 @@
         }
     }
     footer{
+        background-color: black;
         display: flex;
         justify-content: space-between;
-        background-color: black;
         padding: 80px 150px;
         #left_nav_section{
             nav{
@@ -189,13 +190,13 @@
         #right_nav_section{
             #social_media{
                 display: flex;
-                justify-content: flex-end;
                 gap: 25px;
+                justify-content: flex-end;
             }
             p{
+                color: grey;
                 font-family: 'Alata', sans-serif;
                 margin-top: 25px;
-                color: grey;
             }
         }
     }
@@ -229,14 +230,17 @@
             display: flex;
             padding: 35px;
             .container{
+                display: block;
                 img{
                     margin-top: 50px;
                     width: 100%
                 };
                 .vr_leader{
+                   bottom: 0px;
+                   height: auto;
                    margin-top: 50px;
                    padding: 0px;
-                   position: static;
+                   right: 0px;
                    text-align: center;
                    width: 100%;
                     h2{
@@ -370,21 +374,23 @@
                 }
             }
         }
-        
         #leader_in_interactive_vr{
             display: flex;
             padding: 35px;
             .container{
+                display: block;
                 img{
                     margin-top: 50px;
                     width: 100%
                 };
                 .vr_leader{
-                   margin-top: 50px;
-                   padding: 0px;
-                   position: static;
-                   text-align: center;
-                   width: 100%;
+                    bottom: 0px;
+                    height: auto;
+                    margin-top: 50px;
+                    padding: 0px;
+                    right: 0px;
+                    text-align: center;
+                    width: 100%;
                     h2{
                         font-size: 32px;
                         width: 100%;
