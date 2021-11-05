@@ -1,0 +1,51 @@
+<html>
+<head>
+    <title>Background Chooser</title>
+    <script type="text/javascript" src="http://code.jquery.com/jquery-1.10.2.min.js"></script> 
+    <script type="text/javascript">
+        $(document).ready(function(){
+            $('#main_box').click(function(){
+                $(this).css("border", "2px solid lightgrey")
+                $('.mini_boxes').css("border", "none");  
+            });
+                
+            $('.mini_boxes').click(function(event){
+                event.stopPropagation();
+                $(this).css("border", "2px solid yellow");  
+                $(this).siblings().css("border", "none");
+                $('#main_box').css("border", "none")
+            });
+            
+        });
+    </script>
+    <style>
+        #main_box{
+            background-image: url(./background.gif);
+            background-color: lightgray;
+            background-repeat: no-repeat;
+            background-size: cover;
+            padding: 10px;
+        }
+        #main_box img {
+            display: block;
+            width: 200px;
+            height: 100px;
+            margin: 10px 0 15px 10px;
+        }
+        h1 {
+            text-align: center;
+            margin: 30px;
+            font-family: Verdana;
+        }
+    </style>
+</head>
+<body>
+      <h1>Background Chooser</h1>
+      <div id="main_box">
+          <img src="./undefined - Imgur.gif" class="mini_boxes">
+          <img src="./undefined - Imgur (1).gif" class="mini_boxes">
+          <img src="./undefined - Imgur (2).gif" class="mini_boxes">
+          <img src="./undefined - Imgur (3).gif" class="mini_boxes">
+      </div>
+</body>
+</html>
