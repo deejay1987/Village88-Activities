@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <title>Pizza Order Form</title>
+        <link rel="stylesheet" href="//code.jquery.com/ui/1.13.0/themes/base/jquery-ui.css">
+        <link rel="stylesheet" href="/resources/demos/style.css">
+        <script src="https://code.jquery.com/jquery-3.6.0.js"></script>
+        <script src="https://code.jquery.com/ui/1.13.0/jquery-ui.js"></script>
+        <link rel="stylesheet" href="https://ajax.googleapis.com/ajax/libs/jqueryui/1.12.1/themes/smoothness/jquery-ui.css">
+        <script src="https://ajax.googleapis.com/ajax/libs/jqueryui/1.12.1/jquery-ui.min.js"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery.form/4.3.0/jquery.form.min.js"></script>
+        <script src="https://cdn.jsdelivr.net/jquery.validation/1.16.0/jquery.validate.min.js"></script>
+        <script src="https://cdn.jsdelivr.net/jquery.validation/1.16.0/additional-methods.min.js"></script> 
+        <script type="text/javascript" src="js/jquery.ui.datepicker.validation.js"></script>
+    </head>
+    <body>
+        <form id="orderForm">
+            <h1>Pizza Order Form</h1> 
+            <label for="first_name">First Name:</label>
+            <input type="text" id="first_name" name="firstname"><br>
+            
+            <label for="last_name">Last Name:</label>
+            <input type="text" id="last_name" name="lastname"><br>
+            
+            <label for="email">Email Address:</label>
+            <input type="email" id="email" name="email"><br>
+            
+            <label>Contact Number:</label>
+            <input type="text" id="phoneNumber" name="phoneNumber"><br>
+            
+            <label>Prefered Delivery Date:</label>
+            <input type="text" id="date" name="date" value="" placeholder="mm/dd/yyyy"><br>
+
+            <p>Size:</p>
+            <input type="radio" name="small">
+            <label for="small">Small</label>                
+            
+            <input type="radio" name="medium">
+            <label for="medium">Medium</label>
+            
+            <input type="radio" name="large">
+            <label for="large">Large</label>
+            
+            <p>Flavor</p>
+            <input type="checkbox" name="vehicle1">
+            <label for="hawaiian">Hawaiian (Php 150.00)</label>
+                <select name="hawaiian">
+                    <option>1</option>
+                    <option>2</option>
+                    <option>3</option>
+                    <option>4</option>
+                </select><br>
+            
+            <input type="checkbox" name="vehicle2">
+            <label for="perpperoni">Pepperoni (Php 140.00)</label>
+                <select name="pepperoni">
+                    <option>1</option>
+                    <option>2</option>
+                    <option>3</option>
+                    <option>4</option>
+                </select><br>
+            
+            <input type="checkbox" name="vehicle3">
+            <label for="vegetable">Vegetable (Php 130.00)</label>
+                <select name="vegetable">
+                    <option>1</option>
+                    <option>2</option>
+                    <option>3</option>
+                    <option>4</option>
+                </select><br><br>
+            
+            <label>Credit Card</label>
+            <input type="text" id="creditcard" name="creditcard"><br>
+            <label>Pin</label>
+            <input type="text" name="pin"><br>
+
+            <p>Additional Note:</p>
+            <textarea name="description"></textarea><br>
+                
+            <input id="submit" type="submit" value="Submit">
+        </form>
+        <script src="../views/script.js"></script>
+    </body>
+</html>
