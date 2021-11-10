@@ -1,7 +1,7 @@
 $(document).ready(function(){
     
     $("body")
-      .on("click", "td img", function(){
+      .on("click", "img", function(){
         $(this).hide();
       })
     

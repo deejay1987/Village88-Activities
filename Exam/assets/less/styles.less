@@ -14,7 +14,6 @@
             nav{
                 padding: 100px 155px 0px 155px;
                 ul{
-                   
                     li{
                         list-style: none;
                         width: 80px;
@@ -30,9 +29,8 @@
             border: 2px solid white;
             bottom: 174px;
             left: 170px;
-            padding: 0px;
             position: absolute;
-            width: 605px;
+            width: 615px;
             h1{
                 color: white;
                 font-family: 'Josefin Sans', sans-serif;
@@ -40,7 +38,6 @@
                 margin: 0px;
                 padding: 40px;
                 text-transform: uppercase;
-                width: 600px;
             }
         }
     }
@@ -71,38 +68,47 @@
         }
     }
     #image_section{
+        display: flex;
+        flex-wrap: wrap;
         gap: 25px;
+        justify-content: center;
         padding: 70px 154px;
         .container{
             display: flex;
+            flex-wrap: wrap;
             justify-content: space-between;
             margin: 0px;
             padding: 0px;
-            width: 100%;
+            width: 97%;
             h2{
                 font-family: 'Josefin Sans', sans-serif;
-                font-size: 32px;
-                margin: 0px;
+                font-size: 42px;
+                margin-bottom: 40px;
                 text-transform: uppercase;
+                width: 85%;
             }
             button{
+                border: 1px solid grey;
                 letter-spacing: 3px;
+                margin-bottom: 40px;
                 text-transform: uppercase;
                 width: 130px;
-            }
-            ul{
-                padding: 0px;
-                li{
-                    list-style: none;
+                a{
+                    text-decoration: none;
+                    color: black;
                 }
             }
         }
         .earth, .night_arcade, .soccer_team, .grid, .from_up_above, .borealis, .curiosity, .fisheye{
             background-repeat: no-repeat;
             background-size: cover;
+            display: flex;
+            display: inline-block;
+            flex-wrap: wrap;
             height: 450px;
+            margin: 15px 0px 15px 0px;
             position: relative;
-            width: 25%;
+            width: 22.6%;
             h3{
                 bottom: 50px;
                 color: white;
@@ -116,11 +122,6 @@
                 width: 172px;
             }
         }
-        .grid{
-            h3{
-                width: 125px;
-            }
-        }
         .earth{
             background-image: url(../images/desktop/image-deep-earth.jpg);
         }
@@ -132,6 +133,9 @@
         }
         .grid{
             background-image: url(../images/desktop/image-grid.jpg);
+            h3{
+                width: 125px;
+            }
         }
         .from_up_above{
             background-image: url(../images/desktop/image-from-above.jpg);
@@ -155,10 +159,19 @@
             display: flex;
             justify-content: space-between;
             margin-top: 20px;
-            width: 400px;
-            a{
-                color: white;
-                text-decoration: none;
+            width: 465px;
+            ul{
+                display: flex;
+                justify-content: space-between;
+                padding: 0px;
+                width: 465px;
+                li{
+                    list-style: none;
+                    a{
+                        color: white;
+                        text-decoration: none;
+                    }
+                }
             }
         }
         #right_section{
@@ -172,6 +185,7 @@
                 font-size: 12px;
                 letter-spacing: .6px;
                 margin-top: 32px;
+                opacity: .5;
             }
         }
     }
@@ -179,10 +193,8 @@
 @media screen and (max-width: 375px){
     #wrapper{
         #splash_section{
-            padding: 0px;
-            width: 100%;
             header{
-                padding: 0px 35px;
+                padding: 55px 35px;
                 nav{
                     padding: 0px;
                     ul{
@@ -190,21 +202,22 @@
                     }
                 }
                 .container-fluid{
-                    padding: 50px 30px;
+                    padding: 0px;
                 }
             }
             .container{
-                left: 0px;
-                width: 100%;
+                bottom: 300px;
+                left: 35px;
+                width: 81%;
                 h1{
-                    font-size: 32px;
-                    width: 100%;
+                    font-size: 42px;
+                    padding: 20px 0px 20px 0px;
                 }
             }
         }
         #leader_in_interactive_vr{
             flex-wrap: wrap;
-            padding: 30px;
+            padding: 70px 35px 20px 35px;
             img{
                 width: 100%;
             }
@@ -219,47 +232,40 @@
                     text-align: center;
                 }
                 p{
-                    text-align: center;
-                    width: 95%;
                     margin: auto;
+                    text-align: center;
+                    width: 100%;
                 }
             }
         }
         #image_section{
-            display: flex;
             flex-direction: column;
             padding: 30px 35px 50px 35px;
             width: 100%;
             .container{
                 flex-direction: column;
+                row-gap: 20px;
                 width: 100%;
-                ul{
-                    padding: 0px;
-                    li{
-                        margin-bottom: 20px;
-                        list-style: none    ;
-                    }
-                }
                 h2{
-                    margin-bottom: 30px;
+                    font-size: 28px;
+                    margin: auto;
                     text-align: center;
                 }
                 button{
-                    padding: 5px;
-                    margin: auto;
+                    border: 1px solid grey;
+                    margin: auto;   
                     order: 9;
+                    padding: 5px;
                 }
             }
             .earth, .night_arcade, .soccer_team, .grid, .from_up_above, .borealis, .curiosity, .fisheye{
-                background-repeat: no-repeat;
-                background-size: cover; 
-                display: flex;
-                flex-wrap: wrap;
-                height: 150px;
+                height: 112px;
+                margin: 0px;
                 width: 100%;
                 h3{
-                    font-size: 24px;
                     bottom: 10px ;
+                    font-size: 18px;
+                    width: 122px;
                 }
             }
             .earth{
@@ -273,6 +279,9 @@
             }
             .grid{
                 background-image: url(../images/mobile/image-grid.jpg);
+                h3{
+                    width: 100px;
+                }
             }
             .from_up_above{
                 background-image: url(../images/mobile/image-from-above.jpg);
@@ -296,8 +305,13 @@
                     flex-direction: column;
                     text-align: center;
                     width: 100%;
-                    a{
-                        padding: 10px 0px;
+                    ul{
+                        flex-direction: column;
+                        justify-content: center;
+                        width: 100%;
+                        li{
+                            padding: 10px 0px;
+                        }
                     }
                 }
             }
@@ -315,11 +329,8 @@
 @media screen and (min-width: 376px) and (max-width: 600px){
     #wrapper{
         #splash_section{
-            position: static;
-            padding: 0px;
-            width: 100%;
             header{
-                padding: 0px 35px;
+                padding: 55px 35px;
                 nav{
                     padding: 0px;
                     ul{
@@ -327,21 +338,22 @@
                     }
                 }
                 .container-fluid{
-                    padding: 50px 30px;
+                    padding: 0px;
                 }
             }
             .container{
-                left: 0px;
-                width: 100%;
+                bottom: 300px;
+                left: 35px;
+                width: 81%;
                 h1{
-                    font-size: 32px;
-                    width: 100%;
+                    font-size: 42px;
+                    padding: 20px 0px 20px 0px;
                 }
             }
         }
         #leader_in_interactive_vr{
             flex-wrap: wrap;
-            padding: 30px;
+            padding: 70px 35px 20px 35px;
             img{
                 width: 100%;
             }
@@ -356,46 +368,45 @@
                     text-align: center;
                 }
                 p{
-                    text-align: center;
-                    width: 95%;
                     margin: auto;
+                    text-align: center;
+                    width: 300px;
                 }
             }
         }
         #image_section{
-            display: flex;
             flex-direction: column;
             padding: 30px 35px 50px 35px;
             width: 100%;
             .container{
                 flex-direction: column;
+                row-gap: 20px;
                 width: 100%;
-                ul{
-                    padding: 0px;
-                    li{
-                        margin-bottom: 20px;
-                    }
-                }
                 h2{
-                    margin-bottom: 30px;
+                    font-size: 28px;
+                    margin: auto;
                     text-align: center;
                 }
                 button{
-                    padding: 5px;
-                    margin: auto;
+                    border: 1px solid grey;
+                    margin: auto;   
                     order: 9;
+                    padding: 5px;
                 }
             }
             .earth, .night_arcade, .soccer_team, .grid, .from_up_above, .borealis, .curiosity, .fisheye{
-                background-repeat: no-repeat;
-                background-size: cover; 
-                display: flex;
-                flex-wrap: wrap;
-                height: 150px;
+                height: 112px;
+                margin: 0px;
                 width: 100%;
                 h3{
-                    font-size: 24px;
                     bottom: 10px ;
+                    font-size: 18px;
+                    width: 122px;
+                }
+            }
+            .grid{
+                h3{
+                    width: 100px;
                 }
             }
         }
@@ -408,8 +419,13 @@
                     flex-direction: column;
                     text-align: center;
                     width: 100%;
-                    a{
-                        padding: 10px 0px;
+                    ul{
+                        flex-direction: column;
+                        justify-content: center;
+                        width: 100%;
+                        li{
+                            padding: 10px 0px;
+                        }
                     }
                 }
             }

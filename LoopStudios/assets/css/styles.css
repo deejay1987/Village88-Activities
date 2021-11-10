@@ -50,20 +50,23 @@
   padding: 100px 150px;
 }
 #wrapper #leader_in_interactive_vr .container {
+  background-image: url(../images/desktop/image-interactive.jpg);
+  background-repeat: no-repeat;
   background-color: white;
   display: flex;
   padding: 0px;
-}
-#wrapper #leader_in_interactive_vr .container .vr_leader {
-  background-color: white;
-  bottom: -205px;
-  height: 300px;
-  padding: 80px 0px 0px 80px;
-  position: relative;
-  right: 155px;
-  width: 557px;
+  /*.vr_leader{
+                background-color: white;
+                bottom: -205px;
+                height: 300px;
+                padding: 80px 0px 0px 80px;
+                position: relative;
+                right: 155px;
+                width: 557px;
+            }*/
 }
 #wrapper #leader_in_interactive_vr .container h2 {
+  background-color: pink;
   font-family: 'Josefin Sans', sans-serif;
   font-size: 48px;
   font-weight: bold;
@@ -71,6 +74,7 @@
   width: 485px;
 }
 #wrapper #leader_in_interactive_vr .container p {
+  background-color: pink;
   color: #8c8c8c;
   font-family: 'Alata', sans-serif;
   margin: 0px;
@@ -228,26 +232,31 @@
     padding: 35px;
   }
   #wrapper #leader_in_interactive_vr .container {
-    display: block;
+    background-image: none;
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    /*.vr_leader{
+                   bottom: 0px;
+                   height: auto;
+                   margin-top: 50px;
+                   padding: 0px;
+                   right: 0px;
+                   text-align: center;
+                   width: 100%;*/
   }
   #wrapper #leader_in_interactive_vr .container img {
     margin-top: 50px;
     width: 100%;
   }
-  #wrapper #leader_in_interactive_vr .container .vr_leader {
-    bottom: 0px;
-    height: auto;
+  #wrapper #leader_in_interactive_vr .container h2 {
     margin-top: 50px;
-    padding: 0px;
-    right: 0px;
-    text-align: center;
-    width: 100%;
-  }
-  #wrapper #leader_in_interactive_vr .container .vr_leader h2 {
+    display: block;
     font-size: 32px;
     width: 100%;
   }
-  #wrapper #leader_in_interactive_vr .container .vr_leader p {
+  #wrapper #leader_in_interactive_vr .container p {
+    display: block;
     width: 100%;
   }
   #wrapper #image_section {
@@ -382,26 +391,28 @@
     padding: 35px;
   }
   #wrapper #leader_in_interactive_vr .container {
+    background-image: none;
     display: block;
+    text-align: center;
+    /*.vr_leader{
+                    bottom: 0px;
+                    height: auto;
+                    margin-top: 50px;
+                    padding: 0px;
+                    right: 0px;
+                    text-align: center;
+                    width: 100%;*/
   }
   #wrapper #leader_in_interactive_vr .container img {
     margin-top: 50px;
     width: 100%;
   }
-  #wrapper #leader_in_interactive_vr .container .vr_leader {
-    bottom: 0px;
-    height: auto;
-    margin-top: 50px;
-    padding: 0px;
-    right: 0px;
-    text-align: center;
-    width: 100%;
-  }
-  #wrapper #leader_in_interactive_vr .container .vr_leader h2 {
+  #wrapper #leader_in_interactive_vr .container h2 {
     font-size: 32px;
+    margin-top: 50px;
     width: 100%;
   }
-  #wrapper #leader_in_interactive_vr .container .vr_leader p {
+  #wrapper #leader_in_interactive_vr .container p {
     width: 100%;
   }
   #wrapper #image_section {

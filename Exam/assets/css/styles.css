@@ -27,9 +27,8 @@
   border: 2px solid white;
   bottom: 174px;
   left: 170px;
-  padding: 0px;
   position: absolute;
-  width: 605px;
+  width: 615px;
 }
 #wrapper #splash_section .container h1 {
   color: white;
@@ -38,7 +37,6 @@
   margin: 0px;
   padding: 40px;
   text-transform: uppercase;
-  width: 600px;
 }
 #wrapper #leader_in_interactive_vr {
   display: flex;
@@ -67,32 +65,37 @@
   font-size: 15px;
 }
 #wrapper #image_section {
+  display: flex;
+  flex-wrap: wrap;
   gap: 25px;
+  justify-content: center;
   padding: 70px 154px;
 }
 #wrapper #image_section .container {
   display: flex;
+  flex-wrap: wrap;
   justify-content: space-between;
   margin: 0px;
   padding: 0px;
-  width: 100%;
+  width: 97%;
 }
 #wrapper #image_section .container h2 {
   font-family: 'Josefin Sans', sans-serif;
-  font-size: 32px;
-  margin: 0px;
+  font-size: 42px;
+  margin-bottom: 40px;
   text-transform: uppercase;
+  width: 85%;
 }
 #wrapper #image_section .container button {
+  border: 1px solid grey;
   letter-spacing: 3px;
+  margin-bottom: 40px;
   text-transform: uppercase;
   width: 130px;
 }
-#wrapper #image_section .container ul {
-  padding: 0px;
-}
-#wrapper #image_section .container ul li {
-  list-style: none;
+#wrapper #image_section .container button a {
+  text-decoration: none;
+  color: black;
 }
 #wrapper #image_section .earth,
 #wrapper #image_section .night_arcade,
@@ -104,9 +107,13 @@
 #wrapper #image_section .fisheye {
   background-repeat: no-repeat;
   background-size: cover;
+  display: flex;
+  display: inline-block;
+  flex-wrap: wrap;
   height: 450px;
+  margin: 15px 0px 15px 0px;
   position: relative;
-  width: 25%;
+  width: 22.6%;
 }
 #wrapper #image_section .earth h3,
 #wrapper #image_section .night_arcade h3,
@@ -127,9 +134,6 @@
   text-transform: uppercase;
   width: 172px;
 }
-#wrapper #image_section .grid h3 {
-  width: 125px;
-}
 #wrapper #image_section .earth {
   background-image: url(../images/desktop/image-deep-earth.jpg);
 }
@@ -141,6 +145,9 @@
 }
 #wrapper #image_section .grid {
   background-image: url(../images/desktop/image-grid.jpg);
+}
+#wrapper #image_section .grid h3 {
+  width: 125px;
 }
 #wrapper #image_section .from_up_above {
   background-image: url(../images/desktop/image-from-above.jpg);
@@ -164,9 +171,18 @@
   display: flex;
   justify-content: space-between;
   margin-top: 20px;
-  width: 400px;
+  width: 465px;
 }
-#wrapper footer nav a {
+#wrapper footer nav ul {
+  display: flex;
+  justify-content: space-between;
+  padding: 0px;
+  width: 465px;
+}
+#wrapper footer nav ul li {
+  list-style: none;
+}
+#wrapper footer nav ul li a {
   color: white;
   text-decoration: none;
 }
@@ -180,14 +196,11 @@
   font-size: 12px;
   letter-spacing: .6px;
   margin-top: 32px;
+  opacity: .5;
 }
 @media screen and (max-width: 375px) {
-  #wrapper #splash_section {
-    padding: 0px;
-    width: 100%;
-  }
   #wrapper #splash_section header {
-    padding: 0px 35px;
+    padding: 55px 35px;
   }
   #wrapper #splash_section header nav {
     padding: 0px;
@@ -196,19 +209,20 @@
     padding: 0px;
   }
   #wrapper #splash_section header .container-fluid {
-    padding: 50px 30px;
+    padding: 0px;
   }
   #wrapper #splash_section .container {
-    left: 0px;
-    width: 100%;
+    bottom: 300px;
+    left: 35px;
+    width: 81%;
   }
   #wrapper #splash_section .container h1 {
-    font-size: 32px;
-    width: 100%;
+    font-size: 42px;
+    padding: 20px 0px 20px 0px;
   }
   #wrapper #leader_in_interactive_vr {
     flex-wrap: wrap;
-    padding: 30px;
+    padding: 70px 35px 20px 35px;
   }
   #wrapper #leader_in_interactive_vr img {
     width: 100%;
@@ -225,35 +239,30 @@
     text-align: center;
   }
   #wrapper #leader_in_interactive_vr .container p {
-    text-align: center;
-    width: 95%;
     margin: auto;
+    text-align: center;
+    width: 100%;
   }
   #wrapper #image_section {
-    display: flex;
     flex-direction: column;
     padding: 30px 35px 50px 35px;
     width: 100%;
   }
   #wrapper #image_section .container {
     flex-direction: column;
+    row-gap: 20px;
     width: 100%;
   }
-  #wrapper #image_section .container ul {
-    padding: 0px;
-  }
-  #wrapper #image_section .container ul li {
-    margin-bottom: 20px;
-    list-style: none    ;
-  }
   #wrapper #image_section .container h2 {
-    margin-bottom: 30px;
+    font-size: 28px;
+    margin: auto;
     text-align: center;
   }
   #wrapper #image_section .container button {
-    padding: 5px;
+    border: 1px solid grey;
     margin: auto;
     order: 9;
+    padding: 5px;
   }
   #wrapper #image_section .earth,
   #wrapper #image_section .night_arcade,
@@ -263,11 +272,8 @@
   #wrapper #image_section .borealis,
   #wrapper #image_section .curiosity,
   #wrapper #image_section .fisheye {
-    background-repeat: no-repeat;
-    background-size: cover;
-    display: flex;
-    flex-wrap: wrap;
-    height: 150px;
+    height: 112px;
+    margin: 0px;
     width: 100%;
   }
   #wrapper #image_section .earth h3,
@@ -278,8 +284,9 @@
   #wrapper #image_section .borealis h3,
   #wrapper #image_section .curiosity h3,
   #wrapper #image_section .fisheye h3 {
-    font-size: 24px;
     bottom: 10px ;
+    font-size: 18px;
+    width: 122px;
   }
   #wrapper #image_section .earth {
     background-image: url(../images/mobile/image-deep-earth.jpg);
@@ -292,6 +299,9 @@
   }
   #wrapper #image_section .grid {
     background-image: url(../images/mobile/image-grid.jpg);
+  }
+  #wrapper #image_section .grid h3 {
+    width: 100px;
   }
   #wrapper #image_section .from_up_above {
     background-image: url(../images/mobile/image-from-above.jpg);
@@ -317,7 +327,12 @@
     text-align: center;
     width: 100%;
   }
-  #wrapper footer #left_section nav a {
+  #wrapper footer #left_section nav ul {
+    flex-direction: column;
+    justify-content: center;
+    width: 100%;
+  }
+  #wrapper footer #left_section nav ul li {
     padding: 10px 0px;
   }
   #wrapper footer #right_section {
@@ -330,13 +345,8 @@
   }
 }
 @media screen and (min-width: 376px) and (max-width: 600px) {
-  #wrapper #splash_section {
-    position: static;
-    padding: 0px;
-    width: 100%;
-  }
   #wrapper #splash_section header {
-    padding: 0px 35px;
+    padding: 55px 35px;
   }
   #wrapper #splash_section header nav {
     padding: 0px;
@@ -345,19 +355,20 @@
     padding: 0px;
   }
   #wrapper #splash_section header .container-fluid {
-    padding: 50px 30px;
+    padding: 0px;
   }
   #wrapper #splash_section .container {
-    left: 0px;
-    width: 100%;
+    bottom: 300px;
+    left: 35px;
+    width: 81%;
   }
   #wrapper #splash_section .container h1 {
-    font-size: 32px;
-    width: 100%;
+    font-size: 42px;
+    padding: 20px 0px 20px 0px;
   }
   #wrapper #leader_in_interactive_vr {
     flex-wrap: wrap;
-    padding: 30px;
+    padding: 70px 35px 20px 35px;
   }
   #wrapper #leader_in_interactive_vr img {
     width: 100%;
@@ -374,34 +385,30 @@
     text-align: center;
   }
   #wrapper #leader_in_interactive_vr .container p {
-    text-align: center;
-    width: 95%;
     margin: auto;
+    text-align: center;
+    width: 300px;
   }
   #wrapper #image_section {
-    display: flex;
     flex-direction: column;
     padding: 30px 35px 50px 35px;
     width: 100%;
   }
   #wrapper #image_section .container {
     flex-direction: column;
+    row-gap: 20px;
     width: 100%;
   }
-  #wrapper #image_section .container ul {
-    padding: 0px;
-  }
-  #wrapper #image_section .container ul li {
-    margin-bottom: 20px;
-  }
   #wrapper #image_section .container h2 {
-    margin-bottom: 30px;
+    font-size: 28px;
+    margin: auto;
     text-align: center;
   }
   #wrapper #image_section .container button {
-    padding: 5px;
+    border: 1px solid grey;
     margin: auto;
     order: 9;
+    padding: 5px;
   }
   #wrapper #image_section .earth,
   #wrapper #image_section .night_arcade,
@@ -411,11 +418,8 @@
   #wrapper #image_section .borealis,
   #wrapper #image_section .curiosity,
   #wrapper #image_section .fisheye {
-    background-repeat: no-repeat;
-    background-size: cover;
-    display: flex;
-    flex-wrap: wrap;
-    height: 150px;
+    height: 112px;
+    margin: 0px;
     width: 100%;
   }
   #wrapper #image_section .earth h3,
@@ -426,8 +430,12 @@
   #wrapper #image_section .borealis h3,
   #wrapper #image_section .curiosity h3,
   #wrapper #image_section .fisheye h3 {
-    font-size: 24px;
     bottom: 10px ;
+    font-size: 18px;
+    width: 122px;
+  }
+  #wrapper #image_section .grid h3 {
+    width: 100px;
   }
   #wrapper footer {
     flex-direction: column;
@@ -441,7 +449,12 @@
     text-align: center;
     width: 100%;
   }
-  #wrapper footer #left_section nav a {
+  #wrapper footer #left_section nav ul {
+    flex-direction: column;
+    justify-content: center;
+    width: 100%;
+  }
+  #wrapper footer #left_section nav ul li {
     padding: 10px 0px;
   }
   #wrapper footer #right_section {

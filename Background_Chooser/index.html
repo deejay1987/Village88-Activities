@@ -4,18 +4,17 @@
     <script type="text/javascript" src="http://code.jquery.com/jquery-1.10.2.min.js"></script> 
     <script type="text/javascript">
         $(document).ready(function(){
-            $('#main_box').click(function(){
+            $("#main_box").click(function(){
                 $(this).css("border", "2px solid lightgrey")
-                $('.mini_boxes').css("border", "none");  
+                $(".mini_boxes").css("border", "none");  
             });
                 
-            $('.mini_boxes').click(function(event){
+            $(".mini_boxes").click(function(event){
                 event.stopPropagation();
                 $(this).css("border", "2px solid yellow");  
                 $(this).siblings().css("border", "none");
-                $('#main_box').css("border", "none")
+                $("#main_box").css("border", "none");
             });
-            
         });
     </script>
     <style>

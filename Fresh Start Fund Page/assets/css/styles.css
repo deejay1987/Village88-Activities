@@ -273,8 +273,7 @@
 }
 @media screen and (max-width: 375px) {
   #wrapper #splash_section {
-    height: 555px;
-    padding: 0px 35px;
+    padding: 35px 35px;
   }
   #wrapper #splash_section .container {
     height: 390px;
@@ -446,8 +445,7 @@
 }
 @media screen and (min-width: 376px) and (max-width: 665px) {
   #wrapper #splash_section {
-    height: 555px;
-    padding: 0px 35px;
+    padding: 35px 35px;
   }
   #wrapper #splash_section .container {
     margin-top: 58px;
@@ -471,6 +469,7 @@
   }
   #wrapper #splash_section .container form input,
   #wrapper #splash_section .container form button {
+    border-radius: 2px;
     height: 65px;
     width: 306px;
   }

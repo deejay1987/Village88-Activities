@@ -1,7 +1,7 @@
 $(document).ready(function(){
    
     $(function() {
-        $("#date").datepicker({ minDate: 0, maxDate: "+1M" }).on('changeDate', function(ev) {
+        $("#date").datepicker({ minDate: 0, maxDate: "+1M" }).on('changeDate', function() {
             if($(this).valid()){
             $('#date').removeClass('invalid').addClass('success');   
             }
