@@ -24,11 +24,11 @@
                         <li><a href="">Home</a></li>
                         <li><a href="">Service</a></li>
                         <li><a href="">Event</a></li>
-                        <button type="button" class="btn btn-danger" data-bs-toggle="modal" data-bs-target="#shelterModal">
-                            <img src="../assets/images/Vector (2).png" alt="Add sign">
-                            Add A Pet To Shelter
-                        </button>
                     </ul>
+                    <button type="button" class="btn btn-danger" data-bs-toggle="modal" data-bs-target="#shelterModal">
+                        <img src="../assets/images/add.png" alt="Add sign">
+                        Add A Pet To Shelter
+                    </button>
                 </nav>
             </div>
         </header>
@@ -39,7 +39,7 @@
                     <h2>Don't <span id="shop">Shop</span></h2>
                     <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, Neque id Lorem nisi.</p>
                 </div>
-                <img id= "cat" src="../assets/images/Group 5.png" alt="Cat">
+                <img id= "cat" src="../assets/images/dogcat.png" alt="Cat">
             </div>
         </section>
 
@@ -52,11 +52,11 @@
                         <h2>Cat</h2>
                         <div class="details_edit_button">
                             <button type="button" class="btn" data-bs-toggle="modal" data-bs-target="#details">
-                                <img src="../assets/images/Vector.png" alt="Vector">
+                                <img src="../assets/images/details.png" alt="Vector">
                                 Details
                             </button>
                             <button class="btn" data-bs-toggle="modal" data-bs-target="#edit">
-                                <img src="../assets/images/Vector (1).png" alt="Vector">
+                                <img src="../assets/images/edit.png" alt="Vector">
                                 Edit
                             </button>
                         </div>
@@ -68,11 +68,11 @@
                         <h2>Cat</h2>
                         <div class="details_edit_button">
                             <button type="button" class="btn" data-bs-toggle="modal" data-bs-target="#details">
-                                <img src="../assets/images/Vector.png" alt="Vector">
+                                <img src="../assets/images/details.png" alt="Vector">
                                 Details
                             </button>
                             <button class="btn" data-bs-toggle="modal" data-bs-target="#edit">
-                                <img src="../assets/images/Vector (1).png" alt="Vector">
+                                <img src="../assets/images/edit.png" alt="Vector">
                                 Edit
                             </button>
                         </div>
@@ -84,11 +84,11 @@
                         <h2>Dog</h2>
                         <div class="details_edit_button">
                             <button type="button" class="btn" data-bs-toggle="modal" data-bs-target="#details">
-                                <img src="../assets/images/Vector.png" alt="Vector">
+                                <img src="../assets/images/details.png" alt="Vector">
                                 Details
                             </button>
                             <button class="btn" data-bs-toggle="modal" data-bs-target="#edit">
-                                <img src="../assets/images/Vector (1).png" alt="Vector">
+                                <img src="../assets/images/edit.png" alt="Vector">
                                 Edit
                             </button>
                         </div>
@@ -100,11 +100,11 @@
                         <h2>Dog</h2>
                         <div class="details_edit_button">
                             <button type="button" class="btn" data-bs-toggle="modal" data-bs-target="#details">
-                                <img src="../assets/images/Vector.png" alt="Vector">
+                                <img src="../assets/images/details.png" alt="Vector">
                                 Details
                             </button>
                             <button class="btn" data-bs-toggle="modal" data-bs-target="#edit">
-                                <img src="../assets/images/Vector (1).png" alt="Vector">
+                                <img src="../assets/images/edit.png" alt="Vector">
                                 Edit
                             </button>
                         </div>
@@ -116,11 +116,11 @@
                         <h2>Duck</h2>
                         <div class="details_edit_button">
                             <button type="button" class="btn" data-bs-toggle="modal" data-bs-target="#details">
-                                <img src="../assets/images/Vector.png" alt="Vector">
+                                <img src="../assets/images/details.png" alt="Vector">
                                 Details
                             </button>
                             <button class="btn" data-bs-toggle="modal" data-bs-target="#edit">
-                                <img src="../assets/images/Vector (1).png" alt="Vector">
+                                <img src="../assets/images/edit.png" alt="Vector">
                                 Edit
                             </button>
                         </div>
@@ -132,11 +132,11 @@
                         <h2>Penguin</h2>
                         <div class="details_edit_button">
                             <button type="button" class="btn" data-bs-toggle="modal" data-bs-target="#details">
-                                <img src="../assets/images/Vector.png" alt="Vector">
+                                <img src="../assets/images/details.png" alt="Vector">
                                 Details
                             </button>
                             <button class="btn" data-bs-toggle="modal" data-bs-target="#edit">
-                                <img src="../assets/images/Vector (1).png" alt="Vector">
+                                <img src="../assets/images/edit.png" alt="Vector">
                                 Edit
                             </button>
                         </div>
@@ -151,7 +151,7 @@
     </div>
 
     <!-- Modal adding a pet -->
-    <div class="modal fade" id="shelterModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+    <div class="modal fade" id="shelterModal" tabindex="-1" aria-hidden="true">
         <div class="modal-dialog">
             <div class="modal-content">
                 <div class="modal-header"></div>
@@ -182,7 +182,7 @@
     </div>
 
     <!-- Pet Details modal -->
-    <div class="modal fade" id="details" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+    <div class="modal fade" id="details" tabindex="-1" aria-hidden="true">
         <div class="modal-dialog">
             <div class="modal-content">
                 <h3 class="modal-title">Details About:  </h3>
@@ -201,20 +201,20 @@
     </div>    
     
     <!-- Pet Edit modal -->
-    <div class="modal fade" id="edit" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+    <div class="modal fade" id="edit" tabindex="-1" aria-hidden="true">
         <div class="modal-dialog">
             <div class="modal-content">
                 <h3 class="modal-title">Edit Details: </h3>
                 <div class="modal-body">
                     <form id="editForm">
-                        <label for="pettype">Pet Type</label>
-                        <input type="text" id="pettype" name="pettype">
+                        <label for="petType">Pet Type</label>
+                        <input type="text" id="petType" name="petType">
 
-                        <label for="description">Description</label>
-                        <textarea name="description" id="description"></textarea>
+                        <label for="pet_description">Description</label>
+                        <textarea name="description" id="pet_description"></textarea>
 
-                        <label for="skills">Skills</label>
-                        <input type="text" id="skills" name="skills">
+                        <label for="pet_skills">Skills</label>
+                        <input type="text" id="pet_skills" name="skills">
                     </form>
                 </div>
                 <div class="modal-footer"  id="save_button">
