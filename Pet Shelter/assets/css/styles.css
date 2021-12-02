@@ -1,0 +1,239 @@
+#wrapper {
+  margin: 0px auto;
+  background-color: #f5f9fa;
+}
+#wrapper header {
+  margin-bottom: 49px;
+  padding: 30px 100px;
+}
+#wrapper header .container {
+  background-color: white;
+  height: 69px;
+  padding: 7px 32px;
+}
+#wrapper header .container h1 {
+  color: black;
+  font-family: 'Do Hyeon', sans-serif;
+  font-size: 24px;
+  margin: 0px;
+  text-transform: uppercase;
+}
+#wrapper header .container a {
+  text-decoration: none;
+}
+#wrapper header .container nav ul {
+  align-items: center;
+  display: flex;
+  gap: 2em;
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+#wrapper header .container nav ul li {
+  align-items: center;
+  display: flex;
+  list-style: none;
+  padding: 0px 20px;
+}
+#wrapper header .container nav ul li a {
+  color: #bdbdbd;
+  font-family: 'Kanit', sans-serif;
+  font-size: 14px;
+  text-decoration: none;
+}
+#wrapper header .container nav ul li a:hover {
+  color: #FF5C4C;
+}
+#wrapper header .container nav .btn {
+  align-items: center;
+  background-color: #FF5C4C;
+  border: none;
+  display: flex;
+  font-family: 'Kanit', sans-serif;
+  font-size: 14px;
+}
+#wrapper header .container nav .btn img {
+  margin-right: 7px;
+}
+#wrapper #tagline_section {
+  margin-bottom: 100px;
+  padding: 0px 120px;
+}
+#wrapper #tagline_section .container {
+  display: flex;
+  position: relative;
+}
+#wrapper #tagline_section .container #tagline_subtitle h2 {
+  font-family: 'Do Hyeon', sans-serif;
+  font-size: 48px;
+  margin-top: -6px;
+}
+#wrapper #tagline_section .container #tagline_subtitle h2 span#adopt {
+  color: #FF5C4C;
+}
+#wrapper #tagline_section .container #tagline_subtitle h2 span#shop {
+  color: #bdbdbd;
+}
+#wrapper #tagline_section .container #tagline_subtitle p {
+  color: #bdbdbd;
+  font-family: 'Kanit', sans-serif;
+  font-size: 14px;
+  margin-top: 11px;
+  width: 60%;
+}
+#wrapper #tagline_section .container img {
+  position: absolute;
+  top: -43px;
+  right: 0px;
+}
+#wrapper #pet_section {
+  padding: 0px 120px;
+}
+#wrapper #pet_section h4 {
+  font-family: 'Kanit', sans-serif;
+  font-size: 24px;
+  font-weight: normal;
+  margin-bottom: 26px;
+  text-align: center;
+}
+#wrapper #pet_section table {
+  width: 100%;
+}
+#wrapper #pet_section table tr td {
+  align-items: center;
+  background-color: white;
+  display: flex;
+  height: 69px;
+  justify-content: space-between;
+  margin-bottom: 10px;
+  padding: 0px 24px;
+}
+#wrapper #pet_section table tr td h2 {
+  font-family: 'Kanit', sans-serif;
+  font-size: 18px;
+  margin: 0px;
+  width: 40%;
+}
+#wrapper #pet_section table tr .details_edit_button {
+  display: flex;
+  gap: 36px;
+}
+#wrapper #pet_section table tr .details_edit_button button {
+  align-items: center;
+  background-color: transparent;
+  border: none;
+  color: #bdbdbd;
+  display: inline-flex;
+  font-family: 'Kanit', sans-serif;
+  padding: 0px;
+}
+#wrapper #pet_section table tr .details_edit_button button img {
+  margin-right: 5px;
+}
+#wrapper footer p {
+  color: #bdbdbd;
+  font-family: 'Kanit', sans-serif;
+  padding: 30px;
+  text-align: center;
+}
+#wrapper footer p span {
+  color: #FF5C4C;
+}
+/* Adding modal */
+.modal {
+  border: 1px solid black;
+  display: flex;
+  margin: 0 auto;
+  padding: 15px;
+  width: 400px;
+}
+.modal .modal-header {
+  border: none;
+}
+.modal .modal-body {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: flex-end;
+  width: 100%;
+}
+.modal .modal-body form {
+  align-items: center;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  row-gap: 10px;
+  width: 100%;
+}
+.modal .modal-body form label {
+  color: #bdbdbd;
+  display: flex;
+  font-size: 14PX;
+  justify-content: space-between;
+  margin-bottom: 10px;
+}
+.modal .modal-body form input {
+  background-color: #f2f2f2;
+  border: none;
+  height: 40px;
+  width: 80%;
+}
+.modal .modal-body form textarea {
+  background-color: #f2f2f2;
+  border: none;
+  width: 80%;
+}
+.modal .modal-body form #error {
+  width: 100%;
+}
+.modal #add_button {
+  background-color: white;
+}
+.modal .modal-footer .btn {
+  align-items: center;
+  display: flex;
+  font-family: 'Kanit', sans-serif;
+  font-size: 14px;
+  gap: 10px;
+}
+/* Details modal */
+.modal h3 {
+  font-family: 'Kanit', sans-serif;
+  font-size: 18px;
+  font-weight: 600;
+  padding: 15px;
+}
+.modal .modal-body {
+  flex-direction: column;
+}
+.modal .modal-body h4 {
+  color: #bdbdbd;
+  font-size: 14px;
+  margin-bottom: 20px;
+}
+.modal .modal-footer {
+  background-color: #F2F2F2;
+  border: none;
+  gap: 24px;
+  height: 83px;
+}
+.modal .modal-footer p {
+  color: #bdbdbd;
+  font-family: 'Kanit', sans-serif;
+  font-size: 14px;
+}
+.modal .modal-footer #like_pet {
+  background-color: #F5C388;
+  border: none;
+}
+.modal .modal-footer #adopt_pet {
+  background-color: #FF5C4C;
+  border: none;
+}
+/* Edit modal */
+.modal .modal-footer .btn {
+  background-color: #FF5C4C;
+  color: white;
+}
+.modal #save_button {
+  background-color: white;
+}

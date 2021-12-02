@@ -1,0 +1,227 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pet Shelter</title>
+    <link rel="stylesheet" href="../assets/css/styles.css">
+    <link href="https://fonts.googleapis.com/css2?family=Do+Hyeon&family=Kanit&display=swap" rel="stylesheet">  
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <script src="../assets/js/custom/app.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.11.2/jquery.min.js"></script>
+</head>
+<body>
+    <div id="wrapper">
+        <header>
+            <div class="container d-flex justify-content-between align-items-center">
+                <h1>PetShelter</h1>
+                <nav>
+                    <ul>
+                        <li><a href="">Home</a></li>
+                        <li><a href="">Service</a></li>
+                        <li><a href="">Event</a></li>
+                        <button type="button" class="btn btn-danger" data-bs-toggle="modal" data-bs-target="#shelterModal">
+                            <img src="../assets/images/Vector (2).png" alt="Add sign">
+                            Add A Pet To Shelter
+                        </button>
+                    </ul>
+                </nav>
+            </div>
+        </header>
+        <section id="tagline_section">  
+            <div class="container">
+                <div id="tagline_subtitle">
+                    <h2>Let's <span id="adopt">Adopt</span></h2>
+                    <h2>Don't <span id="shop">Shop</span></h2>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, Neque id Lorem nisi.</p>
+                </div>
+                <img id= "cat" src="../assets/images/Group 5.png" alt="Cat">
+            </div>
+        </section>
+
+        <section id="pet_section">
+            <h4>These pets are looking for a good home</h4>
+            <table>
+                <tr>
+                    <td>
+                        <h2>Garfield</h2> 
+                        <h2>Cat</h2>
+                        <div class="details_edit_button">
+                            <button type="button" class="btn" data-bs-toggle="modal" data-bs-target="#details">
+                                <img src="../assets/images/Vector.png" alt="Vector">
+                                Details
+                            </button>
+                            <button class="btn" data-bs-toggle="modal" data-bs-target="#edit">
+                                <img src="../assets/images/Vector (1).png" alt="Vector">
+                                Edit
+                            </button>
+                        </div>
+                    </td>
+                </tr>
+                <!-- <tr>
+                    <td>
+                        <h2>Doraemon</h2> 
+                        <h2>Cat</h2>
+                        <div class="details_edit_button">
+                            <button type="button" class="btn" data-bs-toggle="modal" data-bs-target="#details">
+                                <img src="../assets/images/Vector.png" alt="Vector">
+                                Details
+                            </button>
+                            <button class="btn" data-bs-toggle="modal" data-bs-target="#edit">
+                                <img src="../assets/images/Vector (1).png" alt="Vector">
+                                Edit
+                            </button>
+                        </div>
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <h2>Snoopy</h2> 
+                        <h2>Dog</h2>
+                        <div class="details_edit_button">
+                            <button type="button" class="btn" data-bs-toggle="modal" data-bs-target="#details">
+                                <img src="../assets/images/Vector.png" alt="Vector">
+                                Details
+                            </button>
+                            <button class="btn" data-bs-toggle="modal" data-bs-target="#edit">
+                                <img src="../assets/images/Vector (1).png" alt="Vector">
+                                Edit
+                            </button>
+                        </div>
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <h2>Dug</h2> 
+                        <h2>Dog</h2>
+                        <div class="details_edit_button">
+                            <button type="button" class="btn" data-bs-toggle="modal" data-bs-target="#details">
+                                <img src="../assets/images/Vector.png" alt="Vector">
+                                Details
+                            </button>
+                            <button class="btn" data-bs-toggle="modal" data-bs-target="#edit">
+                                <img src="../assets/images/Vector (1).png" alt="Vector">
+                                Edit
+                            </button>
+                        </div>
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <h2>Duffy</h2> 
+                        <h2>Duck</h2>
+                        <div class="details_edit_button">
+                            <button type="button" class="btn" data-bs-toggle="modal" data-bs-target="#details">
+                                <img src="../assets/images/Vector.png" alt="Vector">
+                                Details
+                            </button>
+                            <button class="btn" data-bs-toggle="modal" data-bs-target="#edit">
+                                <img src="../assets/images/Vector (1).png" alt="Vector">
+                                Edit
+                            </button>
+                        </div>
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <h2>Penpen</h2> 
+                        <h2>Penguin</h2>
+                        <div class="details_edit_button">
+                            <button type="button" class="btn" data-bs-toggle="modal" data-bs-target="#details">
+                                <img src="../assets/images/Vector.png" alt="Vector">
+                                Details
+                            </button>
+                            <button class="btn" data-bs-toggle="modal" data-bs-target="#edit">
+                                <img src="../assets/images/Vector (1).png" alt="Vector">
+                                Edit
+                            </button>
+                        </div>
+                    </td>
+                </tr> -->
+            </table>
+        </section>
+
+        <footer>
+            <p>Ⓒ2020 <span>V88Studios.</span> All Rights Reserved</p>
+        </footer>
+    </div>
+
+    <!-- Modal adding a pet -->
+    <div class="modal fade" id="shelterModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="modal-header"></div>
+                <div class="modal-body">
+                    <form id="addForm">
+                        <label for="petname">Pet Name</label>
+                        <input type="text" id="petname" name="petname">
+                        <div id="error"></div>
+
+                        <label for="pettype">Pet Type</label>
+                        <input type="text" id="pettype" name="pettype">
+
+                        <label for="description">Description</label>
+                        <textarea name="description" id="description"></textarea>
+
+                        <label for="skills">Skills</label>
+                        <input type="text" id="skills" name="skills">
+                    </form>
+                </div>
+                <div class="modal-footer" id="add_button">
+                    <button type="submit" id="submit" class="btn" data-bs-dismiss="modal">
+                        <img src="../assets/images/upload.png" alt="Upload Icon">
+                        Add Pet
+                    </button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Pet Details modal -->
+    <div class="modal fade" id="details" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <h3 class="modal-title">Details About:  </h3>
+                <div class="modal-body">
+                    <h4>Pet type</h4>
+                    <h4>Description</h4>
+                    <h4>Skills</h4>
+                </div>
+                <div class="modal-footer">
+                    <p>0 Likes</p>
+                    <button type="button" id="like_pet" class="btn" data-bs-dismiss="modal">Like</button>
+                    <button type="button" id="adopt_pet" class="btn">Adopt</button>
+                </div>
+            </div>
+        </div>
+    </div>    
+    
+    <!-- Pet Edit modal -->
+    <div class="modal fade" id="edit" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <h3 class="modal-title">Edit Details: </h3>
+                <div class="modal-body">
+                    <form id="editForm">
+                        <label for="pettype">Pet Type</label>
+                        <input type="text" id="pettype" name="pettype">
+
+                        <label for="description">Description</label>
+                        <textarea name="description" id="description"></textarea>
+
+                        <label for="skills">Skills</label>
+                        <input type="text" id="skills" name="skills">
+                    </form>
+                </div>
+                <div class="modal-footer"  id="save_button">
+                    <button type="button" class="btn" data-bs-dismiss="modal">Save Changes</button>
+                </div>
+            </div>
+        </div>
+    </div>    
+</body>
+</html>
