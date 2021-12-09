@@ -2,13 +2,13 @@ $(document).ready(function(){
     var count = 0;
 
     $("body")
-    .on("submit", "#addForm", function(){
+    .on("click", "#submit", function(){
         valid = true;
-        
+        alert("submit")
         if($("#petname").val() == "" || $("#petname").val().length < 3){
             $("#petname").css('border','1px solid red');
-            valid = false;
-            return false;
+                valid = false;
+                return false;
         }
         else{
             $("#petname").css('border','none');
@@ -41,7 +41,7 @@ $(document).ready(function(){
             $("#skills").css('border','none');
         }
     })
-    .on("click", "#submit", function(){
+    .on("submit", "#addForm", function(){
         // array
         let add_form_data_array = $("#addForm").serializeArray();
         let table_td = "";

@@ -1,0 +1,45 @@
+* {
+  margin: 0 auto;
+  padding: 0px;
+}
+#wrapper {
+  padding: 150px;
+}
+#wrapper .container {
+  background-color: #c4c4c4;
+  padding: 20px;
+  width: 30%;
+}
+#wrapper .container #form_section {
+  margin-bottom: 15px;
+}
+#wrapper .container #form_section #todo_list {
+  display: flex;
+  justify-content: center;
+  width: 75%;
+}
+#wrapper .container #form_section #todo_list input {
+  border: none;
+  margin: 0px;
+  padding: 5px;
+  width: 100%;
+}
+#wrapper .container #form_section #todo_list button {
+  background-color: #569AFF;
+  border: none;
+  color: white;
+  margin-left: 5px;
+  padding: 10px;
+}
+#wrapper .container #todo_list_section .container {
+  width: 75%;
+}
+#wrapper .container #todo_list_section .container h1 {
+  margin-bottom: 20px;
+}
+#wrapper .container #todo_list_section .container ul li {
+  background-color: white;
+  list-style: none;
+  margin-bottom: 10px;
+  padding: 5px;
+}
