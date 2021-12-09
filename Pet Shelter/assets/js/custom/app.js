@@ -2,9 +2,10 @@ $(document).ready(function(){
     var count = 0;
 
     $("body")
-    .on("click", "#submit", function(){
+    .on("submit", "#addForm", function(){
+        let add_form_data_array = $("#addForm").serializeArray();
+        let table_td = "";
         valid = true;
-        alert("submit")
         if($("#petname").val() == "" || $("#petname").val().length < 3){
             $("#petname").css('border','1px solid red');
                 valid = false;
@@ -40,12 +41,6 @@ $(document).ready(function(){
         else{
             $("#skills").css('border','none');
         }
-    })
-    .on("submit", "#addForm", function(){
-        // array
-        let add_form_data_array = $("#addForm").serializeArray();
-        let table_td = "";
-
         for (i=0; i<add_form_data_array.length; i++) {
             
             if(add_form_data_array[i].name == "Description" || add_form_data_array[i].name  == "Skills"){

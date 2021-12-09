@@ -1,21 +1,22 @@
 $(document).ready(function(){
 
     $("body")
-    .on("submit", "#todo_list", function(e){
-        e.preventDefault();
-        let list_item = $("#todo");
-        valid = true;
+        .on("submit", "#add_todo_form", function(e){
+            e.preventDefault();
+            let add_todo_form = $(this);
+            let todo_input = add_todo_form.find("#todo_input");
 
-        if($(list_item).val() == "" || $(list_item).val().length < 3){
-            $(list_item).css("border", "1px solid red");
-            valid = false;
-            return false;
-        }
-        else{
-            $(list_item).css("border", "none");
-        }
+            if(todo_input.val() == "" || todo_input.val().length < 3){
+                todo_input.addClass("border_red");
+            }
+            else{
+                todo_input.removeClass("border_red");
+            }
 
-        $("#list").prepend("<li>" + list_item.val() + "</li>");
-        $("#todo_list")[0].reset();
-    })
+            if(!todo_input.hasClass("border_red")){ // || if(todo_input.hasClass("border_red") === false)
+                $("ul").prepend("<li>" + todo_input.val() + "</li>");
+
+                add_todo_form[0].reset();
+            }
+        });
 });

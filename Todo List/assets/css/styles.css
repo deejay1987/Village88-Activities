@@ -10,34 +10,33 @@
   padding: 20px;
   width: 30%;
 }
-#wrapper .container #form_section {
-  margin-bottom: 15px;
-}
-#wrapper .container #form_section #todo_list {
+#wrapper .container #add_todo_form {
   display: flex;
   justify-content: center;
-  width: 75%;
+  width: 100%;
+  margin-bottom: 20px;
 }
-#wrapper .container #form_section #todo_list input {
+#wrapper .container #add_todo_form input {
   border: none;
   margin: 0px;
   padding: 5px;
   width: 100%;
 }
-#wrapper .container #form_section #todo_list button {
+#wrapper .container #add_todo_form .border_red {
+  border: 1px solid red;
+}
+#wrapper .container #add_todo_form button {
   background-color: #569AFF;
   border: none;
   color: white;
   margin-left: 5px;
   padding: 10px;
+  width: 80px;
 }
-#wrapper .container #todo_list_section .container {
-  width: 75%;
-}
-#wrapper .container #todo_list_section .container h1 {
+#wrapper .container h1 {
   margin-bottom: 20px;
 }
-#wrapper .container #todo_list_section .container ul li {
+#wrapper .container ul li {
   background-color: white;
   list-style: none;
   margin-bottom: 10px;
