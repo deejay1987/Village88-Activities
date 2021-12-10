@@ -7,6 +7,7 @@ $(document).ready(function(){
             let todo_input = add_todo_form.find("#todo_input");
 
             if(todo_input.val() == "" || todo_input.val().length < 3 ? todo_input.addClass("border_red") : todo_input.removeClass("border_red"));
+            
             if(!todo_input.hasClass("border_red")){
                 $("ul").prepend("<li>" + todo_input.val() + "</li>");
 
