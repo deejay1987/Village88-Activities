@@ -2,48 +2,24 @@ $(document).ready(function(){
     var count = 0;
 
     $("body")
-    .on("submit", "#addForm", function(){
-        let add_form_data_array = $("#addForm").serializeArray();
+    .on("submit", "#addForm", function(e){
+        e.preventDefault();
+        let addForm = $(this);
+        let add_form_data_array = addForm.serializeArray();
         let table_td = "";
-        valid = true;
-        if($("#petname").val() == "" || $("#petname").val().length < 3){
-            $("#petname").css('border','1px solid red');
-                valid = false;
-                return false;
-        }
-        else{
-            $("#petname").css('border','none');
-        }
 
-        if($("#pettype").val() == "" || $("#pettype").val().length < 3){
-            $("#pettype").css('border','1px solid red');
-            valid = false;
-            return false;
-        }
-        else{
-            $("#pettype").css('border','none');
-        }
+        if($("#petname").val() == "" || $("#petname").val().length < 3 ? $("#petname").addClass("border_red") : $("#petname").removeClass("border_red"));
 
-        if($("#description").val() == "" || $("#description").val().length < 3){
-            $("#description").css('border','1px solid red');
-            valid = false;
-            return false;
-        }
-        else{
-            $("#description").css('border','none');
-        }
+        if($("#pettype").val() == "" || $("#pettype").val().length < 3 ? $("#pettype").addClass("border_red") : $("#pettype").removeClass("border_red"));
 
-        if($("#skills").val() == "" || $("#skills").val().length < 3){
-            $("#skills").css('border','1px solid red');
-            valid = false;
-            return false;
-        }
-        else{
-            $("#skills").css('border','none');
-        }
+        if($("#description").val() == "" || $("#description").val().length < 3 ? $("#description").addClass("border_red") : $("#description").removeClass("border_red"));
+
+        if($("#skills").val() == "" || $("#skills").val().length < 3 ? $("#skills").addClass("border_red") : $("#skills").removeClass("border_red"));
+           
+
         for (i=0; i<add_form_data_array.length; i++) {
             
-            if(add_form_data_array[i].name == "Description" || add_form_data_array[i].name  == "Skills"){
+            if(add_form_data_array[i].name == "description" || add_form_data_array[i].name  == "skills"){
                
             }
             else{
@@ -66,22 +42,6 @@ $(document).ready(function(){
                 </td>
             </tr>`);
     })
-
-    .on("click", "submit", function(){
-        let pet = "";
-        var petName = $("#petname").val(); /*passing data to the details and edit header modal*/
-        $("#details_about").html("Details about: " + petName);
-        $("#edit_details").html("Edit details: " + petName);
-
-        if(add_form_data_array[i].name == "petname"){
-
-        }
-        else{
-            pet += "<td>" + add_form_data_array[i].value + "</td>"
-        }
-        $("#table_modal").html("<tr>" + pet + "</tr>");  
-    })
-    
     .on("click", "#like_pet", function(){
         count++;
         
@@ -91,7 +51,22 @@ $(document).ready(function(){
         else {
             $("#likes").html(count + " Likes");
         }
-    });
+    })
+
+    // .on("click", "submit", function(){
+    //     let pet = "";
+    //     var petName = $("#petname").val(); /*passing data to the details and edit header modal*/
+    //     $("#details_about").html("Details about: " + petName);
+    //     $("#edit_details").html("Edit details: " + petName);
+
+    //     if(add_form_data_array[i].name == "petname"){
+
+    //     }
+    //     else{
+    //         pet += "<td>" + add_form_data_array[i].value + "</td>"
+    //     }
+    //     $("#table_modal").html("<tr>" + pet + "</tr>");  
+    // })
 });
 
 
