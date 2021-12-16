@@ -5,13 +5,14 @@ $(document).ready(function(){
     .on("submit", "#addForm", function(e){
         e.preventDefault();
         let addForm = $(this);
-        let add_form_data_array = addForm.find("input");
+        let add_form_data_array = addForm.find("#addForm").serializeArray();
         // let table_td = "";
 
         if(add_form_data_array.val() == "" || (add_form_data_array).val().length < 3 ? (add_form_data_array).addClass("border_red") : (add_form_data_array).removeClass("border_red"));
+        
         if(!add_form_data_array.hasClass("border_red")){
             $("#pets").append(
-                "<tr>" + add_form_data_array + `
+                "<tr>" + add_form_data_array.val() + `
                     <td>
                         <button type="button" class="btn" data-bs-toggle="modal" data-bs-target="#details">
                             <img src="../assets/images/details.png" alt="Vector">

@@ -10,35 +10,142 @@
   padding: 20px;
   width: 30%;
 }
-#wrapper .container #add_todo_form {
-  display: flex;
-  justify-content: center;
-  width: 100%;
-  margin-bottom: 20px;
-}
-#wrapper .container #add_todo_form input {
-  border: none;
-  margin: 0px;
-  padding: 5px;
-  width: 100%;
-}
-#wrapper .container #add_todo_form .border_red {
-  border: 1px solid red;
-}
-#wrapper .container #add_todo_form button {
+#wrapper .container #add_todo_button {
   background-color: #569AFF;
   border: none;
   color: white;
-  margin-left: 5px;
-  padding: 10px;
-  width: 80px;
+  margin-bottom: 15px;
+  padding: 5px;
+  width: 100%;
 }
 #wrapper .container h1 {
   margin-bottom: 20px;
 }
+#wrapper .container ul {
+  padding: 0px;
+}
 #wrapper .container ul li {
+  align-items: center;
   background-color: white;
+  display: flex;
+  justify-content: space-between;
   list-style: none;
   margin-bottom: 10px;
   padding: 5px;
+}
+#wrapper .container ul li span {
+  margin: 0px;
+  width: 50%;
+}
+#wrapper .container ul li .update_todo_list {
+  display: none;
+}
+#wrapper .container ul li:hover .update_todo_list {
+  background-color: #c4c4c4;
+  border: none;
+  display: block;
+  font-size: 16px;
+  margin: 0px;
+  padding: 0px 10px;
+}
+#wrapper .container ul li .delete_todo_list {
+  display: none;
+}
+#wrapper .container ul li:hover .delete_todo_list {
+  background-color: #c4c4c4;
+  border: none;
+  display: block;
+  font-size: 16px;
+  margin: 0px;
+  padding: 0px 10px;
+}
+.modal .modal-content {
+  background-color: lightgrey;
+  padding: 20px;
+}
+.modal .modal-content #add_todo_form,
+.modal .modal-content #delete_button_form,
+.modal .modal-content #update_todo_form {
+  display: flex;
+  flex-wrap: wrap;
+}
+.modal .modal-content #add_todo_form .modal-body,
+.modal .modal-content #delete_button_form .modal-body,
+.modal .modal-content #update_todo_form .modal-body {
+  width: 100%;
+}
+.modal .modal-content #add_todo_form label,
+.modal .modal-content #delete_button_form label,
+.modal .modal-content #update_todo_form label {
+  font-weight: 600;
+  margin-bottom: 10px;
+  width: 100%;
+}
+.modal .modal-content #add_todo_form #todo_input,
+.modal .modal-content #delete_button_form #todo_input,
+.modal .modal-content #update_todo_form #todo_input {
+  width: 100%;
+}
+.modal .modal-content #add_todo_form .border_red,
+.modal .modal-content #delete_button_form .border_red,
+.modal .modal-content #update_todo_form .border_red {
+  border: 1px solid red;
+}
+.modal .modal-content #add_todo_form p,
+.modal .modal-content #delete_button_form p,
+.modal .modal-content #update_todo_form p,
+.modal .modal-content #add_todo_form h3,
+.modal .modal-content #delete_button_form h3,
+.modal .modal-content #update_todo_form h3 {
+  font-weight: 600;
+  text-align: center;
+}
+.modal .modal-content #add_todo_form h3,
+.modal .modal-content #delete_button_form h3,
+.modal .modal-content #update_todo_form h3 {
+  margin-bottom: 15px;
+}
+.modal .modal-content #add_cancel_button,
+.modal .modal-content #update_cancel_button {
+  display: flex;
+  justify-content: space-evenly;
+  width: 100%;
+}
+.modal .modal-content #add_cancel_button .cancel_button,
+.modal .modal-content #update_cancel_button .cancel_button {
+  background-color: darkgrey;
+  border: none;
+  color: white;
+  padding: 5px;
+  width: 35%;
+}
+.modal .modal-content #add_cancel_button #submit_button_add,
+.modal .modal-content #update_cancel_button #submit_button_add,
+.modal .modal-content #add_cancel_button #submit_button_update,
+.modal .modal-content #update_cancel_button #submit_button_update {
+  background-color: #569AFF;
+  border: none;
+  color: white;
+  padding: 5px;
+  width: 55%;
+}
+.modal .modal-content #delete_button_form {
+  display: flex;
+  justify-content: space-evenly;
+  width: 100%;
+}
+.modal .modal-content #delete_button_form .cancel_button {
+  background-color: darkgrey;
+  border: none;
+  padding: 5px;
+  width: 35%;
+}
+.modal .modal-content #delete_button_form #delete_button_yes {
+  background-color: #ff5151;
+  border: none;
+  padding: 5px;
+  width: 55%;
+}
+.modal .modal-content #update_todo_form #update_todo_input {
+  width: 100%;
 }
