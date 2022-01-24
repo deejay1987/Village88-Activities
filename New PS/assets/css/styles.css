@@ -1,0 +1,335 @@
+* {
+  margin: 0px;
+  padding: 0px;
+}
+.border_red {
+  border: 1px solid red !important;
+}
+#wrapper {
+  background-color: #F5F9FA;
+}
+#wrapper header {
+  padding: 30px 189px;
+}
+#wrapper header .container {
+  background-color: white;
+  border-radius: 4px;
+  padding: 11px 20px;
+}
+#wrapper header .container a {
+  text-decoration: none;
+}
+#wrapper header .container a h1 {
+  color: black;
+  font-family: 'Do Hyeon', sans-serif;
+  font-size: 24px;
+  margin: 0px;
+  text-transform: uppercase;
+}
+#wrapper header .container nav {
+  display: flex;
+  justify-content: flex-end;
+  width: 65%;
+}
+#wrapper header .container nav ul {
+  align-items: center;
+  display: flex;
+  justify-content: space-evenly;
+  margin: 0px;
+  padding: 0px;
+  width: 54%;
+}
+#wrapper header .container nav ul li {
+  list-style-type: none;
+  padding: 5px;
+}
+#wrapper header .container nav ul li :hover {
+  color: #FF5C4C;
+}
+#wrapper header .container nav ul li a {
+  color: #bdbdbd;
+  font-family: 'Kanit', sans-serif;
+  font-size: 14px;
+  text-decoration: none;
+}
+#wrapper header .container nav .btn {
+  align-items: center;
+  background-color: #FF5C4C;
+  border-radius: 7px;
+  color: white;
+  display: flex;
+  font-size: 14px;
+}
+#wrapper header .container nav .btn img {
+  margin-right: 5px;
+}
+#wrapper #tagline_section {
+  padding: 0px 208px;
+}
+#wrapper #tagline_section .container {
+  display: flex;
+  padding: 0px;
+}
+#wrapper #tagline_section .container #tagline_subtitle {
+  display: flex;
+  flex-direction: column;
+  margin: auto;
+}
+#wrapper #tagline_section .container #tagline_subtitle h2 {
+  font-family: 'Do Hyeon', sans-serif;
+  font-size: 48px;
+  margin: 0px;
+}
+#wrapper #tagline_section .container #tagline_subtitle h2 #adopt {
+  color: #FF5C4C;
+}
+#wrapper #tagline_section .container #tagline_subtitle h2 #shop {
+  color: #bdbdbd;
+}
+#wrapper #tagline_section .container #tagline_subtitle p {
+  color: #bdbdbd;
+  font-family: 'Kanit', sans-serif;
+  font-size: 14px;
+}
+#wrapper #pet_section {
+  margin-top: 45px;
+  padding: 0px 208px;
+}
+#wrapper #pet_section h4 {
+  font-family: 'Kanit', sans-serif;
+  letter-spacing: .6px;
+  margin-bottom: 26px;
+  text-align: center;
+}
+#wrapper #pet_section table {
+  border-collapse: separate;
+  border-spacing: 0 5px;
+  width: 100%;
+}
+#wrapper #pet_section table tr td {
+  background-color: white;
+  font-family: 'Kanit', sans-serif;
+  font-size: 18px;
+  height: 69px;
+  margin-bottom: 10px;
+  padding: 0px 24px;
+  width: 50%;
+}
+#wrapper #pet_section table tr td button {
+  align-items: center;
+  background-color: transparent;
+  border: none;
+  color: #bdbdbd;
+  display: inline-flex;
+  font-family: 'Kanit', sans-serif;
+  padding: 0px;
+}
+#wrapper #pet_section table tr td button img {
+  margin-right: 5px;
+}
+#wrapper #pet_section table tr td.hidden_description,
+#wrapper #pet_section table tr td.hidden_skills {
+  display: none;
+}
+#wrapper footer {
+  padding: 53px 208px;
+  text-align: center;
+}
+#wrapper footer p {
+  color: #bdbdbd;
+  font-family: 'Kanit', sans-serif;
+  font-size: 14px;
+}
+#wrapper footer p span {
+  color: #FF5C4C;
+}
+/* modal*/
+.modal .modal-dialog .modal-content .modal_header {
+  border-bottom: none;
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: -33px;
+  padding: 16px;
+}
+.modal .modal-dialog .modal-content .modal_header h3 {
+  align-items: center;
+  display: flex;
+  padding: 0px;
+}
+.modal .modal-dialog .modal-content .modal_header .details_about {
+  font-family: 'Kanit', sans-serif;
+  font-size: 18px;
+  font-weight: 600;
+}
+.modal .modal-dialog .modal-content .modal_header .close {
+  background-color: none;
+  background-color: white;
+  border: none;
+  font-size: 30px;
+  opacity: 1;
+}
+.modal .modal-dialog .modal-content .modal-body {
+  padding: 0px;
+}
+.modal .modal-dialog .modal-content .modal-body #details_pet_table {
+  border-collapse: separate;
+  border-spacing: 0 21px;
+  padding: 16px;
+  width: 100%;
+}
+.modal .modal-dialog .modal-content .modal-body #details_pet_table tr td {
+  font-family: 'Kanit', sans-serif;
+}
+.modal .modal-dialog .modal-content .modal-body #details_pet_table tr td.table_title_td {
+  color: #bdbdbd;
+}
+.modal .modal-dialog .modal-content .modal-body #details_pet_table tr td ul {
+  display: flex;
+  gap: 30px;
+  margin: 0px;
+  padding: 0px;
+}
+.modal .modal-dialog .modal-content .modal-body #details_pet_table tr td ul li:first-child {
+  list-style-type: none;
+}
+.modal .modal-dialog .modal-content .modal-body.add_pet_modal {
+  padding: 16px;
+}
+.modal .modal-dialog .modal-content .modal-body #add_pet_form {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: flex-end;
+}
+.modal .modal-dialog .modal-content .modal-body #add_pet_form .error {
+  width: 100%;
+  border: red;
+  font-size: 12px;
+  font-style: italic;
+  text-align: center;
+  margin-bottom: 10px;
+  margin-top: -12px;
+}
+.modal .modal-dialog .modal-content .modal-body #add_pet_form label {
+  color: #bdbdbd;
+  font-family: 'Kanit', sans-serif;
+  font-size: 14px;
+  width: 25%;
+}
+.modal .modal-dialog .modal-content .modal-body #add_pet_form .add_pet_input,
+.modal .modal-dialog .modal-content .modal-body #add_pet_form #add_description {
+  background-color: #e5e5e5;
+  border-radius: 4px;
+  border: transparent;
+  margin-bottom: 10px;
+  padding: 14px;
+}
+.modal .modal-dialog .modal-content .modal-body #add_pet_form .add_pet_input {
+  height: 40px;
+}
+.modal .modal-dialog .modal-content .modal-body #add_pet_form #add_description {
+  height: 84;
+  vertical-align: top;
+}
+.modal .modal-dialog .modal-content .modal-body #add_pet_form .add_pet_input,
+.modal .modal-dialog .modal-content .modal-body #add_pet_form #add_description {
+  width: 75%;
+}
+.modal .modal-dialog .modal-content .modal-body #add_pet_form #add_btn {
+  display: flex;
+  justify-content: flex-end;
+  margin-top: 30px;
+  width: 100%;
+}
+.modal .modal-dialog .modal-content .modal-body #add_pet_form #add_btn #submit_add_btn {
+  align-items: center;
+  background-color: #FF5C4C;
+  border-radius: 5px;
+  border: none;
+  color: white;
+  display: flex;
+  font-family: 'Kanit', sans-serif;
+  padding: 10px;
+}
+.modal .modal-dialog .modal-content .modal-body #add_pet_form #add_btn #submit_add_btn img {
+  margin-right: 10px;
+}
+.modal .modal-dialog .modal-content #details_action_container {
+  background-color: #f2f2f2;
+  display: flex;
+  gap: 26px;
+  justify-content: flex-end;
+  padding: 20px;
+}
+.modal .modal-dialog .modal-content #details_action_container #like_pet_btn,
+.modal .modal-dialog .modal-content #details_action_container #adopt_pet_btn,
+.modal .modal-dialog .modal-content #details_action_container #total_likes {
+  align-items: center;
+  display: flex;
+  font-family: 'Kanit', sans-serif;
+  font-size: 14px;
+}
+.modal .modal-dialog .modal-content #details_action_container #like_pet_btn,
+.modal .modal-dialog .modal-content #details_action_container #adopt_pet_btn {
+  gap: 10px;
+}
+.modal .modal-dialog .modal-content #details_action_container #total_likes {
+  margin: 0px;
+}
+.modal .modal-dialog .modal-content #details_action_container #like_pet_btn {
+  background-color: #F5C388;
+  color: white;
+}
+.modal .modal-dialog .modal-content #details_action_container #adopt_pet_btn {
+  background-color: #FF5C4C;
+  color: white;
+}
+.modal .modal-dialog .modal-content .edit_pet_name {
+  font-family: 'Kanit', sans-serif;
+  font-size: 18px;
+  font-weight: 600;
+  margin-bottom: 0px;
+  padding: 16px;
+  width: 100%;
+}
+.modal .modal-dialog .modal-content #edit_pet_form {
+  display: flex;
+  flex-wrap: wrap;
+  font-family: 'Kanit', sans-serif;
+  font-size: 14px;
+  justify-content: flex-end;
+  padding: 16px;
+}
+.modal .modal-dialog .modal-content #edit_pet_form label {
+  color: #bdbdbd;
+  width: 25%;
+}
+.modal .modal-dialog .modal-content #edit_pet_form .edit_input,
+.modal .modal-dialog .modal-content #edit_pet_form #edit_description {
+  background-color: #e5e5e5;
+  border-radius: 4px;
+  border: none;
+  height: 40px;
+  margin-bottom: 10px;
+  padding: 14px;
+  width: 75%;
+}
+.modal .modal-dialog .modal-content #edit_pet_form #edit_description {
+  vertical-align: top;
+}
+.modal .modal-dialog .modal-content #edit_pet_form #save_action_container {
+  display: flex;
+  justify-content: flex-end;
+}
+.modal .modal-dialog .modal-content #edit_pet_form #save_action_container #save_btn {
+  align-items: center;
+  background-color: #ff5c4c;
+  border-radius: 4px;
+  border: none;
+  color: white;
+  display: flex;
+  margin-top: 29px;
+  padding: 5.5px;
+}
+.modal .modal-dialog .modal-content #edit_pet_form #save_action_container #save_btn img {
+  margin-right: 10px;
+}

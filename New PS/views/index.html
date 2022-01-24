@@ -1,0 +1,214 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pet Shelter</title>
+    <link rel="stylesheet" href="../assets/css/styles.css">
+    <link href="https://fonts.googleapis.com/css2?family=Do+Hyeon&family=Kanit&display=swap" rel="stylesheet">  
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <script src="../assets/js/custom/app.js"></script>
+</head>
+<body>
+    <div id="wrapper">
+        <header>
+            <div class="container d-flex justify-content-between align-items-center">
+                <a href=""><h1>PetShelter</h1></a>
+                <nav>
+                    <ul>
+                        <li><a href="#">Home</a></li>
+                        <li><a href="#">Service</a></li>
+                        <li><a href="#">Event</a></li>
+                    </ul>
+                    <button type="button" class="btn add_pet_shelter_btn">
+                        <img src="../assets/images/add.png" alt="add icon">
+                        Add A Pet To Shelter
+                    </button>
+                </nav>
+            </div>
+        </header>
+
+        <section id="tagline_section">
+            <div class="container">
+                <div id="tagline_subtitle">
+                    <h2>Let's <span id="adopt">Adopt</span></h2>
+                    <h2>Don't <span id="shop">Shop</span></h2>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, Neque id Lorem nisi.</p>
+                </div>
+                <img src="../assets/images/pet.png" alt="Dog & Cat">
+            </div>
+        </section>
+
+        <section id="pet_section">
+            <h4>These pets are looking for a good home</h4> 
+            <table id="add_pet_section">
+                <tr data-pet-id="2">
+                    <td class="pet_name">Garfield</td>
+                    <td class="pet_type">Cat</td>
+                    <td class="hidden_description">Hate Mondays</td>
+                    <td class="hidden_skills">
+                        <ul>
+                            <li>Eating</li>
+                            <li>Sleeping</li>
+                            <li>Slacking off</li>
+                        </ul>
+                    </td>
+                    <td>
+                        <button type="button" class="details_pet_btn">
+                            <img src="../assets/images/details.png" alt="Details Icon">
+                            Details
+                        </button>
+                    </td>
+                    <td>
+                        <button type="button" class="edit_pet_btn" >
+                            <img src="../assets/images/edit.png" alt=" Edit Icon">
+                            Edit
+                        </button>
+                    </td>
+                </tr>
+                <tr data-pet-id="1">
+                    <td class="pet_name">Doraemon</td>
+                    <td class="pet_type">Cat</td>
+                    <td class="hidden_description">Color Blue</td>
+                    <td class="hidden_skills">
+                        <ul>
+                            <li>Helpful</li>
+                            <li>Sleeping</li>
+                            <li>Magician</li>
+                        </ul>
+                    </td>
+                    <td>
+                        <button type="button" class="details_pet_btn">
+                            <img src="../assets/images/details.png" alt=" Details Icon">
+                            Details
+                        </button>
+                    </td>
+                    <td>
+                        <button type="button" class="edit_pet_btn" >
+                            <img src="../assets/images/edit.png" alt="Edit Icon">
+                            Edit
+                        </button>
+                    </td>
+                </tr>
+            </table>
+        </section>
+
+        <footer>
+            <p>Ⓒ2020 <span>V88Studios.</span> All Rights Reserved</p>
+        </footer>
+    </div>
+
+    <!-- Modal adding a pet -->
+    <div class="modal fade" id="add_pet_shelter_modal" tabindex="-1" aria-hidden="true">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="modal-body add_pet_modal">
+                    <form id="add_pet_form">
+                        <label for="add_petname">Pet Name</label>
+                        <input type="text" class="add_pet_input" id="add_petname" name="petname">
+
+                        <label for="add_pettype">Pet Type</label>
+                        <input type="text" class="add_pet_input" id="add_pettype" name="pettype">
+
+                        <label for="add_description">Description</label>
+                        <textarea name="description" id="add_description"></textarea>
+
+                        <label for="add_skills">Skills</label>
+                        <input type="text" class="add_pet_input" id="add_skills" name="skills">
+                        <input type="text" class="add_pet_input" name="skills">
+                        <input type="text" class="add_pet_input" name="skills">
+
+                        <div id="add_btn">
+                            <button type="submit" id="submit_add_btn">
+                                <img src="../assets/images/upload.png" alt="Upload Icon">
+                                Add Pet
+                            </button>
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- Pet Details Modal -->
+    <div class="modal fade"  id="pet_details_modal" tabindex="-1" aria-hidden="true" role="dialog">
+        <div class="modal-dialog" role="document">
+            <div class="modal-content">
+                <div class="modal_header">
+                    <h3 class="modal-title details_about">Details about: Garfield </h3>
+                    <button type="button" class="close" data-bs-dismiss="modal" aria-label="Close">
+                        <span aria-hidden="true">&times;</span>
+                    </button>
+                </div>
+                <div class="modal-body">
+                    <form id="details_pet_form">
+                        <table id="details_pet_table">
+                            <tr>
+                                <td class="table_title_td">Pet type</td>
+                                <td id="pet_type_details">Cat</td>
+                            </tr>
+                            <tr>
+                                <td class="table_title_td">Description</td>
+                                <td id="description_details">Hate Mondays</td>
+                            </tr>
+                            <tr>
+                                <td class="table_title_td">Skills</td>
+                                <td id="skills_details">
+                                    <ul>
+                                        <li>Eating</li>
+                                        <li>Sleeping</li>
+                                        <li>Slacking off</li>
+                                    </ul>
+                                </td>
+                            </tr>
+                        </table>
+                        <div id="details_action_container">
+                            <p id="total_likes">0 Likes</p>
+                            <button type="button" id="like_pet_btn" class="btn">
+                                <img src="../assets/images/heart.png" alt="heart icon">
+                                Like Garfield
+                            </button>
+                            <button type="button" id="adopt_pet_btn" class="btn">
+                                <img src="../assets/images/house.png" alt="house icon">
+                                Adopt Garfield
+                            </button>
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Pet Edit modal -->
+    <div class="modal fade" id="edit_pet_modal" tabindex="-1" aria-hidden="true">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <h3 class="modal-title edit_pet_name">Edit Details: Garfield</h3>
+                <div class="modal-body">
+                    <form id="edit_pet_form">
+                        <label for="edit_pettype">Pet Type</label>
+                        <input type="text" id="edit_pettype" class="edit_input" name="petType">
+
+                        <label for="edit_description">Description</label>
+                        <textarea name="description" id="edit_description"></textarea>
+
+                        <label for="edit_skills">Skills</label>
+                        <input type="text" class="edit_input" id="edit_skills" name="skill">
+                        <input type="text" class="edit_input" name="skill">
+                        <input type="text" class="edit_input" name="skill">
+                        
+                        <div id="save_action_container">
+                            <button type="submit" id="save_btn">
+                                <img src="../assets/images/save.png" alt="save icon">
+                                Save Changes
+                            </button>
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </div>    
+</body>
+</html>
