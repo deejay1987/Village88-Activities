@@ -2,6 +2,9 @@
     margin: 0 auto;
     padding: 0px;
 }
+.hidden{
+    display: none !important;
+}
 #wrapper{
     padding: 150px;
     .container{
@@ -33,10 +36,10 @@
                     margin: 0px;
                     width: 50%;
                 }
-                .update_todo_list{
+                .update_todo_btn{
                     display: none;
                 }
-                &:hover .update_todo_list{
+                &:hover .update_todo_btn{
                     background-color: #c4c4c4;
                     border: none;
                     display: block;
@@ -44,10 +47,10 @@
                     margin: 0px;
                     padding: 0px 10px;  
                 }
-                .delete_todo_list{
+                .delete_todo_btn{
                     display: none;
                 }
-                &:hover .delete_todo_list{
+                &:hover .delete_todo_btn{
                     background-color: #c4c4c4;
                     border: none;
                     display: block;
@@ -55,7 +58,6 @@
                     margin: 0px;
                     padding: 0px 10px;   
                 }
-               
             }
         }
     }
@@ -65,18 +67,28 @@
     .modal-content{
         background-color: lightgrey;
         padding: 20px;
-        #add_todo_form, #delete_button_form, #update_todo_form{
+        #add_todo_form, #delete_todo_form_btn, #update_todo_form{
             display: flex;
             flex-wrap: wrap;
             .modal-body{
                 width: 100%;
-            }
-            label{
-                font-weight: 600;
+                padding: 0px;
                 margin-bottom: 10px;
-                width: 100%;
+                .others_type_input{
+                    margin-top: 10px;
+                    width: 100%;
+                }
+                label{
+                    font-weight: 600;
+                    margin-bottom: 10px;
+                    width: 100%;
+                    &#add_label_todo_type, &#update_label_todo_type{
+                        margin-top: 15px;
+                    }
+                }
             }
-            #todo_input{
+            #todo_input, #todo_type, .select_type_option{
+                display: inline-block;
                 width: 100%;
             }
             .border_red{
@@ -90,9 +102,9 @@
                 margin-bottom: 15px;
             }
         }
-        #add_cancel_button, #update_cancel_button{
+        .action_container{
             display: flex;
-            justify-content: space-evenly;
+            justify-content: space-between;
             width: 100%;
             .cancel_button{
                 background-color: darkgrey;
@@ -101,7 +113,7 @@
                 padding: 5px;
                 width: 35%;
             }
-            #submit_button_add, #submit_button_update{
+            #add_submit_btn, #update_submit_btn{
                 background-color: #569AFF;
                 border: none;
                 color: white;
@@ -109,7 +121,7 @@
                 width: 55%;
             }
         }
-        #delete_button_form{
+        #delete_todo_form_btn{
             display: flex;
             justify-content: space-evenly;
             width: 100%;
@@ -119,7 +131,7 @@
                 padding: 5px;
                 width: 35%;
             }
-            #delete_button_yes{
+            #delete_yes_btn{
                 background-color: #ff5151;
                 border: none;
                 padding: 5px;

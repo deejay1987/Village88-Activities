@@ -2,6 +2,9 @@
   margin: 0 auto;
   padding: 0px;
 }
+.hidden {
+  display: none !important;
+}
 #wrapper {
   padding: 150px;
 }
@@ -37,10 +40,10 @@
   margin: 0px;
   width: 50%;
 }
-#wrapper .container ul li .update_todo_list {
+#wrapper .container ul li .update_todo_btn {
   display: none;
 }
-#wrapper .container ul li:hover .update_todo_list {
+#wrapper .container ul li:hover .update_todo_btn {
   background-color: #c4c4c4;
   border: none;
   display: block;
@@ -48,10 +51,10 @@
   margin: 0px;
   padding: 0px 10px;
 }
-#wrapper .container ul li .delete_todo_list {
+#wrapper .container ul li .delete_todo_btn {
   display: none;
 }
-#wrapper .container ul li:hover .delete_todo_list {
+#wrapper .container ul li:hover .delete_todo_btn {
   background-color: #c4c4c4;
   border: none;
   display: block;
@@ -64,83 +67,102 @@
   padding: 20px;
 }
 .modal .modal-content #add_todo_form,
-.modal .modal-content #delete_button_form,
+.modal .modal-content #delete_todo_form_btn,
 .modal .modal-content #update_todo_form {
   display: flex;
   flex-wrap: wrap;
 }
 .modal .modal-content #add_todo_form .modal-body,
-.modal .modal-content #delete_button_form .modal-body,
+.modal .modal-content #delete_todo_form_btn .modal-body,
 .modal .modal-content #update_todo_form .modal-body {
   width: 100%;
+  padding: 0px;
+  margin-bottom: 10px;
 }
-.modal .modal-content #add_todo_form label,
-.modal .modal-content #delete_button_form label,
-.modal .modal-content #update_todo_form label {
+.modal .modal-content #add_todo_form .modal-body .others_type_input,
+.modal .modal-content #delete_todo_form_btn .modal-body .others_type_input,
+.modal .modal-content #update_todo_form .modal-body .others_type_input {
+  margin-top: 10px;
+  width: 100%;
+}
+.modal .modal-content #add_todo_form .modal-body label,
+.modal .modal-content #delete_todo_form_btn .modal-body label,
+.modal .modal-content #update_todo_form .modal-body label {
   font-weight: 600;
   margin-bottom: 10px;
   width: 100%;
 }
+.modal .modal-content #add_todo_form .modal-body label#add_label_todo_type,
+.modal .modal-content #delete_todo_form_btn .modal-body label#add_label_todo_type,
+.modal .modal-content #update_todo_form .modal-body label#add_label_todo_type,
+.modal .modal-content #add_todo_form .modal-body label#update_label_todo_type,
+.modal .modal-content #delete_todo_form_btn .modal-body label#update_label_todo_type,
+.modal .modal-content #update_todo_form .modal-body label#update_label_todo_type {
+  margin-top: 15px;
+}
 .modal .modal-content #add_todo_form #todo_input,
-.modal .modal-content #delete_button_form #todo_input,
-.modal .modal-content #update_todo_form #todo_input {
+.modal .modal-content #delete_todo_form_btn #todo_input,
+.modal .modal-content #update_todo_form #todo_input,
+.modal .modal-content #add_todo_form #todo_type,
+.modal .modal-content #delete_todo_form_btn #todo_type,
+.modal .modal-content #update_todo_form #todo_type,
+.modal .modal-content #add_todo_form .select_type_option,
+.modal .modal-content #delete_todo_form_btn .select_type_option,
+.modal .modal-content #update_todo_form .select_type_option {
+  display: inline-block;
   width: 100%;
 }
 .modal .modal-content #add_todo_form .border_red,
-.modal .modal-content #delete_button_form .border_red,
+.modal .modal-content #delete_todo_form_btn .border_red,
 .modal .modal-content #update_todo_form .border_red {
   border: 1px solid red;
 }
 .modal .modal-content #add_todo_form p,
-.modal .modal-content #delete_button_form p,
+.modal .modal-content #delete_todo_form_btn p,
 .modal .modal-content #update_todo_form p,
 .modal .modal-content #add_todo_form h3,
-.modal .modal-content #delete_button_form h3,
+.modal .modal-content #delete_todo_form_btn h3,
 .modal .modal-content #update_todo_form h3 {
   font-weight: 600;
   text-align: center;
 }
 .modal .modal-content #add_todo_form h3,
-.modal .modal-content #delete_button_form h3,
+.modal .modal-content #delete_todo_form_btn h3,
 .modal .modal-content #update_todo_form h3 {
   margin-bottom: 15px;
 }
-.modal .modal-content #add_cancel_button,
-.modal .modal-content #update_cancel_button {
+.modal .modal-content .action_container {
   display: flex;
-  justify-content: space-evenly;
+  justify-content: space-between;
   width: 100%;
 }
-.modal .modal-content #add_cancel_button .cancel_button,
-.modal .modal-content #update_cancel_button .cancel_button {
+.modal .modal-content .action_container .cancel_button {
   background-color: darkgrey;
   border: none;
   color: white;
   padding: 5px;
   width: 35%;
 }
-.modal .modal-content #add_cancel_button #submit_button_add,
-.modal .modal-content #update_cancel_button #submit_button_add,
-.modal .modal-content #add_cancel_button #submit_button_update,
-.modal .modal-content #update_cancel_button #submit_button_update {
+.modal .modal-content .action_container #add_submit_btn,
+.modal .modal-content .action_container #update_submit_btn {
   background-color: #569AFF;
   border: none;
   color: white;
   padding: 5px;
   width: 55%;
 }
-.modal .modal-content #delete_button_form {
+.modal .modal-content #delete_todo_form_btn {
   display: flex;
   justify-content: space-evenly;
   width: 100%;
 }
-.modal .modal-content #delete_button_form .cancel_button {
+.modal .modal-content #delete_todo_form_btn .cancel_button {
   background-color: darkgrey;
   border: none;
   padding: 5px;
   width: 35%;
 }
-.modal .modal-content #delete_button_form #delete_button_yes {
+.modal .modal-content #delete_todo_form_btn #delete_yes_btn {
   background-color: #ff5151;
   border: none;
   padding: 5px;

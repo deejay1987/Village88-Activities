@@ -45,15 +45,15 @@
         <section id="pet_section">
             <h4>These pets are looking for a good home</h4> 
             <table id="add_pet_section">
-                <tr data-pet-id="2">
+                <tr data-pet-id="2" data-like="0" data-is-liked="false" data-skills=["Eating","Sleeping","Slacking-off"]>
                     <td class="pet_name">Garfield</td>
                     <td class="pet_type">Cat</td>
                     <td class="hidden_description">Hate Mondays</td>
                     <td class="hidden_skills">
                         <ul>
-                            <li>Eating</li>
-                            <li>Sleeping</li>
-                            <li>Slacking off</li>
+                            <li class="skill_1">Eating</li>
+                            <li class="skill_2">Sleeping</li>
+                            <li class="skill_3">Slacking off</li>
                         </ul>
                     </td>
                     <td>
@@ -69,15 +69,15 @@
                         </button>
                     </td>
                 </tr>
-                <tr data-pet-id="1">
+                <tr data-pet-id="1" data-like="0" data-is-liked="false" data-skills=["Helpful","Sleeping","Magician"]>
                     <td class="pet_name">Doraemon</td>
                     <td class="pet_type">Cat</td>
                     <td class="hidden_description">Color Blue</td>
                     <td class="hidden_skills">
                         <ul>
-                            <li>Helpful</li>
-                            <li>Sleeping</li>
-                            <li>Magician</li>
+                            <li class="skill_1">Helpful</li>
+                            <li class="skill_2">Sleeping</li>
+                            <li class="skill_3">Magician</li>
                         </ul>
                     </td>
                     <td>
@@ -116,10 +116,10 @@
                         <label for="add_description">Description</label>
                         <textarea name="description" id="add_description"></textarea>
 
-                        <label for="add_skills">Skills</label>
-                        <input type="text" class="add_pet_input" id="add_skills" name="skills">
-                        <input type="text" class="add_pet_input" name="skills">
-                        <input type="text" class="add_pet_input" name="skills">
+                        <label for="add_skill_1">Skills</label>
+                        <input type="text" class="add_pet_input" id="add_skill_1" name="skills">
+                        <input type="text" class="add_pet_input" id="add_skill_2" name="skills">
+                        <input type="text" class="add_pet_input" id="add_skill_3" name="skills">
 
                         <div id="add_btn">
                             <button type="submit" id="submit_add_btn">
@@ -157,15 +157,17 @@
                                 <td class="table_title_td">Skills</td>
                                 <td id="skills_details">
                                     <ul>
-                                        <li>Eating</li>
-                                        <li>Sleeping</li>
-                                        <li>Slacking off</li>
+                                        <li class="skill_1">Eating</li>
+                                        <li class="skill_2">Sleeping</li>
+                                        <li class="skill_3">Slacking off</li>
                                     </ul>
                                 </td>
                             </tr>
                         </table>
                         <div id="details_action_container">
                             <p id="total_likes">0 Likes</p>
+                            <input type="hidden" id="is_like_pet" value="">
+                            <input type="hidden" id="pet_id" value="">
                             <button type="button" id="like_pet_btn" class="btn">
                                 <img src="../assets/images/heart.png" alt="heart icon">
                                 Like Garfield
@@ -189,15 +191,15 @@
                 <div class="modal-body">
                     <form id="edit_pet_form">
                         <label for="edit_pettype">Pet Type</label>
-                        <input type="text" id="edit_pettype" class="edit_input" name="petType">
+                        <input type="text" id="edit_pettype" class="edit_input" name="pet_type">
 
                         <label for="edit_description">Description</label>
                         <textarea name="description" id="edit_description"></textarea>
 
-                        <label for="edit_skills">Skills</label>
-                        <input type="text" class="edit_input" id="edit_skills" name="skill">
-                        <input type="text" class="edit_input" name="skill">
-                        <input type="text" class="edit_input" name="skill">
+                        <label for="edit_skill_1">Skills</label>
+                        <input type="text" class="edit_input edit_skill_1" id="edit_skill_1" name="skills">
+                        <input type="text" class="edit_input edit_skill_2" name="skills">
+                        <input type="text" class="edit_input edit_skill_3" name="skills">
                         
                         <div id="save_action_container">
                             <button type="submit" id="save_btn">
