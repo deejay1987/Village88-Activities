@@ -29,7 +29,7 @@ $(document).ready(function(){
                     input.removeClass("border_red");
                 }
             });
-            let skills = [skill_1, skill_2, skill_3];
+            let skills = [`"${skill_1}"`, `"${skill_2}"`, `"${skill_3}"`];
 
             if(add_pet_form.find("input[type='text'], textarea").hasClass("border_red") === false){
                 $("#add_pet_section").prepend(
