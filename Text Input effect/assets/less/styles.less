@@ -1,0 +1,467 @@
+@keyframes anim-1 {
+	50%{
+		opacity: 0;
+		transform: translate3d(16px, 0, 0);
+	}
+	51%{
+		opacity: 0;
+		transform: translate3d(-16px, -40%, 0);
+	}
+	100%{
+		opacity: 1;
+		transform: translate3d(0, -40%, 0);
+	}
+}
+
+*{
+	box-sizing: border-box;
+	&:after{
+		box-sizing: border-box;
+	}
+	&:before{
+		box-sizing: border-box;
+	}
+}
+body{
+	background: #f9f7f6;
+	color: #404d5b;
+	font-family: 'Raleway', Arial, sans-serif;
+	font-size: 18px;
+	font-weight: 500;
+	margin: 0 auto;
+	text-align: center;
+}
+.dragon_container{
+	font-size: 150%;
+	padding: 48px 0;
+	h2 {
+		margin: 0 0 2px;
+		opacity: 0.1;
+	}
+}
+.input{
+	display: inline-block;
+	margin: 18px;
+	max-width: 350px;
+	position: relative;
+	vertical-align: top;
+	width: calc(100% - 36px);
+	z-index: 1;
+}
+.input_field{
+	background: #f0f0f0;
+	border-radius: 0;
+	border: none;
+	color: #aaa;
+	display: block;
+	float: right;
+	font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+	font-weight: bold;
+	padding: 0.8em;
+	position: relative;
+	width: 60%;
+	&:focus{
+		outline: none;
+	}
+}
+.input_label{
+	color: #6a7989;
+	display: inline-block;
+	float: right;
+	font-size: 70.25%;
+	font-weight: bold;
+	padding: 0 1em;
+	user-select: none;
+	width: 40%;
+}
+.input_label-content{
+	display: block;
+	padding: 1.6em 0;
+	position: relative;
+	width: 100%;
+}
+.graphic{
+	fill: none;
+	left: 0;
+	position: absolute;
+	top: 0;
+}
+.icon{
+	color: #ddd;
+	font-size: 150%;
+}
+/* Hideo */
+.input--hideo{
+	background: #fff;
+	overflow: hidden;
+    .input_field--hideo{
+        background: transparent;
+        font-size: 26px;
+        height: 70px;
+        padding: 14px 14px 14px 64px;
+        transform: translate3d(16px, 0, 0);
+        transition: transform 0.3s;
+        width: 100%;
+        &:focus{
+            transform: translate3d(0, 0, 0);
+            &+.input_label--hideo {
+                &::before{
+                    transform: scale3d(0.8, 1, 1);
+                }
+                .icon--hideo{
+                    transform: scale3d(0.6, 0.6, 1);
+                }
+            }
+        }
+    }
+    .input_label--hideo{
+        height: 100%;
+        padding: 20px 0 0;
+        position: absolute;
+        width: 70px;
+        &::before{
+            background: #899dda;
+            content: '';
+            height: 100%;
+            left: 0;
+            position: absolute;
+            top: 0;
+            transform-origin: 0% 50%;
+            transition: transform 0.3s;
+            width: 70px;
+            z-index: -1;
+        }
+    }
+    .icon--hideo{
+        color: #fff;
+        transform-origin: 0% 50%;
+        transform: scale3d(1, 1, 1);
+        transition: transform 0.3s;
+    }
+    .input_label-content--hideo{
+        position: absolute;
+        top: 100%;
+    }
+}
+
+/* Juro */
+.juro{
+	background-color: #2fa8ec;
+    .input--juro{
+        overflow: hidden;
+        .input_field--juro{
+            background: transparent;
+            color: #1784cd;
+            font-size: 26px;
+            padding: 46px 16px 0;
+            position: absolute;
+            width: 100%;
+            z-index: 1;
+            &:focus{
+                &+.input_label--juro{
+                    &::before{
+                        border-width: 8px;
+                        border-color: #1784cd;
+                        border-top-width: 36px;
+                    }
+                    .input_label-content--juro{
+                        color: #fff;
+                        transform: translate3d(0, -26px, 0) scale3d(0.75, 0.75, 1);
+                    }
+                }
+            }
+            &:valid{
+                &+.input_label--juro{
+                    &::before{
+                        border-width: 8px;
+                        border-color: #1784cd;
+                        border-top-width: 36px;
+                    }
+                    .input_label-content--juro{
+                        color: #fff;
+                        transform: translate3d(0, -26px, 0) scale3d(0.75, 0.75, 1);
+                    }
+                }
+            }
+        }
+        .input_label--juro{
+            background: #fff;
+            height: 100%;
+            padding: 0;
+            text-align: left;
+            width: 100%;
+            &::before{
+                border: 0px solid transparent;
+                content: '';
+                height: 100%;
+                left: 0;
+                position: absolute;
+                top: 0;
+                transition: border-width 0.3s, border-color 0.3s;
+                width: 100%;
+            }
+        }
+        .input_label-content--juro{
+            padding: 36px 20px;
+            transform-origin: 0% 50%;  
+            transition: transform 0.3s, color 0.3s;
+        }
+    }
+}
+
+/* Haruki */
+.haruki{
+	background-color: #f0efee;
+	padding: 50px;
+    .input--haruki{
+        margin: 64px 16px 16px;
+        .input_field--haruki{
+            background: transparent;
+            color: #AFB5BB;
+            font-size: 32px;
+            padding: 20px 4px;
+            width: 100%;
+            &:focus{
+                &+.input_label--haruki{
+                    .input_label-content--haruki{
+                        transform: translate3d(0, -90%, 0);
+                    }
+                    &::before{
+                        transform: translate3d(0, -4px, 0);
+                    }
+                    &::after{
+                        transform: translate3d(0, 4px, 0);
+                    }
+                }
+            }
+            &:valid{
+                &+.input_label--haruki{
+                    .input_label-content--haruki{
+                        transform: translate3d(0, -90%, 0);
+                    }
+                    &::before{
+                        transform: translate3d(0, -4px, 0);
+                    }
+                    &::after{
+                        transform: translate3d(0, 0, 0);
+                    }
+                }
+            }
+        }
+        .input_label--haruki{
+            pointer-events: none;
+            position: absolute;
+            text-align: left;
+            width: 100%;
+            &::before{
+                background: #6a7989;
+                content: '';
+                height: 4px;
+                left: 0;
+                position: absolute;
+                top: 0;
+                transition: transform 0.3s;
+                width: 100%;
+                z-index: -1;
+            }
+            &::after{
+                background: #6a7989;
+                bottom: 0;
+                content: '';
+                height: 4px;
+                left: 0;
+                position: absolute;
+                transition: transform 0.3s;
+                width: 100%;
+                z-index: -1;
+            }
+        }
+        .input_label-content--haruki{
+            transition: transform 0.3s;
+        }
+        .input--filled {
+            .input_label-content--haruki{
+                transform: translate3d(0, -90%, 0);
+            }
+            .input_label--haruki {
+                &::before{
+                    transform: translate3d(0, -4px, 0);
+                }
+                &::after{
+                    transform: translate3d(0, 4px, 0);
+                }
+            }
+        }
+    }
+}
+
+/* Hoshi */
+.input--hoshi{
+	overflow: hidden;
+    .input_field--hoshi {
+        background: transparent;
+        color: #595F6E;
+        font-size: 26px;
+        margin-top: 10px;
+        padding: 20px 6px;
+        width: 100%;
+        &:focus {
+            &~.input_label--hoshi{
+                &::after {
+                    transform: translate3d(0, 0, 0);
+                }
+                .input_label-content--hoshi{
+                    animation: anim-1 0.3s forwards;
+                }
+            }
+        }
+        &:valid{
+            &+.input_label--hoshi{
+                &::after {
+                    transform: translate3d(0, 0, 0);
+                }
+                .input_label-content--hoshi{
+                    animation: anim-1 0.3s forwards;
+                }
+            }
+        }
+    }
+    .input_label--hoshi {
+        bottom: 50;
+        height: calc(100% - 4px);
+        left: 0;
+        padding: 0 4px;
+        pointer-events: none;
+        position: absolute;
+        text-align: left;
+        width: 100%;
+        &::before{
+            border-bottom: 1px solid #B9C1CA;
+            content: '';
+            height: calc(100% - 10px);
+            left: 0;
+            position: absolute;
+            top: 0;
+            width: 100%;
+        }
+        &::after{
+            border-bottom: 1px solid #B9C1CA;
+            border-bottom: 4px solid red;
+            content: '';
+            height: calc(100% - 10px);
+            left: 0;
+            margin-top: 2px;
+            position: absolute;
+            top: 0;
+            transform: translate3d(-100%, 0, 0);
+            transition: transform 0.3s;
+            width: 100%;
+        }
+    }
+    .input_label-content--hoshi{
+        position: absolute;
+    }
+    .input_label--hoshi-color-blue{
+        &::after {
+            border-color: blue;
+        }
+    }
+    .input_label--hoshi-color-green{
+        &::after {
+            border-color: lightgreen;
+        }
+    }
+    .input_label--hoshi-color-orange{
+        &::after {
+            border-color: orangered;
+        }
+    }
+    .input--filled{
+        .input_label--hoshi{
+            &::after {
+                transform: translate3d(0, 0, 0);
+            }
+        }
+        .input_label-content--hoshi{
+            animation: anim-1 0.3s forwards;
+        }
+    }
+}
+
+/* Madoka */
+.madoka {
+	background-color: #2f3238;
+	color: #fff;
+    .input--madoka {
+        margin: 1.1em;
+        .input_field--madoka{
+            background: transparent;
+            color: #7A7593;
+            font-size: 26px;
+            width: 100%;
+            &:focus {
+                &+.input_label--madoka{
+                    cursor: default;
+                    pointer-events: none;
+                    .graphic--madoka{
+                        stroke-dashoffset: 0;
+                    }
+                    .input_label-content--madoka{
+                        margin-top: -10px;
+                        transform: scale3d(0.81, 0.81, 1) translate3d(0, 72px, 0);
+                    }
+                }
+            }
+            &:valid{
+                &+.input_label--madoka{
+                    cursor: default;
+                    pointer-events: none;
+                    .graphic--madoka {
+                        stroke-dashoffset: 0;
+                    }
+                    .input_label-content--madoka{
+                        margin-top: -10px;
+                        transform: scale3d(0.81, 0.81, 1) translate3d(0, 72px, 0);
+                    }
+                }
+            }
+        }
+        .input_label--madoka{
+            color: #7A7593;
+            cursor: text;
+            height: 100%;
+            position: absolute;
+            text-align: left;
+            width: 100%;
+        }
+    }
+    .input_label-content--madoka{
+        transform-origin: 0% 50%;
+        transition: transform 0.3s;
+    }
+    .graphic--madoka{
+        pointer-events: none;
+        stroke-dasharray: 962;
+        stroke-dashoffset: 558;
+        stroke-width: 4px;
+        stroke: #7A7593;
+        transform: scale3d(1, -1, 1);
+        transition: stroke-dashoffset 0.3s;
+    }
+    .input--filled{
+        .input_label--madoka{
+            cursor: default;
+            pointer-events: none;
+        }
+        .graphic--madoka{
+            stroke-dashoffset: 0;
+        }
+        .input_label-content--madoka{
+            margin-top: -30px;
+            transform: scale3d(0.81, 0.81, 1) translate3d(0, 72px, 0);
+        }
+    }
+}
+
+
+
