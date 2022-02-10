@@ -1,0 +1,126 @@
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+body {
+  align-items: center;
+  display: flex;
+  flex-direction: column;
+  font-size: 16px;
+  height: 500px;
+  justify-content: center;
+  margin: auto;
+  width: 320px;
+}
+.input {
+  display: inline-block;
+  max-width: 350px;
+  position: relative;
+  width: 100%;
+  z-index: 1;
+}
+form {
+  display: flex;
+  flex-direction: column;
+  height: 170px;
+  justify-content: space-between;
+  position: relative;
+  width: 320px;
+}
+form .input_email {
+  background: none;
+  border-radius: 8px;
+  border: 2px solid darkgrey;
+  font-size: 18px;
+  height: 100%;
+  left: 0;
+  margin-bottom: 12px;
+  padding: 20px;
+  position: absolute;
+  top: 0;
+  width: 100%;
+}
+form .input_email:focus {
+  border-color: black;
+}
+form .input_email:focus + .label_email {
+  background-color: black;
+  border-radius: 3px;
+  color: white;
+  font-size: 16px;
+  padding: 3px 7px 3px 7px;
+  top: -10px;
+}
+form .input_email:valid {
+  border-color: black;
+}
+form .input_email:valid + .label_email {
+  background-color: white;
+  color: black;
+  font-size: 16px;
+  left: 8px;
+  padding: 0px 12px 0px 12px;
+  top: -8px;
+}
+form .label_email {
+  color: lightgrey;
+  cursor: text;
+  font-size: 22px;
+  left: 12px;
+  position: absolute;
+  top: 10px;
+  transition: 200ms ease-in, left 200ms ease-in, font-size 200ms ease-in;
+}
+form .input_password {
+  background: none;
+  border-radius: 8px;
+  border: 2px solid darkgrey;
+  font-size: 18px;
+  height: 100%;
+  left: 0;
+  padding: 20px;
+  position: absolute;
+  top: 0;
+  width: 100%;
+}
+form .input_password:focus {
+  border-color: black;
+}
+form .input_password:focus + .label_password {
+  background-color: black;
+  border-radius: 3px;
+  color: white;
+  font-size: 16px;
+  padding: 3px 7px 3px 7px;
+  top: -10px;
+}
+form .input_password:valid {
+  border-color: black;
+}
+form .input_password:valid + .label_password {
+  background-color: white;
+  color: black;
+  font-size: 16px;
+  left: 8px;
+  padding: 0px 12px 0px 12px;
+  top: -8px;
+}
+form .label_password {
+  color: lightgrey;
+  cursor: text;
+  font-size: 22px;
+  left: 12px;
+  position: absolute;
+  top: 10px;
+  transition: 200ms ease-in, left 200ms ease-in, font-size 200ms ease-in;
+}
+form button {
+  background-color: black;
+  border-radius: 5px;
+  border: none;
+  color: white;
+  padding: 15px;
+}
