@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>UX Elements/Checkboxes and Radio</title>
+    <link rel="stylesheet" href="../assets/css/styles.css">
+</head>
+<body>
+    <form >
+        <header class="search_input">
+            <input type="text" id="search_input" class="input_search" required/>
+            <label for="search_input" class="label_search">Type to search...</label>
+        </header>
+        
+        <section id="checkbox_radio">
+
+            <h3>Security</h3>
+
+            <span class="checkbox">
+                <input type="checkbox" class="input_checkbox" id="checkbox" required/>
+                <label for="checkbox" class="label_checkbox">Checkbox</label>
+            </span>
+
+            <span class="checkbox">
+                <input type="checkbox" class="input_checkbox" id="encrypt_wsa" required/>
+                <label for="encrypt_wsa" class="label_checkbox">Encrypt WSA</label>
+            </span>
+                
+            <span class="checkbox">
+                <input type="checkbox" class="input_checkbox" id="third_option" required/>
+                <label for="third_option" class="label_checkbox">Third option</label>
+            </span>
+            
+            <h3>Access</h3>
+
+            <span class="radio">
+                <input type="radio" id="private">
+                <label for="private" class="label_radio">Private (Only Me)</label>
+            </span>
+
+            <span class="radio">
+                <input type="radio" id="public">
+                <label for="public" class="label_radio">Public</label>
+            </span>
+        </section>
+        
+        
+    </form>
+</body>
+</html>

@@ -1,0 +1,97 @@
+@keyframes slide-out {
+    100% { transform: translateX(100%); }
+    0% { transform: translateX(-0%); }
+}
+
+*, *::before, *::after{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+body{
+    align-items: center;
+    display: flex;
+    flex-direction: column;
+    font-size: 16px;
+    height: 500px;
+    justify-content: center;
+    margin: auto;
+    width: 400px;
+}
+
+form{
+    display: flex;
+    flex-wrap: wrap;
+    position: relative;
+    width: 100%;
+    h3{
+        margin: 20px 0px 0px;
+        width: 100%;
+        color: lightgrey;
+    }
+    .checkbox, .radio{
+        display: flex;
+        align-items: center;
+        font-size: 24px;
+        width: 100%;
+        padding: 0px 30px;
+        input[type=checkbox], input[type=radio]{
+            transform: scale(2);
+        }
+        .label_checkbox, .label_radio{
+            margin: 15px 15px;
+        }
+    }
+    #checkbox_radio{
+        margin-top: 65px;
+        width: 100%;
+        cursor: pointer;
+    }
+
+    /* Input Search*/
+    .input_search{
+        background: none;
+        border-radius: 8px;
+        border: 2px solid darkgrey;
+        font-size: 18px;
+        height: 50px;
+        padding: 20px;
+        position: absolute;
+        top: -12px;
+        width: 100%;
+        &:focus{
+            border-color: black;
+            &+.label_search{
+                animation: slide-out 0.2s;
+            }
+        }
+        &:valid{
+            &+.label_search{
+                animation: slide-out 0.2s;
+            }
+        }
+    }
+    .label_search{
+        left: 12px;
+        position: absolute;
+        color: lightgrey;
+        font-size: 24px;
+        cursor: text;
+    }
+
+    .input_checkbox{
+        &:focus{
+            &+.label_checkbox{
+                color: #4FC3F7;
+            }
+        }
+        &:valid{
+            &+.label_checkbox{
+                color: #4FC3F7;
+            }
+        }
+    }
+    .label_checkbox{
+        cursor: pointer;
+    }
+}
