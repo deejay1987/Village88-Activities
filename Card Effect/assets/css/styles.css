@@ -1,0 +1,65 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+#wrapper {
+  background: white;
+  border-radius: 12px;
+  box-sizing: border-box;
+  display: flex;
+  margin: 100px auto;
+  max-height: 500px;
+  max-width: 632px;
+}
+.container_cards {
+  border-radius: 10px;
+  border: 1px solid lightgrey;
+  display: flex;
+  margin: auto;
+  padding: 15px;
+  visibility: hidden;
+  width: 600px;
+}
+.container_cards.active {
+  opacity: 1;
+  visibility: visible;
+}
+.container_cards img {
+  border-radius: 50%;
+  height: 70px;
+  width: 70px;
+}
+.container_cards .person_details {
+  display: flex;
+  flex-direction: column;
+  margin-left: 18px;
+}
+.container_cards .person_details h4,
+.container_cards .person_details p {
+  color: grey;
+}
+.container_cards .person_details p {
+  margin-top: 24px;
+}
+.action_btn {
+  border: none;
+  display: flex;
+  justify-content: flex-end;
+  position: relative;
+  vertical-align: top;
+}
+.action_btn::after {
+  color: black;
+  content: "|";
+  position: absolute;
+  right: 59px;
+  width: 2px;
+  z-index: 100;
+}
+.action_btn .btn {
+  background-color: transparent;
+  border: none;
+  color: red;
+  cursor: pointer;
+  padding: 5px 10px;
+}
