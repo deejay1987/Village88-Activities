@@ -1,0 +1,45 @@
+* {
+  margin: 0 auto;
+  padding: 0;
+}
+@keyframes scaleIn {
+  from {
+    transform: scale(0.5, 0.5);
+    opacity: .5;
+  }
+  to {
+    transform: scale(2.5, 2.5);
+    opacity: 0;
+  }
+}
+body {
+  display: grid;
+  place-content: center;
+}
+body #container {
+  width: 600px;
+  height: 400px;
+  display: grid;
+  place-content: center;
+  overflow: hidden;
+  position: relative;
+}
+body #container .circle {
+  border-radius: 50%;
+  width: 150px;
+  height: 150px;
+  background-color: blue;
+  position: absolute;
+  opacity: 0;
+  left: 222px;
+  top: 150px;
+  animation: scaleIn 4s infinite cubic-bezier(0.36, 0.11, 0.89, 0.32);
+}
+body #container .item {
+  z-index: 100;
+  padding: 5px;
+}
+body #container .item img {
+  width: 150px;
+  background-color: transparent;
+}

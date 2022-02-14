@@ -1,0 +1,27 @@
+#container p {
+  margin-bottom: 15px;
+}
+#container li {
+  margin-bottom: 10px;
+}
+#container li a {
+  text-decoration: none;
+  transition: all 0.2s ease-out;
+  padding: 5px;
+  background: linear-gradient(to bottom, rgba(58, 85, 240, 0) 0%, rgba(58, 85, 240, 0) 50%, #3a55f0 50%, #3a55f0 100%);
+  background-repeat: no-repeat;
+  background-size: 100% 200%;
+}
+#container li a:hover {
+  background-position: 0 100%;
+}
+#sample li {
+  padding: 7px 0px;
+}
+#sample li a {
+  text-decoration: none;
+  transition: all 0.2s ease-out;
+}
+#sample li a:hover {
+  border-bottom: 4px solid blue;
+}
