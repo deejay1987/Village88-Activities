@@ -1,17 +1,49 @@
-@keyframes slide-out {
-  100% {
-    transform: translateX(100%);
-  }
-  0% {
-    transform: translateX(0%);
-  }
-}
 *,
 *::before,
 *::after {
   box-sizing: border-box;
   margin: 0;
   padding: 0;
+}
+.input {
+  display: flex;
+  align-items: center;
+  margin: 18px;
+  max-width: 350px;
+  position: relative;
+  vertical-align: top;
+  width: 100%;
+  z-index: 1;
+}
+.input_field {
+  background: #f0f0f0;
+  border-radius: 0;
+  border: none;
+  color: #aaa;
+  display: block;
+  float: right;
+  font-weight: 400;
+  padding: 14px;
+  position: relative;
+  width: 5%;
+}
+.input_field:focus {
+  outline: none;
+}
+.input_label {
+  color: #696969;
+  display: inline-block;
+  float: right;
+  font-size: 24px;
+  font-weight: bold;
+  padding: 0 18px;
+  user-select: none;
+  width: 100%;
+}
+.input_label .input_label-content {
+  display: block;
+  position: relative;
+  width: 100%;
 }
 body {
   align-items: center;
@@ -25,7 +57,7 @@ body {
 }
 form {
   display: flex;
-  flex-wrap: wrap;
+  flex-direction: column;
   position: relative;
   width: 100%;
   /* Input Search*/
@@ -35,64 +67,148 @@ form h3 {
   width: 100%;
   color: lightgrey;
 }
-form .checkbox,
-form .radio {
+form .content_name {
   display: flex;
   align-items: center;
   font-size: 24px;
   width: 100%;
-  padding: 0px 30px;
 }
-form .checkbox input[type=checkbox],
-form .radio input[type=checkbox],
-form .checkbox input[type=radio],
-form .radio input[type=radio] {
+form .content_name input[type=checkbox],
+form .content_name input[type=radio] {
   transform: scale(2);
 }
-form .checkbox .label_checkbox,
-form .radio .label_checkbox,
-form .checkbox .label_radio,
-form .radio .label_radio {
+form .content_name .label_checkbox,
+form .content_name .label_radio {
   margin: 15px 15px;
 }
-form #checkbox_radio {
-  margin-top: 65px;
+form .search {
+  margin-top: 70px;
   width: 100%;
+}
+form .search h2 {
+  color: lightgrey;
+  font-size: 36px;
+}
+form .search .input--search {
+  width: 100%;
+  background: #fff;
+  overflow: hidden;
+  margin: 0px;
+}
+form .search .input--search .input_field--search {
+  background: transparent;
+  border: 2px solid lightgrey;
+  border-radius: 10px;
+  color: #6a7989;
+  font-size: 24px;
+  height: 69px;
+  padding-left: 20px;
+  width: 100%;
+}
+form .search .input--search .input_field--search:focus {
+  border: 2px solid #848389;
+  z-index: 1;
+}
+form .search .input--search .input_field--search:focus + .input_label--search {
+  border: 5px solid lightgrey;
+  border-radius: 10px;
+}
+form .search .input--search .input_field--search:focus + .input_label--search .input_label-content--search {
+  opacity: 0;
+  transform: translate3d(100px, 0, 0);
+  transition-timing-function: cubic-bezier(0.7, 0, 0.3, 1);
+}
+form .search .input--search .input_field--search:valid {
+  border: 2px solid #848389;
+  z-index: 1;
+}
+form .search .input--search .input_field--search:valid + .input_label--search {
+  border: 5px solid lightgrey;
+  border-radius: 10px;
+}
+form .search .input--search .input_field--search:valid + .input_label--search .input_label-content--search {
+  opacity: 0;
+  transform: translate3d(100px, 0, 0);
+  transition-timing-function: cubic-bezier(0.7, 0, 0.3, 1);
+}
+form .search .input_label--search {
+  align-items: center;
+  color: #D2D2D2;
+  display: flex;
+  height: 100%;
+  pointer-events: none;
+  position: absolute;
+  text-align: left;
+  width: 100%;
+}
+form .search .input_label-content--search {
+  display: inline-block;
+  transition-timing-function: cubic-bezier(0.7, 0, 0.3, 1);
+  transition: transform 0.3s, opacity 0.3s;
+  width: auto;
+}
+/* Checkbox */
+.checkbox .input--checkbox .input_field--checkbox {
   cursor: pointer;
 }
-form .input_search {
-  background: none;
-  border-radius: 8px;
-  border: 2px solid darkgrey;
-  font-size: 18px;
-  height: 50px;
-  padding: 20px;
-  position: absolute;
-  top: -12px;
-  width: 100%;
+.checkbox .input--checkbox .input_field--checkbox:focus + .input_label--checkbox .input_label-content--checkbox {
+  color: #1C89C1;
 }
-form .input_search:focus {
-  border-color: black;
+.checkbox .input--checkbox .input_field--checkbox:valid + .input_label--checkbox .input_label-content--checkbox {
+  color: #1C89C1;
 }
-form .input_search:focus + .label_search {
-  animation: slide-out 0.2s;
+.checkbox .input--checkbox .input_label--checkbox {
+  cursor: pointer;
 }
-form .input_search:valid + .label_search {
-  animation: slide-out 0.2s;
+/* Encrypt WSA */
+.encrypt_wsa .input--encrypt_wsa .input_field--encrypt_wsa {
+  cursor: pointer;
 }
-form .label_search {
-  left: 12px;
-  position: absolute;
-  color: lightgrey;
-  font-size: 24px;
-  cursor: text;
+.encrypt_wsa .input--encrypt_wsa .input_field--encrypt_wsa:focus + .input_label--encrypt_wsa .input_label-content--encrypt_wsa {
+  color: #1C89C1;
 }
-form .input_checkbox:focus + .label_checkbox {
-  color: #4FC3F7;
+.encrypt_wsa .input--encrypt_wsa .input_field--encrypt_wsa:valid + .input_label--encrypt_wsa .input_label-content--encrypt_wsa {
+  color: #1C89C1;
 }
-form .input_checkbox:valid + .label_checkbox {
-  color: #4FC3F7;
+.encrypt_wsa .input--encrypt_wsa .input_label--encrypt_wsa {
+  cursor: pointer;
 }
-form .label_checkbox {
+/* Third Option */
+.third_option .input--third_option .input_field--third_option {
+  cursor: pointer;
+}
+.third_option .input--third_option .input_field--third_option:focus + .input_label--third_option .input_label-content--third_option {
+  color: #1C89C1;
+}
+.third_option .input--third_option .input_field--third_option:valid + .input_label--third_option .input_label-content--third_option {
+  color: #1C89C1;
+}
+.third_option .input--third_option .input_label--third_option {
+  cursor: pointer;
+}
+/* Private */
+.private .input--private .input_field--private {
+  cursor: pointer;
+}
+.private .input--private .input_field--private:focus + .input_label--private .input_label-content--private {
+  color: #1C89C1;
+}
+.private .input--private .input_field--private:valid + .input_label--private .input_label-content--private {
+  color: #1C89C1;
+}
+.private .input--private .input_label--private {
+  cursor: pointer;
+}
+/* Public */
+.public .input--public .input_field--public {
+  cursor: pointer;
+}
+.public .input--public .input_field--public:focus + .input_label--public .input_label-content--public {
+  color: #1C89C1;
+}
+.public .input--public .input_field--public:valid + .input_label--public .input_label-content--public {
+  color: #1C89C1;
+}
+.public .input--public .input_label--public {
   cursor: pointer;
 }

@@ -14,6 +14,7 @@ body {
   justify-content: center;
   margin: auto;
   width: 320px;
+  background-color: #F0EEF0;
 }
 .input {
   display: inline-block;
@@ -44,21 +45,23 @@ form .input_email {
   width: 100%;
 }
 form .input_email:focus {
+  background-color: white;
   border-color: black;
 }
 form .input_email:focus + .label_email {
   background-color: black;
   border-radius: 3px;
-  color: white;
+  color: #F0EEF0;
   font-size: 16px;
   padding: 3px 7px 3px 7px;
   top: -10px;
 }
 form .input_email:valid {
+  background-color: #F0EEF0;
   border-color: black;
 }
 form .input_email:valid + .label_email {
-  background-color: white;
+  background-color: #F0EEF0;
   color: black;
   font-size: 16px;
   left: 8px;
@@ -87,21 +90,23 @@ form .input_password {
   width: 100%;
 }
 form .input_password:focus {
+  background-color: white;
   border-color: black;
 }
 form .input_password:focus + .label_password {
   background-color: black;
   border-radius: 3px;
-  color: white;
+  color: #F0EEF0;
   font-size: 16px;
   padding: 3px 7px 3px 7px;
   top: -10px;
 }
 form .input_password:valid {
+  background-color: #F0EEF0;
   border-color: black;
 }
 form .input_password:valid + .label_password {
-  background-color: white;
+  background-color: #F0EEF0;
   color: black;
   font-size: 16px;
   left: 8px;

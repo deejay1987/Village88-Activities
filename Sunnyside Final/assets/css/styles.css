@@ -299,7 +299,7 @@
 }
 #wrapper footer a img {
   filter: invert(1) brightness(0);
-  opacity: .5;
+  opacity: .5s;
 }
 #wrapper footer ul {
   column-gap: 50px;
@@ -317,7 +317,7 @@
   font-family: "Barlow", sans-serif;
   text-decoration: none;
 }
-#wrapper footer ul li a img.icon:hover {
+#wrapper footer ul li a img:hover {
   filter: brightness(0) invert(1);
   opacity: 1;
 }

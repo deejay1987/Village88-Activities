@@ -12,13 +12,13 @@ $(document).ready(function(){
             e.preventDefault();
             let add_pet_form = $(this);
             let add_pet_shelter_modal = $("#add_pet_shelter_modal");
-            let add_pet_id = Math.floor((Math.random() * 1000) + 1);
+            let add_pet_id = Math.floor((Math.random() * 10000));
             let add_pet_name = add_pet_form.find("#add_petname").val();
             let add_pet_type = add_pet_form.find("#add_pettype").val();
             let hidden_description = add_pet_form.find("#add_description").val();
-            let skill_1 = add_pet_form.find("#add_skill_1").val();
-            let skill_2 = add_pet_form.find("#add_skill_2").val();
-            let skill_3 = add_pet_form.find("#add_skill_3").val();
+            let skill_1 = add_pet_form.find("#add_skill_0").val();
+            let skill_2 = add_pet_form.find("#add_skill_1").val();
+            let skill_3 = add_pet_form.find("#add_skill_2").val();
             
             add_pet_form.find("input[type='text'], textarea").each(function() {
 				let input = $(this);
@@ -68,9 +68,8 @@ $(document).ready(function(){
             pet_details_modal.find("#pet_type_details").html(pet_details.find(".pet_type").text());
             pet_details_modal.find("#description_details").html(pet_details.find(".hidden_description").text());
 
-            $.each(pet_skills, function(index, value) {   
-                let pet_skill_id = index + 1;
-                pet_details_modal.find(".skill_" + pet_skill_id).text(value);
+            $.each(pet_skills, function(index, value) {
+                pet_details_modal.find(".skill_" + index).text(value);
             });
 
             pet_details_modal.find("#like_pet_btn").html("Like " + pet_name);
@@ -116,8 +115,7 @@ $(document).ready(function(){
             edit_pet_modal.find("#edit_description").data("pet-id", edit_pet_btn.data("pet-id")).val(edit_pet_btn.find(".hidden_description").text());
             
             $.each(data_skills, function(index, value) {   
-                let pet_skill_id = index + 1;
-                edit_pet_modal.find(".edit_skill_" + pet_skill_id).val(value);
+                edit_pet_modal.find(".edit_skill_" + index).val(value);
             });
 
             edit_pet_modal.find("input[type='text'], textarea").removeClass("border_red");
@@ -128,9 +126,9 @@ $(document).ready(function(){
             e.preventDefault();
             let edit_pet_form = $(this);
             let edit_pet_modal = edit_pet_form.closest("#edit_pet_modal");
-            let skill_1 = edit_pet_form.find(".edit_skill_1").val();
-            let skill_2 = edit_pet_form.find(".edit_skill_2").val();
-            let skill_3 = edit_pet_form.find(".edit_skill_3").val();
+            let skill_1 = edit_pet_form.find(".edit_skill_0").val();
+            let skill_2 = edit_pet_form.find(".edit_skill_1").val();
+            let skill_3 = edit_pet_form.find(".edit_skill_2").val();
 
             edit_pet_form.find("input[type='text'], textarea").each(function() {
 				let input = $(this);
@@ -144,7 +142,6 @@ $(document).ready(function(){
             let skills = [skill_1, skill_2, skill_3];
 
             if(edit_pet_form.find("input[type='text'], textarea").hasClass("border_red") === false){
-
                 $("#add_pet_section tr[data-pet-id=" + edit_pet_form.find("#edit_pettype").data("pet-id") + "]").find(".pet_type").text(edit_pet_form.find("#edit_pettype").val());
                 $("#add_pet_section tr[data-pet-id=" + edit_pet_form.find("#edit_pettype").data("pet-id") + "]").find(".hidden_description").text(edit_pet_form.find("#edit_description").val());
                 $("#add_pet_section tr[data-pet-id=" + edit_pet_form.find("#edit_pettype").data("pet-id") + "]").data("skills", skills);

@@ -232,7 +232,7 @@
             margin: auto;
             img{
                 filter: invert(1) brightness(0);
-                opacity: .5;
+                opacity: .5s;
             }
         }
         ul{
@@ -249,7 +249,7 @@
                     font-family: "Barlow", sans-serif;
                     text-decoration: none;
                     img{
-                        &.icon:hover{
+                        &:hover{
                             filter: brightness(0) invert(1);
                             opacity: 1;
                         }
@@ -328,7 +328,7 @@
                 a{
                     width: 50%;
                     &::before{  /*hover for darker color*/
-                        bottom: 52px;
+                        bottom: 52px; 
                     }
                 }
             }

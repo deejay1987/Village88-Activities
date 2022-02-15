@@ -2,7 +2,6 @@ $(document).ready(function(){
     let container_cards = $(".container_cards");
     let current_card = container_cards.filter(".active");
 
-
     $("body")
         .on("click", "#next", function(){
             let next_card = current_card.next();
@@ -13,7 +12,7 @@ $(document).ready(function(){
                 current_card = next_card.addClass("active");
             }
             else{
-                current_card =container_cards.first().addClass("active");
+                current_card = container_cards.first().addClass("active");
             }
             
         })

@@ -7,52 +7,61 @@
   border-radius: 12px;
   box-sizing: border-box;
   display: flex;
+  flex-wrap: wrap;
   margin: 100px auto;
   max-height: 500px;
-  max-width: 632px;
+  max-width: 774px;
+  position: relative;
 }
-.container_cards {
+#wrapper ul {
+  width: 100%;
+}
+#wrapper ul .container_cards {
   border-radius: 10px;
   border: 1px solid lightgrey;
   display: flex;
   margin: auto;
-  padding: 15px;
+  padding: 40px;
+  position: absolute;
+  top: 0;
   visibility: hidden;
   width: 600px;
 }
-.container_cards.active {
+#wrapper ul .container_cards.active {
   opacity: 1;
   visibility: visible;
 }
-.container_cards img {
+#wrapper ul .container_cards img {
   border-radius: 50%;
   height: 70px;
   width: 70px;
 }
-.container_cards .person_details {
+#wrapper ul .container_cards .person_details {
   display: flex;
   flex-direction: column;
   margin-left: 18px;
 }
-.container_cards .person_details h4,
-.container_cards .person_details p {
+#wrapper ul .container_cards .person_details h4,
+#wrapper ul .container_cards .person_details p {
   color: grey;
 }
-.container_cards .person_details p {
+#wrapper ul .container_cards .person_details p {
   margin-top: 24px;
 }
 .action_btn {
   border: none;
   display: flex;
   justify-content: flex-end;
-  position: relative;
-  vertical-align: top;
+  position: absolute;
+  top: 380px;
+  right: 90px;
 }
 .action_btn::after {
   color: black;
   content: "|";
   position: absolute;
   right: 59px;
+  top: 0px;
   width: 2px;
   z-index: 100;
 }
