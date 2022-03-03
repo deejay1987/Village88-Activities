@@ -8,6 +8,7 @@
     <link rel="stylesheet" href="../assets/css/styles.css">
     <link href="https://fonts.googleapis.com/css2?family=Do+Hyeon&family=Kanit&display=swap" rel="stylesheet">  
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="https://code.jquery.com/jquery-3.5.0.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
     <script src="../assets/js/custom/app.js"></script>
@@ -45,7 +46,7 @@
         <section id="pet_section">
             <h4>These pets are looking for a good home</h4> 
             <table id="add_pet_section">
-                <tr data-pet-id="2" data-like="0" data-is-liked="false" data-skills=["Eating","Sleeping","Slacking-off"]>
+                <tr data-pet-id="2" data-like="0" data-is-liked="false" data-skills='["Eating","Sleeping","Slacking-off"]'>
                     <td class="pet_name">Garfield</td>
                     <td class="pet_type">Cat</td>
                     <td class="hidden_description">Hate Mondays</td>
@@ -56,20 +57,20 @@
                             <li class="skill_2">Slacking off</li>
                         </ul>
                     </td>
-                    <td>
+                    <td class="details_btn">
                         <button type="button" class="details_pet_btn">
                             <img src="../assets/images/details.png" alt="Details Icon">
                             Details
                         </button>
                     </td>
-                    <td>
+                    <td>  
                         <button type="button" class="edit_pet_btn" >
                             <img src="../assets/images/edit.png" alt=" Edit Icon">
                             Edit
                         </button>
                     </td>
                 </tr>
-                <tr data-pet-id="1" data-like="0" data-is-liked="false" data-skills=["Helpful","Sleeping","Magician"]>
+                <tr data-pet-id="1" data-like="0" data-is-liked="false" data-skills='["Helpful","Sleeping","Magician"]'>
                     <td class="pet_name">Doraemon</td>
                     <td class="pet_type">Cat</td>
                     <td class="hidden_description">Color Blue</td>

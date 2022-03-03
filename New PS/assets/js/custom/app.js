@@ -37,25 +37,24 @@ $(document).ready(function(){
                         <td class="pet_name">`+ add_pet_name +`</td>
                         <td class="pet_type">` + add_pet_type + `</td>
                         <td class="hidden_description">` + hidden_description + `</td>
-                        <td>
+                        <td class="details_btn">
                             <button type="button" class="details_pet_btn">
                                 <img src="../assets/images/details.png" alt="Details Icon">
                                 Details
                             </button>
                         </td>
-                        <td>
+                        <td>  
                             <button type="button" class="edit_pet_btn" >
                                 <img src="../assets/images/edit.png" alt=" Edit Icon">
                                 Edit
                             </button>
                         </td>
                    </tr>`
-                   );
-                   add_pet_shelter_modal.modal("hide");
-                   add_pet_form[0].reset();
-               }
-               return false; 
-
+                );
+                add_pet_shelter_modal.modal("hide");
+                add_pet_form[0].reset();
+            }
+            return false; 
         })
 
         .on("click", ".details_pet_btn", function(){
@@ -108,11 +107,12 @@ $(document).ready(function(){
             let edit_pet_modal = $("#edit_pet_modal");
             let edit_pet_btn = $(this).closest("tr");
             let data_skills = edit_pet_btn.data("skills");
+            let edit_data_pet_id = edit_pet_btn.data("pet-id");
 
             edit_pet_modal.find(".edit_pet_name").html("Edit Details: " + edit_pet_btn.find(".pet_name").text());
 
-            edit_pet_modal.find("#edit_pettype").data("pet-id", edit_pet_btn.data("pet-id")).val(edit_pet_btn.find(".pet_type").text());
-            edit_pet_modal.find("#edit_description").data("pet-id", edit_pet_btn.data("pet-id")).val(edit_pet_btn.find(".hidden_description").text());
+            edit_pet_modal.find("#edit_pettype").data("pet-id", edit_data_pet_id).val(edit_pet_btn.find(".pet_type").text());
+            edit_pet_modal.find("#edit_description").data("pet-id", edit_data_pet_id).val(edit_pet_btn.find(".hidden_description").text());
             
             $.each(data_skills, function(index, value) {   
                 edit_pet_modal.find(".edit_skill_" + index).val(value);
@@ -129,6 +129,7 @@ $(document).ready(function(){
             let skill_1 = edit_pet_form.find(".edit_skill_0").val();
             let skill_2 = edit_pet_form.find(".edit_skill_1").val();
             let skill_3 = edit_pet_form.find(".edit_skill_2").val();
+            let active_data_pet_id = edit_pet_form.find("#edit_pettype").data("pet-id");
 
             edit_pet_form.find("input[type='text'], textarea").each(function() {
 				let input = $(this);
@@ -142,12 +143,16 @@ $(document).ready(function(){
             let skills = [skill_1, skill_2, skill_3];
 
             if(edit_pet_form.find("input[type='text'], textarea").hasClass("border_red") === false){
-                $("#add_pet_section tr[data-pet-id=" + edit_pet_form.find("#edit_pettype").data("pet-id") + "]").find(".pet_type").text(edit_pet_form.find("#edit_pettype").val());
-                $("#add_pet_section tr[data-pet-id=" + edit_pet_form.find("#edit_pettype").data("pet-id") + "]").find(".hidden_description").text(edit_pet_form.find("#edit_description").val());
-                $("#add_pet_section tr[data-pet-id=" + edit_pet_form.find("#edit_pettype").data("pet-id") + "]").data("skills", skills);
+                $("#add_pet_section tr[data-pet-id=" + active_data_pet_id + "]").find(".pet_type").text(edit_pet_form.find("#edit_pettype").val());
+                $("#add_pet_section tr[data-pet-id=" + active_data_pet_id + "]").find(".hidden_description").text(edit_pet_form.find("#edit_description").val());
+                $("#add_pet_section tr[data-pet-id=" + active_data_pet_id + "]").data("skills", skills);
 
                 edit_pet_modal.modal("hide");
             }
             return false;
         })
 });
+
+
+
+ 

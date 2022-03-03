@@ -73,7 +73,7 @@ body {
   user-select: none;
   width: 40%;
 }
-.input_label-content {
+.input_label_content {
   display: block;
   padding: 1.6em 0;
   position: relative;
@@ -136,7 +136,7 @@ body {
   transform: scale3d(1, 1, 1);
   transition: transform 0.3s;
 }
-.input--hideo .input_label-content--hideo {
+.input--hideo .input_label_content--hideo {
   position: absolute;
   top: 100%;
 }
@@ -146,42 +146,44 @@ body {
 }
 .juro .input--juro {
   overflow: hidden;
+  height: 50px;
 }
-.juro .input--juro .input_field--juro {
+.juro .input--juro .input_field_juro {
   background: transparent;
   color: #1784cd;
-  font-size: 26px;
-  padding: 46px 16px 0;
+  font-size: 14px;
+  padding: 22px 16px 0;
   position: absolute;
   width: 100%;
   z-index: 1;
 }
-.juro .input--juro .input_field--juro:focus + .input_label--juro::before {
+.juro .input--juro .input_field_juro:focus + .input_label_juro::before {
   border-width: 8px;
   border-color: #1784cd;
-  border-top-width: 36px;
+  border-top-width: 18px;
 }
-.juro .input--juro .input_field--juro:focus + .input_label--juro .input_label-content--juro {
+.juro .input--juro .input_field_juro:focus + .input_label_juro .input_label_content_juro {
   color: #fff;
-  transform: translate3d(0, -26px, 0) scale3d(0.75, 0.75, 1);
+  transform: translate3d(0, -16px, 0) scale3d(0.75, 0.75, 1);
 }
-.juro .input--juro .input_field--juro:valid + .input_label--juro::before {
+.juro .input--juro .input_field_juro:valid + .input_label_juro::before {
   border-width: 8px;
   border-color: #1784cd;
-  border-top-width: 36px;
+  border-top-width: 18px;
 }
-.juro .input--juro .input_field--juro:valid + .input_label--juro .input_label-content--juro {
+.juro .input--juro .input_field_juro:valid + .input_label_juro .input_label_content_juro {
   color: #fff;
-  transform: translate3d(0, -26px, 0) scale3d(0.75, 0.75, 1);
+  transform: translate3d(0, -16px, 0) scale3d(0.75, 0.75, 1);
 }
-.juro .input--juro .input_label--juro {
+.juro .input--juro .input_label_juro {
   background: #fff;
   height: 100%;
   padding: 0;
+  font-size: 18px;
   text-align: left;
   width: 100%;
 }
-.juro .input--juro .input_label--juro::before {
+.juro .input--juro .input_label_juro::before {
   border: 0px solid transparent;
   content: '';
   height: 100%;
@@ -191,8 +193,8 @@ body {
   transition: border-width 0.3s, border-color 0.3s;
   width: 100%;
 }
-.juro .input--juro .input_label-content--juro {
-  padding: 36px 20px;
+.juro .input--juro .input_label_content_juro {
+  padding: 15px 22px;
   transform-origin: 0% 50%;
   transition: transform 0.3s, color 0.3s;
 }
@@ -201,54 +203,55 @@ body {
   background-color: #f0efee;
   padding: 50px;
 }
-.haruki .input--haruki {
-  margin: 64px 16px 16px;
+.haruki .input_haruki {
+  margin: 57px 16px 16px;
+  height: 24px;
 }
-.haruki .input--haruki .input_field--haruki {
+.haruki .input_haruki .input_field_haruki {
   background: transparent;
   color: #AFB5BB;
-  font-size: 32px;
-  padding: 20px 4px;
+  font-size: 24px;
+  padding: 5px 20px;
   width: 100%;
 }
-.haruki .input--haruki .input_field--haruki:focus + .input_label--haruki .input_label-content--haruki {
-  transform: translate3d(0, -90%, 0);
+.haruki .input_haruki .input_field_haruki:focus + .input_label_haruki .input_label_content_haruki {
+  transform: translate3d(0, -100%, 0);
 }
-.haruki .input--haruki .input_field--haruki:focus + .input_label--haruki::before {
+.haruki .input_haruki .input_field_haruki:focus + .input_label_haruki::before {
   transform: translate3d(0, -4px, 0);
 }
-.haruki .input--haruki .input_field--haruki:focus + .input_label--haruki::after {
+.haruki .input_haruki .input_field_haruki:focus + .input_label_haruki::after {
   transform: translate3d(0, 4px, 0);
 }
-.haruki .input--haruki .input_field--haruki:valid + .input_label--haruki .input_label-content--haruki {
-  transform: translate3d(0, -90%, 0);
+.haruki .input_haruki .input_field_haruki:valid + .input_label_haruki .input_label_content_haruki {
+  transform: translate3d(0, -100%, 0);
 }
-.haruki .input--haruki .input_field--haruki:valid + .input_label--haruki::before {
+.haruki .input_haruki .input_field_haruki:valid + .input_label_haruki::before {
   transform: translate3d(0, -4px, 0);
 }
-.haruki .input--haruki .input_field--haruki:valid + .input_label--haruki::after {
+.haruki .input_haruki .input_field_haruki:valid + .input_label_haruki::after {
   transform: translate3d(0, 0, 0);
 }
-.haruki .input--haruki .input_label--haruki {
+.haruki .input_haruki .input_label_haruki {
   pointer-events: none;
   position: absolute;
   text-align: left;
   width: 100%;
 }
-.haruki .input--haruki .input_label--haruki::before {
+.haruki .input_haruki .input_label_haruki::before {
   background: #6a7989;
   content: '';
   height: 4px;
   left: 0;
   position: absolute;
-  top: 0;
+  top: -4px;
   transition: transform 0.3s;
   width: 100%;
   z-index: -1;
 }
-.haruki .input--haruki .input_label--haruki::after {
+.haruki .input_haruki .input_label_haruki::after {
   background: #6a7989;
-  bottom: 0;
+  bottom: -4px;
   content: '';
   height: 4px;
   left: 0;
@@ -257,16 +260,17 @@ body {
   width: 100%;
   z-index: -1;
 }
-.haruki .input--haruki .input_label-content--haruki {
+.haruki .input_haruki .input_label_content_haruki {
+  padding: 8px 0;
   transition: transform 0.3s;
 }
-.haruki .input--haruki .input--filled .input_label-content--haruki {
+.haruki .input_haruki .input--filled .input_label_content_haruki {
   transform: translate3d(0, -90%, 0);
 }
-.haruki .input--haruki .input--filled .input_label--haruki::before {
+.haruki .input_haruki .input--filled .input_label_haruki::before {
   transform: translate3d(0, -4px, 0);
 }
-.haruki .input--haruki .input--filled .input_label--haruki::after {
+.haruki .input_haruki .input--filled .input_label_haruki::after {
   transform: translate3d(0, 4px, 0);
 }
 /* Hoshi */
@@ -284,13 +288,13 @@ body {
 .input--hoshi .input_field--hoshi:focus ~ .input_label--hoshi::after {
   transform: translate3d(0, 0, 0);
 }
-.input--hoshi .input_field--hoshi:focus ~ .input_label--hoshi .input_label-content--hoshi {
+.input--hoshi .input_field--hoshi:focus ~ .input_label--hoshi .input_label_content--hoshi {
   animation: anim-1 0.3s forwards;
 }
 .input--hoshi .input_field--hoshi:valid + .input_label--hoshi::after {
   transform: translate3d(0, 0, 0);
 }
-.input--hoshi .input_field--hoshi:valid + .input_label--hoshi .input_label-content--hoshi {
+.input--hoshi .input_field--hoshi:valid + .input_label--hoshi .input_label_content--hoshi {
   animation: anim-1 0.3s forwards;
 }
 .input--hoshi .input_label--hoshi {
@@ -325,7 +329,7 @@ body {
   transition: transform 0.3s;
   width: 100%;
 }
-.input--hoshi .input_label-content--hoshi {
+.input--hoshi .input_label_content--hoshi {
   position: absolute;
 }
 .input--hoshi .input_label--hoshi-color-blue::after {
@@ -340,7 +344,7 @@ body {
 .input--hoshi .input--filled .input_label--hoshi::after {
   transform: translate3d(0, 0, 0);
 }
-.input--hoshi .input--filled .input_label-content--hoshi {
+.input--hoshi .input--filled .input_label_content--hoshi {
   animation: anim-1 0.3s forwards;
 }
 /* Madoka */
@@ -348,38 +352,38 @@ body {
   background-color: #2f3238;
   color: #fff;
 }
-.madoka .input--madoka {
+.madoka .input_madoka {
   margin: 1.1em;
 }
-.madoka .input--madoka .input_field--madoka {
+.madoka .input_madoka .input_field_madoka {
   background: transparent;
   color: #7A7593;
   font-size: 26px;
   width: 100%;
 }
-.madoka .input--madoka .input_field--madoka:focus + .input_label--madoka {
+.madoka .input_madoka .input_field_madoka:focus + .input_label_madoka {
   cursor: default;
   pointer-events: none;
 }
-.madoka .input--madoka .input_field--madoka:focus + .input_label--madoka .graphic--madoka {
+.madoka .input_madoka .input_field_madoka:focus + .input_label_madoka .graphic_madoka {
   stroke-dashoffset: 0;
 }
-.madoka .input--madoka .input_field--madoka:focus + .input_label--madoka .input_label-content--madoka {
+.madoka .input_madoka .input_field_madoka:focus + .input_label_madoka .input_label_content_madoka {
   margin-top: -10px;
   transform: scale3d(0.81, 0.81, 1) translate3d(0, 72px, 0);
 }
-.madoka .input--madoka .input_field--madoka:valid + .input_label--madoka {
+.madoka .input_madoka .input_field_madoka:valid + .input_label_madoka {
   cursor: default;
   pointer-events: none;
 }
-.madoka .input--madoka .input_field--madoka:valid + .input_label--madoka .graphic--madoka {
+.madoka .input_madoka .input_field_madoka:valid + .input_label_madoka .graphic_madoka {
   stroke-dashoffset: 0;
 }
-.madoka .input--madoka .input_field--madoka:valid + .input_label--madoka .input_label-content--madoka {
+.madoka .input_madoka .input_field_madoka:valid + .input_label_madoka .input_label_content_madoka {
   margin-top: -10px;
   transform: scale3d(0.81, 0.81, 1) translate3d(0, 72px, 0);
 }
-.madoka .input--madoka .input_label--madoka {
+.madoka .input_madoka .input_label_madoka {
   color: #7A7593;
   cursor: text;
   height: 100%;
@@ -387,11 +391,11 @@ body {
   text-align: left;
   width: 100%;
 }
-.madoka .input_label-content--madoka {
+.madoka .input_label_content_madoka {
   transform-origin: 0% 50%;
   transition: transform 0.3s;
 }
-.madoka .graphic--madoka {
+.madoka .graphic_madoka {
   pointer-events: none;
   stroke-dasharray: 962;
   stroke-dashoffset: 558;
@@ -400,14 +404,14 @@ body {
   transform: scale3d(1, -1, 1);
   transition: stroke-dashoffset 0.3s;
 }
-.madoka .input--filled .input_label--madoka {
+.madoka .input--filled .input_label_madoka {
   cursor: default;
   pointer-events: none;
 }
-.madoka .input--filled .graphic--madoka {
+.madoka .input--filled .graphic_madoka {
   stroke-dashoffset: 0;
 }
-.madoka .input--filled .input_label-content--madoka {
+.madoka .input--filled .input_label_content_madoka {
   margin-top: -30px;
   transform: scale3d(0.81, 0.81, 1) translate3d(0, 72px, 0);
 }

@@ -6,8 +6,9 @@ $(document).ready(function(){
            
             flyout_menu.addClass("show");
 
-            flyout_menu.setTimeout(() => {
-                2000}, timeout);
+            flyout_menu.setInterval(() => {
+                
+            }, interval);
         })
 
         .on("click", "#flyoutMenu", function(e){
