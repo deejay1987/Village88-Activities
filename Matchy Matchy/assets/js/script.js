@@ -6,7 +6,8 @@ $(document).ready(function() {
     /* Event listeners should be inside $(document).ready */
     $("body")
         .on("click", ".hidden_img", hiddenImgClick)
-        .on("click", "#matchy_game_btn", matchyGameBtnClick);
+        .on("click", "#matchy_game_btn", matchyGameBtnClick)
+        // .on("click", "#jumble_match_images", jumbleMatchImages);
 
         /* How to name your event handler function
         step 1: Target element + event type
@@ -73,7 +74,7 @@ function matchyGameBtnClick(){
     let images = [
                     {
                     "cap"   : "../assets/images/cap.jfif",
-                    "eye"   : "../assets/images/eye.jpg",
+                    "house" : "../assets/images/house.jpg",
                     "watch" : "../assets/images/watch.jpg",
                     "baby"  : "../assets/images/baby.jpg",
                     },
@@ -81,21 +82,21 @@ function matchyGameBtnClick(){
                     {
                     "cap"   : "../assets/images/cap.jfif",
                     "eye"   : "../assets/images/eye.jpg",
-                    "watch" : "../assets/images/watch.jpg",
+                    "phone" : "../assets/images/phone.jpg",
                     "baby"  : "../assets/images/baby.jpg",
                     },
 
                     {
                     "sunglasses": "../assets/images/sunglasses.jpg",
                     "car"       : "../assets/images/car.jpg",
+                    "eye"       : "../assets/images/eye.jpg",
                     "house"     : "../assets/images/house.jpg",
-                    "phone"     : "../assets/images/phone.jpg"
                     },
 
                     {
                     "sunglasses": "../assets/images/sunglasses.jpg",
                     "car"       : "../assets/images/car.jpg",
-                    "house"     : "../assets/images/house.jpg",
+                    "watch"     : "../assets/images/watch.jpg",
                     "phone"     : "../assets/images/phone.jpg"
                     }
                 ];
@@ -112,6 +113,13 @@ function matchyGameBtnClick(){
             row_data = $("<td><img class='hidden_img' data-img="+ data_img +" src="+ question_img +" data-alt-src="+ data_alt_src +" data-index=" + data_index +"  /></td>");
             
             table_row.append(row_data);
+        }
+        for (let jumble_images = images.length - 1; jumble_images > 1; jumble_images--) {
+            let random_images = Math.floor(Math.random() * (jumble_images + 1));
+            let temp = images[jumble_images];
+    
+            images[jumble_images] = images[random_images];
+            images[random_images] = temp;
         }
 
         $("#matchy_table").append(table_row);
