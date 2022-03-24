@@ -1,6 +1,6 @@
 $(document).ready(function() {
     let current_img = "";
-    let current_index = "0";
+    let current_index = 0;
     
     $("body")
         .on("click", ".hidden_img", function() {
@@ -60,15 +60,15 @@ $(document).ready(function() {
         .on("click", "#matchy_game_btn", function(){
             let images = [
                             {
-                            "cap"   :"../assets/images/cap.jfif",
-                            "eye"   :"../assets/images/eye.jpg",
+                            "cap"   : "../assets/images/cap.jfif",
+                            "eye"   : "../assets/images/eye.jpg",
                             "watch" : "../assets/images/watch.jpg",
                             "baby"  : "../assets/images/baby.jpg",
                             },
 
                             {
-                            "cap"   :"../assets/images/cap.jfif",
-                            "eye"   :"../assets/images/eye.jpg",
+                            "cap"   : "../assets/images/cap.jfif",
+                            "eye"   : "../assets/images/eye.jpg",
                             "watch" : "../assets/images/watch.jpg",
                             "baby"  : "../assets/images/baby.jpg",
                             },
@@ -88,17 +88,19 @@ $(document).ready(function() {
                             }
                         ];
 
-            for(let index = 1; index <= 4; index++){
+            for(let index = 0; index < images.length; index++){
                 let table_row = $("<tr></tr>");
                 let question_img = "../assets/images/question.jpg";
+                let images_obj = images[index];
 
-                $.each(images, function(){
+                for(let images_property in images_obj){
                     let data_index = current_index++ +1;
-                    
-                    row_data = $("<td><img class='hidden_img' data-img="+ +" src="+ question_img +" data-alt-src="+ $(this) +" data-index=" + data_index +"  /></td>");
+                    let data_alt_src = images_obj[images_property];
+                    let data_img = images_property;
+                    row_data = $("<td><img class='hidden_img' data-img="+ data_img +" src="+ question_img +" data-alt-src="+ data_alt_src +" data-index=" + data_index +"  /></td>");
                     
                     table_row.append(row_data);
-                })
+                }
 
                 $("#matchy_table").append(table_row);
             }
