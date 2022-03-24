@@ -114,6 +114,7 @@ function matchyGameBtnClick(){
             
             table_row.append(row_data);
         }
+        /* To randomize images */
         for (let jumble_images = images.length - 1; jumble_images > 1; jumble_images--) {
             let random_images = Math.floor(Math.random() * (jumble_images + 1));
             let temp = images[jumble_images];
