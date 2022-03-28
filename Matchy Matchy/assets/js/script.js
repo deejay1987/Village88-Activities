@@ -7,7 +7,7 @@ $(document).ready(function() {
     $("body")
         .on("click", ".hidden_img", hiddenImgClick)
         .on("click", "#matchy_game_btn", matchyGameBtnClick)
-        // .on("click", "#jumble_match_images", jumbleMatchImages);
+        // .on("click", "#jumble_match_images", random_item);
 
         /* How to name your event handler function
         step 1: Target element + event type
@@ -71,36 +71,32 @@ function hiddenImgClick() {
     }
 }
 function matchyGameBtnClick(){
-    let images = [
-                    {
-                    "cap"   : "../assets/images/cap.jfif",
-                    "house" : "../assets/images/house.jpg",
-                    "watch" : "../assets/images/watch.jpg",
-                    "baby"  : "../assets/images/baby.jpg",
-                    },
+    /* Possible images */
+    let images_content = ["cap", "house", "watch", "baby", "eye", "phone", "sunglasses", "car"];
+    let images = [];
+    let images_content_clone = [...images_content, ...images_content];
 
-                    {
-                    "cap"   : "../assets/images/cap.jfif",
-                    "eye"   : "../assets/images/eye.jpg",
-                    "phone" : "../assets/images/phone.jpg",
-                    "baby"  : "../assets/images/baby.jpg",
-                    },
+    for(let image_index = 0; image_index < 4; image_index++){
+        let empty_obj = {};
+        for(let rand_index = (image_index * 4); rand_index < ((image_index + 1) * 4); rand_index++){
+            empty_obj[images_content_clone[rand_index]] = "../assets/images/" + images_content_clone[rand_index] + ".jpg";
+        }
 
-                    {
-                    "sunglasses": "../assets/images/sunglasses.jpg",
-                    "car"       : "../assets/images/car.jpg",
-                    "eye"       : "../assets/images/eye.jpg",
-                    "house"     : "../assets/images/house.jpg",
-                    },
+        /* Randomized matching images */
+        // for(let rand_index = 0; rand_index < 4; rand_index++){
+        //     let random_image_index = (images_content_clone.length - 1 > 0) ? Math.floor(Math.random() * (images_content_clone.length - 1)) : 0;
 
-                    {
-                    "sunglasses": "../assets/images/sunglasses.jpg",
-                    "car"       : "../assets/images/car.jpg",
-                    "watch"     : "../assets/images/watch.jpg",
-                    "phone"     : "../assets/images/phone.jpg"
-                    }
-                ];
-
+        //     /* Makes sure that no two images fall in the same row */
+        //     if(empty_obj.hasOwnProperty(images_content_clone[random_image_index])){
+        //         random_image_index++;
+        //     }
+        //     empty_obj[images_content_clone[random_image_index]] = "../assets/images/" + images_content_clone[random_image_index] + ".jpg";
+        //     images_content_clone.splice(random_image_index, 1);
+        // }
+        images.push(empty_obj);
+    }
+   
+    /* Append Matchy Matchy grid images */
     for(let index = 0; index < images.length; index++){
         let table_row = $("<tr></tr>");
         let question_img = "../assets/images/question.jpg";
@@ -114,15 +110,6 @@ function matchyGameBtnClick(){
             
             table_row.append(row_data);
         }
-        /* To randomize images */
-        for (let jumble_images = images.length - 1; jumble_images > 1; jumble_images--) {
-            let random_images = Math.floor(Math.random() * (jumble_images + 1));
-            let temp = images[jumble_images];
-    
-            images[jumble_images] = images[random_images];
-            images[random_images] = temp;
-        }
-
         $("#matchy_table").append(table_row);
     }
 }
