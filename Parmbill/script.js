@@ -19,10 +19,12 @@ function tileClick(){
     else{
         target_tile.removeClass("active_tile");
     }
+    getCoordinatesClickBtn();
 }
 
 function getCoordinatesClickBtn() {
     let empty_string = "[";
+    /* Approach 1 is use array then .join later */
     // let empty_string_array = [];
     let tile_row_index = 1;
     let state_table_tr = $("#state_table tr");
@@ -75,17 +77,18 @@ function renderTableBtnClick(){
 
     /* Append/Render tile coordinates */
     $("#state_table").html("");
-    
+
     for(let render_tile_coordinates = 0; render_tile_coordinates < tile_coordinates.length; render_tile_coordinates++){
         let tiles_index = tile_coordinates[render_tile_coordinates];
         let table_row = $("<tr></tr>");
+        // use clone instead of strings
 
         for(let tiles_property in tiles_index){
             let tile_state = tiles_index[tiles_property];
             let active_tile = (tile_state == 1) ? "active_tile" : "";
             
             row_data = $("<td  class='tiles "+ active_tile +"' data-tile_state=" + tile_state + ">");
-            console.log(row_data);
+            // use clone instead of strings
 
             table_row.append(row_data);
         }

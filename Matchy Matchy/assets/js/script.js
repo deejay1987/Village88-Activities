@@ -15,7 +15,6 @@ $(document).ready(function() {
         step 3: Use function name
         */
 });
-
 /* Event handlers should be after $(document).ready */
 function hiddenImgClick() {
     let hidden_img = $(this);
@@ -79,6 +78,7 @@ function matchyGameBtnClick(){
     for(let image_index = 0; image_index < 4; image_index++){
         let empty_obj = {};
         for(let rand_index = (image_index * 4); rand_index < ((image_index + 1) * 4); rand_index++){
+
             empty_obj[images_content_clone[rand_index]] = "../assets/images/" + images_content_clone[rand_index] + ".jpg";
         }
 
@@ -101,8 +101,10 @@ function matchyGameBtnClick(){
         let table_row = $("<tr></tr>");
         let question_img = "../assets/images/question.jpg";
         let images_obj = images[index];
+        // console.log(images_obj);
 
         for(let images_property in images_obj){
+            // console.log(images_property);
             let data_index = current_index++ +1;
             let data_alt_src = images_obj[images_property];
             let data_img = images_property;
@@ -113,3 +115,24 @@ function matchyGameBtnClick(){
         $("#matchy_table").append(table_row);
     }
 }
+
+
+// function shuffleArray(array){
+//     let counter = array.length;
+
+//     /* While there are elements in the array */
+//     while (counter > 0) {
+
+//         /* Pick a random index */
+//         let random_index = Math.floor(Math.random() * counter);
+
+//         /* Decrease counter by 1 */
+//         counter--;
+
+//         /* Swap the last element with it */
+//         let temp = array[counter];
+//         array[counter] = array[random_index];
+//         array[random_index] = temp;
+//     }
+// };
+// shuffleArray(images);
