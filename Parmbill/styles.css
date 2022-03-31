@@ -32,3 +32,6 @@ td{
 .active_tile{
     background-color: #219653;
 }
+.hidden{
+    display: none;
+}

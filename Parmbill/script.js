@@ -65,6 +65,7 @@ function renderTableBtnClick(){
     let tiles_index_total = 0;
     let tiles_string = "";
     let tile_coordinates = [];
+    let state_table = $("#state_table");
 
     for(let tiles_string_index = 0; tiles_string_index < tiles_string_array.length;  tiles_string_index++){
         let tile_string = tiles_string_array[tiles_string_index];
@@ -76,23 +77,31 @@ function renderTableBtnClick(){
     tile_coordinates = JSON.parse(tiles_string);
 
     /* Append/Render tile coordinates */
-    $("#state_table").html("");
+    state_table.html("");
 
     for(let render_tile_coordinates = 0; render_tile_coordinates < tile_coordinates.length; render_tile_coordinates++){
         let tiles_index = tile_coordinates[render_tile_coordinates];
-        let table_row = $("<tr></tr>");
-        // use clone instead of strings
+        // let table_row = $("<tr></tr>");
+        let table_row_clone = $(".tr_clone").clone();
+
+        table_row_clone.removeClass("tr_clone");
 
         for(let tiles_property in tiles_index){
             let tile_state = tiles_index[tiles_property];
             let active_tile = (tile_state == 1) ? "active_tile" : "";
-            
-            row_data = $("<td  class='tiles "+ active_tile +"' data-tile_state=" + tile_state + ">");
-            // use clone instead of strings
+            let tile_clone = $(".tiles_clone").clone();
 
-            table_row.append(row_data);
+            tile_clone.removeClass("tiles_clone");
+            tile_clone.attr("data-tile_state", tile_state);
+            tile_clone.addClass(active_tile);
+            
+            row_data = tile_clone;
+            // row_data = $("<td  class='tiles "+ active_tile +"' data-tile_state=" + tile_state + ">");
+
+            // table_row.append(row_data);
+            table_row_clone.append(row_data);
         }
-        $("#state_table").append(table_row);
+        state_table.append(table_row_clone);
     }
 
 }
