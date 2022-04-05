@@ -103,5 +103,4 @@ function renderTableBtnClick(){
         }
         state_table.append(table_row_clone);
     }
-
 }
