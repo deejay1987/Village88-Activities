@@ -202,3 +202,6 @@ function renderTableBtnClick(){
     //     content     : "<button type='button' class='till_btn'>Till</button>"
     // });
 }
+
+// areas need help
+// what i learned today
